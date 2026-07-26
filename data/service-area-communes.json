@@ -1,58 +1,6912 @@
 [
   {
-    "name": "Méru",
-    "postalCodes": ["60110"],
+    "name": "Abancourt",
+    "postalCodes": [
+      "60220"
+    ],
     "departmentCode": "60",
-    "departmentName": "Oise",
-    "distanceKm": 0
+    "departmentName": "Oise"
   },
   {
-    "name": "Montataire",
-    "postalCodes": ["60160"],
+    "name": "Abbecourt",
+    "postalCodes": [
+      "60430"
+    ],
     "departmentCode": "60",
-    "departmentName": "Oise",
-    "distanceKm": 10.6
+    "departmentName": "Oise"
   },
   {
-    "name": "Creil",
-    "postalCodes": ["60100"],
+    "name": "Abbeville-Saint-Lucien",
+    "postalCodes": [
+      "60480"
+    ],
     "departmentCode": "60",
-    "departmentName": "Oise",
-    "distanceKm": 12.3
+    "departmentName": "Oise"
   },
   {
-    "name": "Senlis",
-    "postalCodes": ["60300"],
+    "name": "Ableiges",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Achy",
+    "postalCodes": [
+      "60690"
+    ],
     "departmentCode": "60",
-    "departmentName": "Oise",
-    "distanceKm": 18.7
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Acy-en-Multien",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Agnetz",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Aincourt",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Airion",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Allonne",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Amblainville",
+    "postalCodes": [
+      "60110"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ambleville",
+    "postalCodes": [
+      "95420",
+      "95710"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Amenucourt",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Amy",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Andeville",
+    "postalCodes": [
+      "60570"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Andilly",
+    "postalCodes": [
+      "95580"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Angicourt",
+    "postalCodes": [
+      "60940"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Angivillers",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Angy",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ansacq",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ansauvillers",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Antheuil-Portes",
+    "postalCodes": [
+      "60162"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Antilly",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Appilly",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Apremont",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Argenteuil",
+    "postalCodes": [
+      "95100"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Armancourt",
+    "postalCodes": [
+      "60880"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Arnouville",
+    "postalCodes": [
+      "95400"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Arronville",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Arsy",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Arthies",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Asnières-sur-Oise",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Attainville",
+    "postalCodes": [
+      "95570"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Attichy",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Auchy-la-Montagne",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Auger-Saint-Vincent",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Aumont-en-Halatte",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Auneuil",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Auteuil",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Autheuil-en-Valois",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Autrêches",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Auvers-sur-Oise",
+    "postalCodes": [
+      "95430"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Aux Marais",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Avernes",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Avilly-Saint-Léonard",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Avrechy",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Avricourt",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Avrigny",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Babœuf",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bacouël",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Baillet-en-France",
+    "postalCodes": [
+      "95560"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bailleul-le-Soc",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bailleul-sur-Thérain",
+    "postalCodes": [
+      "60930"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bailleval",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bailly",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Balagny-sur-Thérain",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Banthelu",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Barbery",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bargny",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Baron",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Baugy",
+    "postalCodes": [
+      "60113",
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bazancourt",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bazicourt",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beauchamp",
+    "postalCodes": [
+      "95250"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Beaudéduit",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beaugies-sous-Bois",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beaulieu-les-Fontaines",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beaumont-les-Nonains",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beaumont-sur-Oise",
+    "postalCodes": [
+      "95260"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Beaurains-lès-Noyon",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beaurepaire",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
   },
   {
     "name": "Beauvais",
-    "postalCodes": ["60000"],
+    "postalCodes": [
+      "60000"
+    ],
     "departmentCode": "60",
-    "departmentName": "Oise",
-    "distanceKm": 34.2
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Beauvoir",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Belle-Église",
+    "postalCodes": [
+      "60540"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bellefontaine",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Belloy",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Belloy-en-France",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Berlancourt",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bernes-sur-Oise",
+    "postalCodes": [
+      "95340"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Berneuil-en-Bray",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Berneuil-sur-Aisne",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Berthecourt",
+    "postalCodes": [
+      "60370"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Berville",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bessancourt",
+    "postalCodes": [
+      "95550"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Betz",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bezons",
+    "postalCodes": [
+      "95870"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bienville",
+    "postalCodes": [
+      "60280"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Biermont",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bitry",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blacourt",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blaincourt-lès-Précy",
+    "postalCodes": [
+      "60460"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blancfossé",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blargies",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blicourt",
+    "postalCodes": [
+      "60860"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Blincourt",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boisemont",
+    "postalCodes": [
+      "95000"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Boissy-Fresnoy",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boissy-l'Aillerie",
+    "postalCodes": [
+      "95650"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bonlier",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bonneuil-en-France",
+    "postalCodes": [
+      "95500"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bonneuil-en-Valois",
+    "postalCodes": [
+      "60123"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bonneuil-les-Eaux",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bonnières",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bonvillers",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boran-sur-Oise",
+    "postalCodes": [
+      "60820"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Borest",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bornel",
+    "postalCodes": [
+      "60540"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boubiers",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bouconvillers",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bouffémont",
+    "postalCodes": [
+      "95570"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bouillancy",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boullarre",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boulogne-la-Grasse",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bouqueval",
+    "postalCodes": [
+      "95720"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Boursonne",
+    "postalCodes": [
+      "60141"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boury-en-Vexin",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Boutencourt",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bouvresse",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Braisnes-sur-Aronde",
+    "postalCodes": [
+      "60113"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Brasseuse",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bray-et-Lû",
+    "postalCodes": [
+      "95710"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Brenouille",
+    "postalCodes": [
+      "60870"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bresles",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Breteuil",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Breuil-le-Sec",
+    "postalCodes": [
+      "60840"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Breuil-le-Vert",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Brignancourt",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Briot",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Brombos",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Broquiers",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Broyes",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Brunvillers-la-Motte",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bruyères-sur-Oise",
+    "postalCodes": [
+      "95820"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Bréançon",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Brégy",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Brétigny",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bucamps",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Buhy",
+    "postalCodes": [
+      "95770"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Buicourt",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bulles",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bury",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Bussy",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Butry-sur-Oise",
+    "postalCodes": [
+      "95430"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Béhéricourt",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Béthancourt-en-Valois",
+    "postalCodes": [
+      "60129"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Béthemont-la-Forêt",
+    "postalCodes": [
+      "95840"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Béthisy-Saint-Martin",
+    "postalCodes": [
+      "60320"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Béthisy-Saint-Pierre",
+    "postalCodes": [
+      "60320"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Caisnes",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cambronne-lès-Clermont",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cambronne-lès-Ribécourt",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Campagne",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Campeaux",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Campremy",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Candor",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Canly",
+    "postalCodes": [
+      "60680"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cannectancourt",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Canny-sur-Matz",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Canny-sur-Thérain",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Carlepont",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Catenoy",
+    "postalCodes": [
+      "60840"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Catheux",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Catigny",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Catillon-Fumechon",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cauffry",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cauvigny",
+    "postalCodes": [
+      "60730"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cempuis",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cergy",
+    "postalCodes": [
+      "95000",
+      "95800"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Cernoy",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chamant",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chambly",
+    "postalCodes": [
+      "60230"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chambors",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Champagne-sur-Oise",
+    "postalCodes": [
+      "95660"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chantilly",
+    "postalCodes": [
+      "60500"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Charmont",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chars",
+    "postalCodes": [
+      "95750"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chaumont-en-Vexin",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chaumontel",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chaussy",
+    "postalCodes": [
+      "95710"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chauvry",
+    "postalCodes": [
+      "95560"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chavençon",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chelles",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chennevières-lès-Louvres",
+    "postalCodes": [
+      "95380"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chepoix",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chevincourt",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chevrières",
+    "postalCodes": [
+      "60710"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chiry-Ourscamp",
+    "postalCodes": [
+      "60138"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Choisy-au-Bac",
+    "postalCodes": [
+      "60750"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Choisy-la-Victoire",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Choqueuse-les-Bénards",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Châtenay-en-France",
+    "postalCodes": [
+      "95190"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Chèvreville",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Chérence",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Cinqueux",
+    "postalCodes": [
+      "60940"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cires-lès-Mello",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Clairoix",
+    "postalCodes": [
+      "60280"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Clermont",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cléry-en-Vexin",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Coivrel",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Commeny",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Compiègne",
+    "postalCodes": [
+      "60200"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Conchy-les-Pots",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Condécourt",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Conteville",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Corbeil-Cerf",
+    "postalCodes": [
+      "60110"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cormeilles",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cormeilles-en-Parisis",
+    "postalCodes": [
+      "95240"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Cormeilles-en-Vexin",
+    "postalCodes": [
+      "95830"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Coudun",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Couloisy",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Courcelles-Epayelles",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Courcelles-lès-Gisors",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Courcelles-sur-Viosne",
+    "postalCodes": [
+      "95650"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Courdimanche",
+    "postalCodes": [
+      "95800"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Courteuil",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Courtieux",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Coye-la-Forêt",
+    "postalCodes": [
+      "60580"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cramoisy",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crapeaumesnil",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Creil",
+    "postalCodes": [
+      "60100"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cressonsacq",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crillon",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crisolles",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Croissy-sur-Celle",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Croutoy",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crouy-en-Thelle",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crèvecœur-le-Grand",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crèvecœur-le-Petit",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Crépy-en-Valois",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuignières",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuigy-en-Bray",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuise-la-Motte",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuts",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuvergnon",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuvilly",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Cuy",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Daméraucourt",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Dargies",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Delincourt",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Deuil-la-Barre",
+    "postalCodes": [
+      "95170"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Dieudonné",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Dives",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Domfront",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Domont",
+    "postalCodes": [
+      "95330"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Dompierre",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Doméliers",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Duvy",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Eaubonne",
+    "postalCodes": [
+      "95600"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Enghien-les-Bains",
+    "postalCodes": [
+      "95880"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Ennery",
+    "postalCodes": [
+      "95300"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Ercuis",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ermenonville",
+    "postalCodes": [
+      "60950"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ermont",
+    "postalCodes": [
+      "95120"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Ernemont-Boutavent",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Erquery",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Erquinvillers",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Escames",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Esches",
+    "postalCodes": [
+      "60110"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Escles-Saint-Pierre",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Espaubourg",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Esquennoy",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Essuiles",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Estrées-Saint-Denis",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fay-les-Étangs",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Feigneux",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ferrières",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Feuquières",
+    "postalCodes": [
+      "60960"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fitz-James",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Flavacourt",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Flavy-le-Meldeux",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fleurines",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fleury",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fléchy",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fontaine-Bonneleau",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fontaine-Chaalis",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fontaine-Lavaganne",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fontaine-Saint-Lucien",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fontenay-en-Parisis",
+    "postalCodes": [
+      "95190"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Fontenay-Torcy",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Formerie",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fosses",
+    "postalCodes": [
+      "95470"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Fouilleuse",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fouilloy",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Foulangues",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fouquenies",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fouquerolles",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fournival",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Francastel",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Francières",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Franconville",
+    "postalCodes": [
+      "95130"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Fresne-Léguillon",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fresnières",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fresnoy-en-Thelle",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fresnoy-la-Rivière",
+    "postalCodes": [
+      "60127"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Fresnoy-le-Luat",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Frocourt",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Froissy",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Frouville",
+    "postalCodes": [
+      "95690"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Frémainville",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Frémécourt",
+    "postalCodes": [
+      "95830"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Fréniches",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Frépillon",
+    "postalCodes": [
+      "95740"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Frétoy-le-Château",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gannes",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Garges-lès-Gonesse",
+    "postalCodes": [
+      "95140"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Gaudechart",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Genainville",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Genvry",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gerberoy",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gilocourt",
+    "postalCodes": [
+      "60129"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Giraumont",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Glaignes",
+    "postalCodes": [
+      "60129"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Glatigny",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Godenvillers",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Goincourt",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Golancourt",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gondreville",
+    "postalCodes": [
+      "60117"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gonesse",
+    "postalCodes": [
+      "95500"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Gourchelles",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gournay-sur-Aronde",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Goussainville",
+    "postalCodes": [
+      "95190"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Gouvieux",
+    "postalCodes": [
+      "60270"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gouy-les-Groseillers",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grandfresnoy",
+    "postalCodes": [
+      "60680"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grandrû",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grandvillers-aux-Bois",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grandvilliers",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grez",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Grisy-les-Plâtres",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Groslay",
+    "postalCodes": [
+      "95410"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Grémévillers",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Guignecourt",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Guiry-en-Vexin",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Guiscard",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Gury",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Génicourt",
+    "postalCodes": [
+      "95650"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Hadancourt-le-Haut-Clocher",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hainvillers",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Halloy",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hannaches",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hanvoile",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Haravilliers",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Hardivillers",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Haucourt",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Haudivillers",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hautbos",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Haute-Isle",
+    "postalCodes": [
+      "95780"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Haute-Épine",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hautefontaine",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Heilles",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Herblay-sur-Seine",
+    "postalCodes": [
+      "95220"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Herchies",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hermes",
+    "postalCodes": [
+      "60370"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hodenc-en-Bray",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hodenc-l'Évêque",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hodent",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Hondainville",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Houdancourt",
+    "postalCodes": [
+      "60710"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hécourt",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hédouville",
+    "postalCodes": [
+      "95690"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Hémévillers",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hénonville",
+    "postalCodes": [
+      "60119"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Héricourt-sur-Thérain",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Hérouville-en-Vexin",
+    "postalCodes": [
+      "95300"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Hétomesnil",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ivors",
+    "postalCodes": [
+      "60141"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ivry-le-Temple",
+    "postalCodes": [
+      "60173"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Jagny-sous-Bois",
+    "postalCodes": [
+      "95850"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Jaméricourt",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Janville",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Jaulzy",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Jaux",
+    "postalCodes": [
+      "60880"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Jonquières",
+    "postalCodes": [
+      "60680"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Jouy-le-Moutier",
+    "postalCodes": [
+      "95280"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Jouy-sous-Thelle",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Juvignies",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "L'Isle-Adam",
+    "postalCodes": [
+      "95290"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "La Chapelle-en-Serval",
+    "postalCodes": [
+      "60520"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Chapelle-en-Vexin",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "La Corne-en-Vexin",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Drenne",
+    "postalCodes": [
+      "60790"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Frette-sur-Seine",
+    "postalCodes": [
+      "95530"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "La Houssoye",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Hérelle",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-en-Hez",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-Roy",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-Saint-Pierre",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-sur-Oudeuil",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-sur-Ressons",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Neuville-Vault",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Roche-Guyon",
+    "postalCodes": [
+      "95780"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "La Rue-Saint-Pierre",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "La Villeneuve-sous-Thury",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Labbeville",
+    "postalCodes": [
+      "95690"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Laberlière",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Laboissière-en-Thelle",
+    "postalCodes": [
+      "60570"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Labosse",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Labruyère",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lachapelle-aux-Pots",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lachapelle-Saint-Pierre",
+    "postalCodes": [
+      "60730"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lachapelle-sous-Gerberoy",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lachaussée-du-Bois-d'Écu",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lachelle",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lacroix-Saint-Ouen",
+    "postalCodes": [
+      "60610"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lafraye",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lagny",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lagny-le-Sec",
+    "postalCodes": [
+      "60330"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Laigneville",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lalande-en-Son",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lalandelle",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lamorlaye",
+    "postalCodes": [
+      "60260"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lamécourt",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lannoy-Cuillère",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Larbroye",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lassigny",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lassy",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Lataule",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lattainville",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lavacquerie",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Laverrière",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Laversines",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lavilletertre",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Bellay-en-Vexin",
+    "postalCodes": [
+      "95750"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Coudray-Saint-Germer",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Coudray-sur-Thelle",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Crocq",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Fay-Saint-Quentin",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Fayel",
+    "postalCodes": [
+      "60680"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Frestoy-Vaux",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Gallet",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Hamel",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Heaulme",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Mesnil-Aubry",
+    "postalCodes": [
+      "95720"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Mesnil-Conteville",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Mesnil-en-Thelle",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Mesnil-Saint-Firmin",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Mesnil-sur-Bulles",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Mesnil-Théribus",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Meux",
+    "postalCodes": [
+      "60880"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Mont-Saint-Adrien",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Perchay",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Plessier-sur-Bulles",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Plessier-sur-Saint-Just",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Plessis-Belleville",
+    "postalCodes": [
+      "60330"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Plessis-Bouchard",
+    "postalCodes": [
+      "95130"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Plessis-Brion",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Plessis-Gassot",
+    "postalCodes": [
+      "95720"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Plessis-Luzarches",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Plessis-Patte-d'Oie",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Ployron",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Quesnel-Aubry",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Saulchoy",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Thillay",
+    "postalCodes": [
+      "95500"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Le Vaumain",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Le Vauroux",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Les Ageux",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Les Hauts-Talican",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lhéraule",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Liancourt",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Liancourt-Saint-Pierre",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Libermont",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lierville",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lieuvillers",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lihus",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Litz",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Livilliers",
+    "postalCodes": [
+      "95300"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Loconville",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Longueil-Annel",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Longueil-Sainte-Marie",
+    "postalCodes": [
+      "60126"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Longuesse",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Lormaison",
+    "postalCodes": [
+      "60110"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Loueuse",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Louvres",
+    "postalCodes": [
+      "95380"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Luchy",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Luzarches",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Léglantiers",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Lévignen",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Machemont",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maffliers",
+    "postalCodes": [
+      "95560"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Magny-en-Vexin",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Maignelay-Montigny",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maimbeville",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maisoncelle-Saint-Pierre",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maisoncelle-Tuilerie",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mareil-en-France",
+    "postalCodes": [
+      "95850"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Marest-sur-Matz",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mareuil-la-Motte",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mareuil-sur-Ourcq",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Margency",
+    "postalCodes": [
+      "95580"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Margny-aux-Cerises",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Margny-lès-Compiègne",
+    "postalCodes": [
+      "60280"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Margny-sur-Matz",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Marines",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Marly-la-Ville",
+    "postalCodes": [
+      "95670"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Marolles",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Marquéglise",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Marseille-en-Beauvaisis",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Martincourt",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maucourt",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maudétour-en-Vexin",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Maulers",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Maysel",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mello",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Menouville",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Menucourt",
+    "postalCodes": [
+      "95180"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Milly-sur-Thérain",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mogneville",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Moisselles",
+    "postalCodes": [
+      "95570"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Moliens",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monceaux",
+    "postalCodes": [
+      "60940"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monceaux-l'Abbaye",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monchy-Humières",
+    "postalCodes": [
+      "60113"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monchy-Saint-Éloi",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mondescourt",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monneville",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mont-l'Évêque",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montagny-en-Vexin",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montagny-Sainte-Félicité",
+    "postalCodes": [
+      "60950"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montataire",
+    "postalCodes": [
+      "60160"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montchevreuil",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montgeroult",
+    "postalCodes": [
+      "95650"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montgérain",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montiers",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montigny-lès-Cormeilles",
+    "postalCodes": [
+      "95370"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montjavoult",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montlignon",
+    "postalCodes": [
+      "95680"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montlognon",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montmacq",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montmagny",
+    "postalCodes": [
+      "95360"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montmartin",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montmorency",
+    "postalCodes": [
+      "95160"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montreuil-sur-Brêche",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montreuil-sur-Epte",
+    "postalCodes": [
+      "95770"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montreuil-sur-Thérain",
+    "postalCodes": [
+      "60134"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Monts",
+    "postalCodes": [
+      "60119"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Montsoult",
+    "postalCodes": [
+      "95560"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Montépilloy",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Morangles",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Morienval",
+    "postalCodes": [
+      "60127"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Morlincourt",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mortefontaine",
+    "postalCodes": [
+      "60128"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mortefontaine-en-Thelle",
+    "postalCodes": [
+      "60570"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mortemer",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Morvillers",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mory-Montcrux",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mouchy-le-Châtel",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Moulin-sous-Touvent",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mours",
+    "postalCodes": [
+      "95260"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Moussy",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Mouy",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Moyenneville",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Moyvillers",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Muidorge",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Muirancourt",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mureaumont",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mélicocq",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ménévillers",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Mériel",
+    "postalCodes": [
+      "95630"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Méru",
+    "postalCodes": [
+      "60110"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Méry-la-Bataille",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Méry-sur-Oise",
+    "postalCodes": [
+      "95540"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Nampcel",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nanteuil-le-Haudouin",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nerville-la-Forêt",
+    "postalCodes": [
+      "95590"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Nesles-la-Vallée",
+    "postalCodes": [
+      "95690"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Neufchelles",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Neufvy-sur-Aronde",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Neuilly-en-Thelle",
+    "postalCodes": [
+      "60530"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Neuilly-en-Vexin",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Neuilly-sous-Clermont",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Neuville-Bosc",
+    "postalCodes": [
+      "60119"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Neuville-sur-Oise",
+    "postalCodes": [
+      "95000"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Nivillers",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Noailles",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nogent-sur-Oise",
+    "postalCodes": [
+      "60180"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nointel",
+    "postalCodes": [
+      "60840"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nointel",
+    "postalCodes": [
+      "95590"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Noirémont",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Noisy-sur-Oise",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Noroy",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nourard-le-Franc",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Novillers",
+    "postalCodes": [
+      "60730"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Noyers-Saint-Martin",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Noyon",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Nucourt",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Néry",
+    "postalCodes": [
+      "60320"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Offoy",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ognes",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ognolles",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Omerville",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Omécourt",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ons-en-Bray",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ormoy-le-Davien",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ormoy-Villers",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Oroër",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Orrouy",
+    "postalCodes": [
+      "60129"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Orry-la-Ville",
+    "postalCodes": [
+      "60560"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Orvillers-Sorel",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Osny",
+    "postalCodes": [
+      "95520"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Oudeuil",
+    "postalCodes": [
+      "60860"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Oursel-Maison",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Paillart",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Parmain",
+    "postalCodes": [
+      "95620"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Parnes",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Passel",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Persan",
+    "postalCodes": [
+      "95340"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Pierrefitte-en-Beauvaisis",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pierrefonds",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pierrelaye",
+    "postalCodes": [
+      "95220",
+      "95480"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Pimprez",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Piscop",
+    "postalCodes": [
+      "95350"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Pisseleu",
+    "postalCodes": [
+      "60860"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Plailly",
+    "postalCodes": [
+      "60128"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Plainval",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Plainville",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Plessis-de-Roye",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ponchon",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pont-l'Évêque",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pont-Sainte-Maxence",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pontarmé",
+    "postalCodes": [
+      "60520"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
   },
   {
     "name": "Pontoise",
-    "postalCodes": ["95000"],
+    "postalCodes": [
+      "95000",
+      "95300"
+    ],
     "departmentCode": "95",
-    "departmentName": "Val-d’Oise",
-    "distanceKm": 35.1
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Pontoise-lès-Noyon",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pontpoint",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Porcheux",
+    "postalCodes": [
+      "60390"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Porquéricourt",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Pouilly",
+    "postalCodes": [
+      "60790"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Presles",
+    "postalCodes": [
+      "95590"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Pronleroy",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Précy-sur-Oise",
+    "postalCodes": [
+      "60460"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Prévillers",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Puiseux-en-Bray",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Puiseux-en-France",
+    "postalCodes": [
+      "95380"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Puiseux-le-Hauberger",
+    "postalCodes": [
+      "60540"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Puiseux-Pontoise",
+    "postalCodes": [
+      "95650"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Puits-la-Vallée",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Péroy-les-Gombries",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Quesmy",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Quincampoix-Fleuzy",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Quinquempoix",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rainvillers",
+    "postalCodes": [
+      "60155"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rantigny",
+    "postalCodes": [
+      "60290"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Raray",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ravenel",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Reilly",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Remy",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ressons-sur-Matz",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rethondes",
+    "postalCodes": [
+      "60153"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Reuil-sur-Brêche",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rhuis",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ribécourt-Dreslincourt",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ricquebourg",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rieux",
+    "postalCodes": [
+      "60870"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rivecourt",
+    "postalCodes": [
+      "60126"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Roberval",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rochy-Condé",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rocquemont",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rocquencourt",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Roissy-en-France",
+    "postalCodes": [
+      "95700"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Romescamps",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ronquerolles",
+    "postalCodes": [
+      "95340"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Rosières",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rosoy",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rosoy-en-Multien",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rotangy",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rothois",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rousseloy",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rouville",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rouvillers",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rouvres-en-Multien",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rouvroy-les-Merles",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Roy-Boissy",
+    "postalCodes": [
+      "60690"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Royaucourt",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Roye-sur-Matz",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rully",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Russy-Bémont",
+    "postalCodes": [
+      "60117"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Réez-Fosse-Martin",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rémécourt",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Rémérangles",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sacy-le-Grand",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sacy-le-Petit",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sagy",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Sains-Morainvillers",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-André-Farivillers",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Arnoult",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Aubin-en-Bray",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Aubin-sous-Erquery",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Brice-sous-Forêt",
+    "postalCodes": [
+      "95350"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Clair-sur-Epte",
+    "postalCodes": [
+      "95770"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Crépin-aux-Bois",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Crépin-Ibouvillers",
+    "postalCodes": [
+      "60149",
+      "60790"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Cyr-en-Arthies",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Deniscourt",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Félix",
+    "postalCodes": [
+      "60370"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Germain-la-Poterie",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Germer-de-Fly",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Gervais",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Gratien",
+    "postalCodes": [
+      "95210"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Jean-aux-Bois",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Just-en-Chaussée",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Leu-d'Esserent",
+    "postalCodes": [
+      "60340"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Leu-la-Forêt",
+    "postalCodes": [
+      "95320"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Léger-aux-Bois",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Léger-en-Bray",
+    "postalCodes": [
+      "60155"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Martin-aux-Bois",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Martin-du-Tertre",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Martin-le-Nœud",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Martin-Longueau",
+    "postalCodes": [
+      "60700"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Maur",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Maximin",
+    "postalCodes": [
+      "60740"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Omer-en-Chaussée",
+    "postalCodes": [
+      "60860"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Ouen-l'Aumône",
+    "postalCodes": [
+      "95310"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Paul",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Pierre-es-Champs",
+    "postalCodes": [
+      "60850"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Pierre-lès-Bitry",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Prix",
+    "postalCodes": [
+      "95390"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Saint-Quentin-des-Prés",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Remy-en-l'Eau",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Samson-la-Poterie",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Sauveur",
+    "postalCodes": [
+      "60320"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Sulpice",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Thibault",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Vaast-de-Longmont",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Vaast-lès-Mello",
+    "postalCodes": [
+      "60660"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saint-Valery",
+    "postalCodes": [
+      "60220"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
   },
   {
     "name": "Saint-Witz",
-    "postalCodes": ["95470"],
+    "postalCodes": [
+      "95470"
+    ],
     "departmentCode": "95",
-    "departmentName": "Val-d’Oise",
-    "distanceKm": 27.8
+    "departmentName": "Val-d’Oise"
   },
   {
-    "name": "L’Isle-Adam",
-    "postalCodes": ["97490"],
+    "name": "Saint-Étienne-Roilaye",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sainte-Eusoye",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sainte-Geneviève",
+    "postalCodes": [
+      "60730"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Saintines",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Salency",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sannois",
+    "postalCodes": [
+      "95110"
+    ],
     "departmentCode": "95",
-    "departmentName": "Val-d’Oise",
-    "distanceKm": 39.4
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Santeuil",
+    "postalCodes": [
+      "95640"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Sarcelles",
+    "postalCodes": [
+      "95200"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Sarcus",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sarnois",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Savignies",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sempigny",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Senantes",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Senlis",
+    "postalCodes": [
+      "60300"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Senots",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Seraincourt",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Serans",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sermaize",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Seugy",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Silly-le-Long",
+    "postalCodes": [
+      "60330"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Silly-Tillard",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Soisy-sous-Montmorency",
+    "postalCodes": [
+      "95230"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Solente",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sommereux",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Songeons",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sully",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Survilliers",
+    "postalCodes": [
+      "95470"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Suzoy",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sérifontaine",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Séry-Magneval",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Sérévillers",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Talmontiers",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tartigny",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Taverny",
+    "postalCodes": [
+      "95150"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Therdonne",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Theuville",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Thibivillers",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thiers-sur-Thève",
+    "postalCodes": [
+      "60520"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thiescourt",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thieuloy-Saint-Antoine",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thieux",
+    "postalCodes": [
+      "60480"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thiverny",
+    "postalCodes": [
+      "60160"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thourotte",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thury-en-Valois",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Thury-sous-Clermont",
+    "postalCodes": [
+      "60250"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Théméricourt",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Thérines",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tillé",
+    "postalCodes": [
+      "60000"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tourly",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tracy-le-Mont",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tracy-le-Val",
+    "postalCodes": [
+      "60170"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Tricot",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Trie-Château",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Trie-la-Ville",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Troissereux",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Trosly-Breuil",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Troussencourt",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Trumilly",
+    "postalCodes": [
+      "60800"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ully-Saint-Georges",
+    "postalCodes": [
+      "60730"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Us",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Valdampierre",
+    "postalCodes": [
+      "60790"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Valescourt",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vallangoujard",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Valmondois",
+    "postalCodes": [
+      "95760"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Vandélicourt",
+    "postalCodes": [
+      "60490"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Varesnes",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Varinfroy",
+    "postalCodes": [
+      "60890"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vauchelles",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vauciennes",
+    "postalCodes": [
+      "60117"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vaudancourt",
+    "postalCodes": [
+      "60240"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vaudherland",
+    "postalCodes": [
+      "95500"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Vaumoise",
+    "postalCodes": [
+      "60117"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vauréal",
+    "postalCodes": [
+      "95490"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Velennes",
+    "postalCodes": [
+      "60510"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vendeuil-Caply",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Venette",
+    "postalCodes": [
+      "60280"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ver-sur-Launette",
+    "postalCodes": [
+      "60950"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Verberie",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Verderel-lès-Sauqueuse",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Verderonne",
+    "postalCodes": [
+      "60140"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Verneuil-en-Halatte",
+    "postalCodes": [
+      "60550"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Versigny",
+    "postalCodes": [
+      "60440"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vez",
+    "postalCodes": [
+      "60117"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Viarmes",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Viefvillers",
+    "postalCodes": [
+      "60360"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vienne-en-Arthies",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Vieux-Moulin",
+    "postalCodes": [
+      "60350"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vignemont",
+    "postalCodes": [
+      "60162"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vigny",
+    "postalCodes": [
+      "95450"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Villaines-sous-Bois",
+    "postalCodes": [
+      "95570"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Ville",
+    "postalCodes": [
+      "60400"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villembray",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villeneuve-les-Sablons",
+    "postalCodes": [
+      "60175"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villeneuve-sur-Verberie",
+    "postalCodes": [
+      "60410"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villeron",
+    "postalCodes": [
+      "95380"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Villers-en-Arthies",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Villers-Saint-Barthélemy",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Saint-Frambourg-Ognon",
+    "postalCodes": [
+      "60810"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Saint-Genest",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Saint-Paul",
+    "postalCodes": [
+      "60870"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Saint-Sépulcre",
+    "postalCodes": [
+      "60134"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-sous-Saint-Leu",
+    "postalCodes": [
+      "60340"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-sur-Auchy",
+    "postalCodes": [
+      "60650"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-sur-Bonnières",
+    "postalCodes": [
+      "60860"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-sur-Coudun",
+    "postalCodes": [
+      "60150"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Vermont",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villers-Vicomte",
+    "postalCodes": [
+      "60120"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villeselve",
+    "postalCodes": [
+      "60640"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Villiers-Adam",
+    "postalCodes": [
+      "95840"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Villiers-le-Bel",
+    "postalCodes": [
+      "95400"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Villiers-le-Sec",
+    "postalCodes": [
+      "95720"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Vineuil-Saint-Firmin",
+    "postalCodes": [
+      "60500"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vrocourt",
+    "postalCodes": [
+      "60112"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Vémars",
+    "postalCodes": [
+      "95470"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Vétheuil",
+    "postalCodes": [
+      "95510"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Wacquemoulin",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Wambez",
+    "postalCodes": [
+      "60380"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Warluis",
+    "postalCodes": [
+      "60430"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Wavignies",
+    "postalCodes": [
+      "60130"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Welles-Pérennes",
+    "postalCodes": [
+      "60420"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Wy-dit-Joli-Village",
+    "postalCodes": [
+      "95420"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Ève",
+    "postalCodes": [
+      "60330"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Écouen",
+    "postalCodes": [
+      "95440"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Écuvilly",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Élencourt",
+    "postalCodes": [
+      "60210"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Élincourt-Sainte-Marguerite",
+    "postalCodes": [
+      "60157"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Éméville",
+    "postalCodes": [
+      "60123"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Énencourt-Léage",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Épiais-lès-Louvres",
+    "postalCodes": [
+      "95380"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Épiais-Rhus",
+    "postalCodes": [
+      "95810"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Épinay-Champlâtreux",
+    "postalCodes": [
+      "95270"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Épineuse",
+    "postalCodes": [
+      "60190"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Éragny-sur-Epte",
+    "postalCodes": [
+      "60590"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Éragny-sur-Oise",
+    "postalCodes": [
+      "95610"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
+  },
+  {
+    "name": "Étavigny",
+    "postalCodes": [
+      "60620"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Étouy",
+    "postalCodes": [
+      "60600"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Évricourt",
+    "postalCodes": [
+      "60310"
+    ],
+    "departmentCode": "60",
+    "departmentName": "Oise"
+  },
+  {
+    "name": "Ézanville",
+    "postalCodes": [
+      "95460"
+    ],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise"
   }
 ]

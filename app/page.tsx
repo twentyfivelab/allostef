@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState, type KeyboardEvent } from "react";
+import Image from "next/image";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { siteConfig } from "@/config/site";
 import communesData from "@/data/service-area-communes.json";
 
@@ -118,12 +119,48 @@ const methodSteps = [
 ];
 
 const realizations = [
-  { title: "Plomberie", category: "Raccordements et sanitaires" },
-  { title: "Chauffage", category: "Remplacement et confort thermique" },
-  { title: "Électricité", category: "Éclairage et mise à niveau" },
-  { title: "Plâtrerie", category: "Cloisons et finitions" },
-  { title: "Carrelage", category: "Revêtements de sol et murs" },
-  { title: "Rénovation intérieure", category: "Projets plus globaux" },
+  {
+    title: "Plomberie",
+    category: "Raccordements et sanitaires",
+    imageSrc: "/images/realizations/plomberie.jpg",
+    imageAlt: "Visuel illustrant une intervention de plomberie dans une salle de bain moderne",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
+  {
+    title: "Chauffage",
+    category: "Remplacement et confort thermique",
+    imageSrc: "/images/realizations/chauffage.jpg",
+    imageAlt: "Visuel illustrant une installation de chauffage soignée et moderne",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
+  {
+    title: "Électricité",
+    category: "Éclairage et mise à niveau",
+    imageSrc: "/images/realizations/electricite.jpg",
+    imageAlt: "Visuel illustrant une intervention électrique professionnelle",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
+  {
+    title: "Plâtrerie",
+    category: "Cloisons et finitions",
+    imageSrc: "/images/realizations/platrerie.jpg",
+    imageAlt: "Visuel illustrant une réalisation de plâtrerie et de finition",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
+  {
+    title: "Carrelage",
+    category: "Revêtements de sol et murs",
+    imageSrc: "/images/realizations/carrelage.jpg",
+    imageAlt: "Visuel illustrant une pose de carrelage précise et moderne",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
+  {
+    title: "Rénovation intérieure",
+    category: "Projets plus globaux",
+    imageSrc: "/images/realizations/renovation-interieure.jpg",
+    imageAlt: "Visuel illustrant un intérieur moderne, lumineux et abouti",
+    caption: "Visuel illustrant le domaine d’intervention",
+  },
 ];
 
 type Commune = {
@@ -131,7 +168,6 @@ type Commune = {
   postalCodes: string[];
   departmentCode: string;
   departmentName: string;
-  distanceKm: number;
 };
 
 const normalize = (value: string) =>
@@ -142,79 +178,102 @@ const normalize = (value: string) =>
 
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [selectedCommune, setSelectedCommune] = useState<Commune | null>(null);
-  const [statusMessage, setStatusMessage] = useState<string>("Saisissez une commune ou un code postal.");
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const communes = useMemo(() => {
     const items = communesData as Commune[];
-    return items.sort((a, b) => a.name.localeCompare(b.name, "fr", { sensitivity: "base" }));
+    return [...items].sort((a, b) => a.name.localeCompare(b.name, "fr", { sensitivity: "base" }));
   }, []);
 
   const filteredCommunes = useMemo(() => {
     const trimmed = query.trim();
-    if (!trimmed) return communes.slice(0, 8);
+    if (!trimmed) return [];
 
     const normalized = normalize(trimmed);
     return communes.filter((commune) => {
-      const searchable = [commune.name, commune.departmentName, ...commune.postalCodes].map(normalize).join(" ");
+      const searchable = [commune.name, ...commune.postalCodes, commune.departmentName].map(normalize).join(" ");
       return searchable.includes(normalized);
     });
   }, [communes, query]);
 
-  useEffect(() => {
-    if (!query.trim()) {
-      setSelectedCommune(null);
-      setStatusMessage("Saisissez une commune ou un code postal.");
-      return;
-    }
+  const exactMatch = useMemo(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return null;
 
-    const exactMatch = communes.find((entry) => {
-      const normalizedInput = normalize(query.trim());
+    return communes.find((entry) => {
+      const normalizedInput = normalize(trimmed);
       const normalizedName = normalize(entry.name);
       const normalizedPostal = entry.postalCodes.map(normalize);
       return normalizedName === normalizedInput || normalizedPostal.includes(normalizedInput);
-    });
-
-    if (exactMatch) {
-      setSelectedCommune(exactMatch);
-      setStatusMessage(`AlloStef intervient dans votre secteur : ${exactMatch.name}. Distance indicative depuis Méru : ${exactMatch.distanceKm.toFixed(1)} km.`);
-      return;
-    }
-
-    setSelectedCommune(null);
-    setStatusMessage("Cette commune ne figure pas dans notre zone habituelle de 40 km. Contactez AlloStef pour vérifier si une intervention reste possible.");
+    }) ?? null;
   }, [communes, query]);
+
+  const selectedCommune = useMemo(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return null;
+    return exactMatch;
+  }, [exactMatch, query]);
+
+  const statusMessage = useMemo(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return "Saisissez une commune ou un code postal.";
+    if (exactMatch) {
+      const postalCode = exactMatch.postalCodes[0] ?? "";
+      return `AlloStef intervient dans votre secteur : ${exactMatch.name}${postalCode ? ` (${postalCode})` : ""}.`;
+    }
+    return "Aucune commune ne correspond à votre recherche.";
+  }, [exactMatch, query]);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (inputRef.current && !inputRef.current.contains(event.target as Node)) {
+        setIsSuggestionsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, []);
 
   const handleSelect = (commune: Commune) => {
     setQuery(commune.name);
-    setSelectedCommune(commune);
     setActiveIndex(-1);
-    setStatusMessage(`AlloStef intervient dans votre secteur : ${commune.name}. Distance indicative depuis Méru : ${commune.distanceKm.toFixed(1)} km.`);
+    setIsSuggestionsOpen(false);
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
-    if (filteredCommunes.length === 0) return;
+    if (!query.trim() || filteredCommunes.length === 0) {
+      if (event.key === "Escape") {
+        setIsSuggestionsOpen(false);
+      }
+      return;
+    }
 
     if (event.key === "ArrowDown") {
       event.preventDefault();
       setActiveIndex((current) => (current + 1) % filteredCommunes.length);
+      setIsSuggestionsOpen(true);
       return;
     }
 
     if (event.key === "ArrowUp") {
       event.preventDefault();
       setActiveIndex((current) => (current - 1 + filteredCommunes.length) % filteredCommunes.length);
+      setIsSuggestionsOpen(true);
       return;
     }
 
     if (event.key === "Enter" && activeIndex >= 0) {
       event.preventDefault();
       handleSelect(filteredCommunes[activeIndex]);
+      return;
     }
 
     if (event.key === "Escape") {
       setActiveIndex(-1);
+      setIsSuggestionsOpen(false);
     }
   };
 
@@ -242,8 +301,8 @@ export default function Home() {
       />
       <header className="sticky top-0 z-50 border-b border-[#DDEFFF] bg-[rgba(248,252,255,0.94)] backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="#top" className="text-xl font-semibold tracking-[-0.02em] text-[#173246]" aria-label="AlloStef accueil">
-            AlloStef
+          <a href="#top" className="flex items-center" aria-label="AlloStef accueil">
+            <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" priority />
           </a>
           <nav className="hidden items-center gap-6 text-sm font-medium text-[#5F7484] md:flex">
             {siteConfig.navigation.map((item) => (
@@ -397,12 +456,23 @@ export default function Home() {
             </h2>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {realizations.map((item) => (
+            {realizations.map((item, index) => (
               <article key={item.title} className="overflow-hidden rounded-[1.75rem] border border-[#DDEFFF] bg-[linear-gradient(120deg,_#FFFFFF_0%,_#EAF6FF_55%,_#CFE8F8_100%)] shadow-[0_18px_45px_-28px_rgba(23,50,70,0.18)]">
-                <div className="aspect-[4/3] bg-[linear-gradient(135deg,_#173246_0%,_#5CA6D2_100%)]" />
+                <div className="group relative aspect-[4/3] overflow-hidden bg-[#EAF6FF]">
+                  <Image
+                    src={item.imageSrc}
+                    alt={item.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                    priority={index < 2}
+                    loading={index < 2 ? "eager" : "lazy"}
+                  />
+                </div>
                 <div className="p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">{item.category}</p>
                   <h3 className="mt-3 text-lg font-semibold text-[#173246]">{item.title}</h3>
+                  <p className="mt-2 text-sm text-[#5F7484]">{item.caption}</p>
                 </div>
               </article>
             ))}
@@ -423,38 +493,54 @@ export default function Home() {
               </label>
               <div className="mt-4 rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF] p-3">
                 <input
+                  ref={inputRef}
                   id="commune-search"
                   value={query}
-                  onChange={(event) => setQuery(event.target.value)}
+                  onChange={(event) => {
+                    const nextValue = event.target.value;
+                    setQuery(nextValue);
+                    setIsSuggestionsOpen(nextValue.trim().length > 0);
+                  }}
+                  onFocus={() => {
+                    if (query.trim()) {
+                      setIsSuggestionsOpen(true);
+                    }
+                  }}
                   onKeyDown={handleKeyDown}
                   placeholder="Ex. Méru, 60000, Senlis"
                   className="w-full rounded-[0.9rem] border border-[#DDEFFF] bg-white px-4 py-3 text-sm text-[#173246] outline-none focus:border-[#5CA6D2]"
                   role="combobox"
                   aria-autocomplete="list"
-                  aria-expanded={filteredCommunes.length > 0}
+                  aria-expanded={isSuggestionsOpen && filteredCommunes.length > 0}
                   aria-controls="commune-list"
                   aria-label="Rechercher une commune"
                 />
               </div>
-              <div id="commune-list" className="mt-4 max-h-64 overflow-auto rounded-[1.25rem] border border-[#DDEFFF] bg-white" role="listbox" aria-label="Communes disponibles">
-                {filteredCommunes.map((commune, index) => (
-                  <button
-                    key={`${commune.name}-${commune.postalCodes[0]}`}
-                    type="button"
-                    role="option"
-                    aria-selected={activeIndex === index}
-                    onClick={() => handleSelect(commune)}
-                    onMouseEnter={() => setActiveIndex(index)}
-                    className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition ${activeIndex === index ? "bg-[#EFF8FF]" : "bg-white"}`}
-                  >
-                    <span>
-                      <span className="block font-semibold text-[#173246]">{commune.name}</span>
-                      <span className="mt-1 block text-[#5F7484]">{commune.departmentName} · {commune.postalCodes.join(", ")}</span>
-                    </span>
-                    <span className="text-[#397DA9]">{commune.distanceKm.toFixed(1)} km</span>
-                  </button>
-                ))}
-              </div>
+              {query.trim() && isSuggestionsOpen ? (
+                <div id="commune-list" className="mt-4 max-h-64 overflow-auto rounded-[1.25rem] border border-[#DDEFFF] bg-white" role="listbox" aria-label="Communes disponibles">
+                  {filteredCommunes.length > 0 ? (
+                    filteredCommunes.map((commune, index) => (
+                      <button
+                        key={`${commune.name}-${commune.postalCodes[0]}`}
+                        type="button"
+                        role="option"
+                        aria-selected={activeIndex === index}
+                        onMouseDown={(event) => event.preventDefault()}
+                        onClick={() => handleSelect(commune)}
+                        onMouseEnter={() => setActiveIndex(index)}
+                        className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition ${activeIndex === index ? "bg-[#EFF8FF]" : "bg-white"}`}
+                      >
+                        <span>
+                          <span className="block font-semibold text-[#173246]">{commune.name}</span>
+                          <span className="mt-1 block text-[#5F7484]">{commune.departmentName} · {commune.postalCodes.join(", ")}</span>
+                        </span>
+                      </button>
+                    ))
+                  ) : (
+                    <div className="px-4 py-3 text-sm text-[#5F7484]">Aucune commune ne correspond à votre recherche.</div>
+                  )}
+                </div>
+              ) : null}
               <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
                 {statusMessage}
               </p>
@@ -522,7 +608,9 @@ export default function Home() {
       <footer className="border-t border-[#DDEFFF] bg-[#F8FCFF]">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.8fr] lg:px-8">
           <div>
-            <p className="text-xl font-semibold tracking-[-0.02em] text-[#173246]">AlloStef</p>
+            <div className="flex items-center">
+              <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
+            </div>
             <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
               Plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
             </p>
