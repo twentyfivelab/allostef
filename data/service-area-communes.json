@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Méru",
+    "postalCodes": ["60110"],
+    "departmentCode": "60",
+    "departmentName": "Oise",
+    "distanceKm": 0
+  },
+  {
+    "name": "Montataire",
+    "postalCodes": ["60160"],
+    "departmentCode": "60",
+    "departmentName": "Oise",
+    "distanceKm": 10.6
+  },
+  {
+    "name": "Creil",
+    "postalCodes": ["60100"],
+    "departmentCode": "60",
+    "departmentName": "Oise",
+    "distanceKm": 12.3
+  },
+  {
+    "name": "Senlis",
+    "postalCodes": ["60300"],
+    "departmentCode": "60",
+    "departmentName": "Oise",
+    "distanceKm": 18.7
+  },
+  {
+    "name": "Beauvais",
+    "postalCodes": ["60000"],
+    "departmentCode": "60",
+    "departmentName": "Oise",
+    "distanceKm": 34.2
+  },
+  {
+    "name": "Pontoise",
+    "postalCodes": ["95000"],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise",
+    "distanceKm": 35.1
+  },
+  {
+    "name": "Saint-Witz",
+    "postalCodes": ["95470"],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise",
+    "distanceKm": 27.8
+  },
+  {
+    "name": "L’Isle-Adam",
+    "postalCodes": ["97490"],
+    "departmentCode": "95",
+    "departmentName": "Val-d’Oise",
+    "distanceKm": 39.4
+  }
+]

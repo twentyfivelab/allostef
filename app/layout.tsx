@@ -1,51 +1,61 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
-  title: `Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise | ${siteConfig.companyName}`,
-  description: `Besoin d’un artisan pour vos travaux de plomberie, chauffage, électricité, plâtrerie ou carrelage ? ${siteConfig.companyName} intervient dans l’Oise et le Val-d’Oise. Demandez votre devis.`,
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: `AlloStef | Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise`,
+  description:
+    "AlloStef intervient dans l’Oise et le Val-d’Oise pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Contactez-nous pour votre projet.",
   keywords: [
-    "plombier dans l’Oise",
-    "plombier dans le Val-d’Oise",
-    "chauffagiste dans l’Oise",
-    "chauffagiste dans le Val-d’Oise",
-    "électricien dans l’Oise",
-    "électricien dans le Val-d’Oise",
-    "plaquiste dans l’Oise",
-    "plaquiste dans le Val-d’Oise",
-    "carreleur dans l’Oise",
-    "carreleur dans le Val-d’Oise",
-    "artisan multiservices",
-    "rénovation intérieure",
+    "plombier Oise",
+    "plombier Val-d’Oise",
+    "chauffagiste Oise",
+    "chauffagiste Val-d’Oise",
+    "électricien Oise",
+    "électricien Val-d’Oise",
+    "plaquiste Oise",
+    "plaquiste Val-d’Oise",
+    "carreleur Oise",
+    "carreleur Val-d’Oise",
+    "rénovation intérieure Oise",
+    "rénovation intérieure Val-d’Oise",
+    "artisan multiservices Oise",
+    "artisan multiservices Val-d’Oise",
     "demande de devis travaux",
   ],
   alternates: {
-    canonical: siteConfig.websiteUrl,
+    canonical: siteConfig.siteUrl,
   },
   openGraph: {
-    title: `Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise | ${siteConfig.companyName}`,
-    description: `Besoin d’un artisan pour vos travaux de plomberie, chauffage, électricité, plâtrerie ou carrelage ? ${siteConfig.companyName} intervient dans l’Oise et le Val-d’Oise. Demandez votre devis.`,
-    url: siteConfig.websiteUrl,
+    title: `AlloStef | Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise`,
+    description:
+      "AlloStef intervient dans l’Oise et le Val-d’Oise pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Contactez-nous pour votre projet.",
+    url: siteConfig.siteUrl,
     type: "website",
     locale: "fr_FR",
+    images: [{ url: "/icon.svg", width: 1200, height: 630, alt: "AlloStef" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise | ${siteConfig.companyName}`,
-    description: `Besoin d’un artisan pour vos travaux de plomberie, chauffage, électricité, plâtrerie ou carrelage ? ${siteConfig.companyName} intervient dans l’Oise et le Val-d’Oise. Demandez votre devis.`,
+    title: `AlloStef | Plombier, chauffagiste et électricien dans l’Oise et le Val-d’Oise`,
+    description:
+      "AlloStef intervient dans l’Oise et le Val-d’Oise pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Contactez-nous pour votre projet.",
+    images: ["/icon.svg"],
   },
   icons: {
     icon: "/icon.svg",
@@ -58,11 +68,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">{children}</body>
+    <html lang="fr" className={`${inter.variable} ${cormorant.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[#FCFBF7] text-[#132E2A]">{children}</body>
     </html>
   );
 }

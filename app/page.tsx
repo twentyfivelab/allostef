@@ -1,153 +1,142 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { siteConfig } from "@/config/site";
+import communesData from "@/data/service-area-communes.json";
 
 const serviceCards = [
   {
     title: "Plomberie",
+    subtitle: "Fuites, robinetterie, sanitaires, raccordements",
     description:
-      "Installation et remplacement d’équipements, recherche et réparation de fuites, robinetterie, sanitaires, raccordements et rénovation de salle de bain.",
+      "Des interventions soignées pour les installations, réparations et rénovations de salle de bain ou de cuisine.",
+    accent: "from-[#132E2A] to-[#1f4b45]",
   },
   {
     title: "Chauffage",
+    subtitle: "Radiateurs, entretien, confort thermique",
     description:
-      "Installation d’équipements, remplacement de radiateurs, entretien courant, recherche de dysfonctionnements et amélioration du confort thermique.",
+      "Nous étudions les besoins de chauffage pour proposer des solutions claires, cohérentes et adaptées au logement.",
+    accent: "from-[#1f4b45] to-[#2d6b5b]",
   },
   {
     title: "Électricité",
+    subtitle: "Prises, éclairage, tableaux électriques",
     description:
-      "Installation électrique, remplacement de prises et interrupteurs, éclairage, tableau électrique, rénovation électrique et recherche de pannes.",
+      "Installation, rénovation et dépannage pour des circuits fiables et des espaces plus fonctionnels.",
+    accent: "from-[#2d6b5b] to-[#4f7e6e]",
   },
   {
     title: "Plâtrerie",
+    subtitle: "Cloisons, faux plafonds, finitions",
     description:
-      "Pose de plaques de plâtre, création de cloisons, doublage, faux plafonds, isolation intérieure et préparation des surfaces.",
+      "Des murs et plafonds préparés avec soin pour des chantiers plus propres et plus précis.",
+    accent: "from-[#4f7e6e] to-[#6d8e84]",
   },
   {
     title: "Carrelage",
+    subtitle: "Sol, murs, crédences, salles d’eau",
     description:
-      "Pose de carrelage au sol, pose de faïence, crédence, salle de bain, cuisine et rénovation des revêtements.",
+      "Pose de revêtements pour les pièces humides comme pour les espaces de vie avec un rendu soigné.",
+    accent: "from-[#6d8e84] to-[#93A89D]",
   },
   {
     title: "Rénovation intérieure",
+    subtitle: "Coordination de plusieurs travaux",
     description:
-      "Un interlocuteur polyvalent pour coordonner plusieurs travaux au sein d’une même pièce avec une vision globale du chantier.",
+      "Un interlocuteur unique pour accompagner un projet plus global dans une même pièce ou dans toute la maison.",
+    accent: "from-[#93A89D] to-[#B96F45]",
   },
 ];
 
 const reassuranceItems = [
-  "Un interlocuteur unique",
-  "Plusieurs corps de métier",
-  "Des travaux réalisés avec soin",
-  "Une intervention locale",
+  { title: "Un interlocuteur unique", text: "Une seule personne pour comprendre le besoin et suivre l’avancement." },
+  { title: "Plusieurs corps de métier", text: "Plomberie, chauffage, électricité, plâtrerie et carrelage, réunis autour d’un même projet." },
+  { title: "Des projets étudiés avec soin", text: "Chaque intervention est pensée pour être cohérente, propre et adaptée au logement." },
+  { title: "Une intervention locale", text: "AlloStef intervient dans l’Oise et le Val-d’Oise selon la zone du chantier." },
 ];
 
-const faqItems = [
-  {
-    question: "Dans quelles zones intervenez-vous ?",
-    answer:
-      "Nous intervenons dans l’Oise et le Val-d’Oise, ainsi que dans les communes et secteurs environnants selon le projet.",
-  },
-  {
-    question: "Réalisez-vous des projets comprenant plusieurs corps de métier ?",
-    answer:
-      "Oui, cette polyvalence permet de mieux coordonner les travaux et d’apporter une réponse plus cohérente à vos projets de rénovation intérieure.",
-  },
-  {
-    question: "Comment demander un devis ?",
-    answer:
-      "Vous pouvez remplir le formulaire de contact, nous appeler directement ou nous écrire par e-mail. Nous étudions ensuite votre besoin avec attention.",
-  },
-  {
-    question: "Intervenez-vous auprès des particuliers et des professionnels ?",
-    answer:
-      "Oui, nous recevons les demandes de particuliers comme de professionnels, selon la nature du projet et la zone d’intervention.",
-  },
-  {
-    question: "Puis-je vous contacter pour une rénovation complète ?",
-    answer:
-      "Oui, nous pouvons accompagner des projets plus globaux et proposer une approche cohérente entre plusieurs prestations.",
-  },
-  {
-    question: "Comment préparer ma demande ?",
-    answer:
-      "Précisez votre besoin, la nature des travaux, votre localisation et les éléments déjà présents sur place si vous les avez. Cela nous aide à mieux étudier votre demande.",
-  },
-  {
-    question: "Quels éléments dois-je transmettre pour obtenir une première estimation ?",
-    answer:
-      "Le type de travaux, la surface ou la pièce concernée, vos attentes et des photos si possible constituent un bon point de départ pour un premier échange.",
-  },
+const methodSteps = [
+  { title: "Prise de contact", text: "Nous recevons votre besoin et repérons les priorités d’intervention." },
+  { title: "Étude du besoin", text: "Nous examinons la situation, les contraintes et la nature des travaux à prévoir." },
+  { title: "Proposition et devis", text: "Nous vous présentons une approche claire avant toute réalisation." },
+  { title: "Réalisation des travaux", text: "Nous mettons en œuvre les interventions avec méthode et respect du logement." },
 ];
 
-const initialFormState = {
-  name: "",
-  email: "",
-  phone: "",
-  city: "",
-  service: "",
-  priority: "",
-  contactPreference: "",
-  description: "",
-  consent: false,
+const realizations = [
+  { title: "Plomberie", category: "Raccordements et sanitaires" },
+  { title: "Chauffage", category: "Remplacement et confort thermique" },
+  { title: "Électricité", category: "Éclairage et mise à niveau" },
+  { title: "Plâtrerie", category: "Cloisons et finitions" },
+  { title: "Carrelage", category: "Revêtements de sol et murs" },
+  { title: "Rénovation intérieure", category: "Projets plus globaux" },
+];
+
+type Commune = {
+  name: string;
+  postalCodes: string[];
+  departmentCode: string;
+  departmentName: string;
+  distanceKm: number;
 };
 
+const normalize = (value: string) =>
+  value
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase();
+
 export default function Home() {
-  const [formData, setFormData] = useState(initialFormState);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [mailAlert, setMailAlert] = useState("");
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [query, setQuery] = useState("");
+  const [selectedCommune, setSelectedCommune] = useState<Commune | null>(null);
+  const [statusMessage, setStatusMessage] = useState<string>("Saisissez une commune ou un code postal.");
+  const [activeIndex, setActiveIndex] = useState(-1);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-  ) => {
-    const { name, value, type } = e.target;
-    if (type === "checkbox") {
-      setFormData((prev) => ({ ...prev, [name]: (e.target as HTMLInputElement).checked }));
-      return;
-    }
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const communes = useMemo(() => {
+    const items = communesData as Commune[];
+    return items.sort((a, b) => a.name.localeCompare(b.name, "fr", { sensitivity: "base" }));
+  }, []);
 
-  const validate = () => {
-    const nextErrors: Record<string, string> = {};
-    if (!formData.name.trim()) nextErrors.name = "Veuillez renseigner votre nom et prénom.";
-    if (!formData.email.trim()) nextErrors.email = "Veuillez renseigner votre adresse e-mail.";
-    if (!formData.phone.trim()) nextErrors.phone = "Veuillez renseigner votre numéro de téléphone.";
-    if (!formData.city.trim()) nextErrors.city = "Veuillez renseigner votre ville ou code postal.";
-    if (!formData.service) nextErrors.service = "Veuillez choisir un type de prestation.";
-    if (!formData.priority) nextErrors.priority = "Veuillez sélectionner une priorité.";
-    if (!formData.contactPreference) nextErrors.contactPreference = "Veuillez choisir une préférence de contact.";
-    if (!formData.description.trim()) nextErrors.description = "Veuillez décrire votre projet.";
-    if (!formData.consent) nextErrors.consent = "Veuillez accepter l’utilisation de vos informations.";
-    return nextErrors;
-  };
+  const filteredCommunes = useMemo(() => {
+    const trimmed = query.trim();
+    if (!trimmed) return communes.slice(0, 8);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const nextErrors = validate();
-    setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) {
-      setMailAlert("");
+    const normalized = normalize(trimmed);
+    return communes.filter((commune) => {
+      const searchable = [commune.name, commune.departmentName, ...commune.postalCodes].map(normalize).join(" ");
+      return searchable.includes(normalized);
+    });
+  }, [communes, query]);
+
+  useEffect(() => {
+    if (!query.trim()) {
+      setSelectedCommune(null);
+      setStatusMessage("Saisissez une commune ou un code postal.");
       return;
     }
 
-    const subject = `Demande de devis - ${formData.service} - ${formData.name}`;
-    const body = [
-      `Nom : ${formData.name}`,
-      `E-mail : ${formData.email}`,
-      `Téléphone : ${formData.phone}`,
-      `Ville : ${formData.city}`,
-      `Prestation : ${formData.service}`,
-      `Priorité : ${formData.priority}`,
-      `Préférence de contact : ${formData.contactPreference}`,
-      `Description : ${formData.description}`,
-    ].join("\n");
+    const exactMatch = communes.find((entry) => {
+      const normalizedInput = normalize(query.trim());
+      const normalizedName = normalize(entry.name);
+      const normalizedPostal = entry.postalCodes.map(normalize);
+      return normalizedName === normalizedInput || normalizedPostal.includes(normalizedInput);
+    });
 
-    const mailtoLink = `mailto:${siteConfig.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setMailAlert("Votre application de messagerie va s’ouvrir avec votre demande préremplie. Il vous suffira de vérifier les informations et d’envoyer l’e-mail.");
-    window.location.href = mailtoLink;
+    if (exactMatch) {
+      setSelectedCommune(exactMatch);
+      setStatusMessage(`AlloStef intervient dans votre secteur : ${exactMatch.name}. Distance indicative depuis Méru : ${exactMatch.distanceKm.toFixed(1)} km.`);
+      return;
+    }
+
+    setSelectedCommune(null);
+    setStatusMessage("Cette commune ne figure pas dans notre zone habituelle de 40 km. Contactez AlloStef pour vérifier si une intervention reste possible.");
+  }, [communes, query]);
+
+  const handleSelect = (commune: Commune) => {
+    setQuery(commune.name);
+    setSelectedCommune(commune);
+    setActiveIndex(-1);
+    setStatusMessage(`AlloStef intervient dans votre secteur : ${commune.name}. Distance indicative depuis Méru : ${commune.distanceKm.toFixed(1)} km.`);
   };
 
   const structuredData = useMemo(
@@ -155,24 +144,13 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
       name: siteConfig.companyName,
+      url: siteConfig.siteUrl,
       telephone: siteConfig.phoneHref,
       email: siteConfig.email,
-      url: siteConfig.websiteUrl,
       areaServed: siteConfig.serviceAreas,
       serviceType: siteConfig.services,
       description:
-        "Artisan multiservices spécialisé dans la plomberie, le chauffage, l’électricité, la plâtrerie, le carrelage et la rénovation intérieure dans l’Oise et le Val-d’Oise.",
-      openingHoursSpecification: siteConfig.businessHours.values.map((slot) => ({
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: slot.day,
-        opens: "00:00",
-        closes: "23:59",
-      })),
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: siteConfig.baseCity,
-        addressRegion: "FR",
-      },
+        "AlloStef intervient dans l’Oise et le Val-d’Oise pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.",
     }),
     [],
   );
@@ -183,449 +161,292 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[rgba(248,250,252,0.96)] backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-[#D9DDD8] bg-[#FCFBF7]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="#top" className="text-lg font-semibold tracking-tight text-slate-900">
-            {siteConfig.companyName}
+          <a href="#top" className="text-xl font-semibold tracking-[-0.02em] text-[#132E2A]" aria-label="AlloStef accueil">
+            AlloStef
           </a>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-[#293633] md:flex">
             {siteConfig.navigation.map((item) => (
-              <a key={item.href} href={item.href} className="transition hover:text-amber-600">
+              <a key={item.href} href={item.href} className="transition hover:text-[#B96F45]">
                 {item.label}
               </a>
             ))}
           </nav>
-          <div className="hidden items-center gap-3 md:flex">
-            <a href={`tel:${siteConfig.phoneHref}`} className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-amber-500 hover:text-amber-600" aria-label={`Appeler ${siteConfig.companyName}`}>
-              Appeler maintenant
-            </a>
-            <a href="#devis" className="rounded-full bg-amber-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-amber-700">
-              Demander un devis
-            </a>
-          </div>
+          <a href={`tel:${siteConfig.phoneHref}`} aria-label="Appeler AlloStef" className="inline-flex items-center gap-2 rounded-full bg-[#1F7A58] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#176446]">
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+              <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+            </svg>
+            <span className="hidden sm:inline">Appeler</span>
+          </a>
         </div>
       </header>
 
       <main id="top">
-        <section className="mx-auto grid max-w-7xl gap-8 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
+        <section className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
           <div className="max-w-2xl">
-            <p className="mb-4 inline-flex rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-sm font-medium text-amber-700">
-              Artisan multiservices dans l’Oise et le Val-d’Oise
+            <p className="mb-5 inline-flex rounded-full border border-[#D7CFC4] bg-[#F4F1EA] px-3.5 py-1.5 text-sm font-medium text-[#4E5A53]">
+              Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
             </p>
-            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              Vos travaux, un seul artisan de confiance
+            <h1 className="text-4xl font-semibold leading-[1.03] tracking-[-0.03em] text-[#132E2A] sm:text-5xl lg:text-6xl">
+              Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
             </h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Plomberie, chauffage, électricité, plâtrerie et carrelage dans l’Oise et le Val-d’Oise. Une intervention soignée pour vos installations, rénovations et travaux de finition.
+            <p className="mt-6 max-w-xl text-lg leading-8 text-[#4F5D58]">
+              AlloStef intervient pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Un seul interlocuteur pour des travaux cohérents et soignés.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#devis" className="rounded-full bg-amber-600 px-6 py-3 text-center font-semibold text-white shadow-sm transition hover:bg-amber-700">
+              <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1F7A58] px-6 py-3 font-semibold text-white transition hover:bg-[#176446]" aria-label="Appeler AlloStef">
+                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                  <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+                </svg>
+                Appeler AlloStef
+              </a>
+              <a href="#devis" className="inline-flex items-center justify-center rounded-full border border-[#CFC5B7] bg-[#FCFBF7] px-6 py-3 font-semibold text-[#23322F] transition hover:border-[#B96F45] hover:text-[#B96F45]">
                 Demander un devis
               </a>
-              <a href={`tel:${siteConfig.phoneHref}`} className="rounded-full border border-slate-300 px-6 py-3 text-center font-semibold text-slate-800 transition hover:border-amber-500 hover:text-amber-600" aria-label={`Appeler ${siteConfig.companyName}`}>
-                Appeler maintenant
-              </a>
             </div>
-            <ul className="mt-8 grid gap-3 text-sm text-slate-600 sm:grid-cols-2">
-              <li>• Intervention dans l’Oise et le Val-d’Oise</li>
-              <li>• Accompagnement personnalisé</li>
-              <li>• Prestations pour particuliers et professionnels</li>
-              <li>• Étude de chaque demande</li>
-            </ul>
+            <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#4E5A53]">
+              <span className="rounded-full border border-[#DCD9D3] bg-white px-3 py-2">Oise et Val-d’Oise</span>
+              <span className="rounded-full border border-[#DCD9D3] bg-white px-3 py-2">Particuliers et professionnels</span>
+              <span className="rounded-full border border-[#DCD9D3] bg-white px-3 py-2">Plusieurs corps de métier</span>
+            </div>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-[0_20px_60px_-20px_rgba(15,23,42,0.35)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">Pourquoi nous contacter</p>
-            <h2 className="mt-4 text-2xl font-semibold">Une approche claire pour vos projets</h2>
-            <p className="mt-4 text-sm leading-7 text-slate-300">
-              Nous étudions chaque besoin avec attention pour proposer une solution adaptée, coordonnée et adaptée à votre situation.
-            </p>
-            <div className="mt-8 space-y-4">
-              {[
-                "Un interlocuteur unique pour comprendre votre besoin",
-                "Des interventions coordonnées selon les pièces et les travaux",
-                "Une communication claire à chaque étape",
-              ].map((item) => (
-                <div key={item} className="rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">
-                  {item}
+          <div className="rounded-[2rem] border border-[#E7E0D7] bg-[#F4F1EA] p-8 shadow-[0_20px_70px_-40px_rgba(19,46,42,0.35)]">
+            <div className="rounded-[1.5rem] border border-[#D8CDBB] bg-[#FCFBF7] p-6">
+              <div className="flex items-center justify-between border-b border-[#EEE8DD] pb-4">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Intervention</p>
+                  <p className="mt-2 text-xl font-semibold text-[#132E2A]">Travailler avec un seul interlocuteur</p>
+                </div>
+                <div className="rounded-full bg-[#132E2A] p-3 text-[#F4F1EA]">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                    <path d="M6 8.5h12M6 12h12M6 15.5h8" strokeLinecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <div className="mt-6 space-y-3 text-sm leading-7 text-[#4F5D58]">
+                <p>• Plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.</p>
+                <p>• Une approche claire pour les travaux de petite ou grande ampleur.</p>
+                <p>• Un cadre de travail soigné du premier contact jusqu’à la fin des travaux.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-[#E7E0D7] bg-[#F4F1EA]">
+          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 py-6 text-sm text-[#3B4A45] sm:px-6 lg:px-8">
+            <span className="rounded-full border border-[#D7CFC4] bg-[#FCFBF7] px-4 py-2">Un interlocuteur unique</span>
+            <span className="rounded-full border border-[#D7CFC4] bg-[#FCFBF7] px-4 py-2">Plusieurs corps de métier</span>
+            <span className="rounded-full border border-[#D7CFC4] bg-[#FCFBF7] px-4 py-2">Des projets étudiés avec soin</span>
+            <span className="rounded-full border border-[#D7CFC4] bg-[#FCFBF7] px-4 py-2">Une intervention locale</span>
+          </div>
+        </section>
+
+        <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Services</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#132E2A] sm:text-4xl">
+              Une offre complète pour les travaux du quotidien et les projets plus ambitieux
+            </h2>
+          </div>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {serviceCards.map((service, index) => (
+              <article key={service.title} className="group rounded-[1.75rem] border border-[#E7E0D7] bg-[#FCFBF7] p-7 shadow-[0_15px_45px_-28px_rgba(19,46,42,0.25)] transition hover:-translate-y-1">
+                <div className={`inline-flex rounded-full bg-gradient-to-r ${service.accent} px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white`}>
+                  0{index + 1}
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-[#132E2A]">{service.title}</h3>
+                <p className="mt-2 text-sm font-medium text-[#B96F45]">{service.subtitle}</p>
+                <p className="mt-4 text-sm leading-7 text-[#4F5D58]">{service.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="method" className="bg-[#132E2A] py-20 text-[#F4F1EA]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#93A89D]">Notre méthode</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl">
+                Un parcours clair et rassurant, de la première prise de contact à la fin des travaux
+              </h2>
+            </div>
+            <div className="mt-10 grid gap-4 lg:grid-cols-4">
+              {methodSteps.map((step, index) => (
+                <div key={step.title} className="rounded-[1.5rem] border border-white/10 bg-white/10 p-6">
+                  <p className="text-sm font-semibold text-[#93A89D]">0{index + 1}</p>
+                  <h3 className="mt-3 text-lg font-semibold text-white">{step.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#DDE3DF]">{step.text}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="border-y border-slate-200 bg-slate-50/80">
-          <div className="mx-auto grid max-w-7xl gap-4 px-4 py-8 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-            {reassuranceItems.map((item) => (
-              <div key={item} className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                <p className="text-sm font-semibold text-slate-900">{item}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <section id="realisations" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Services</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Des prestations variées pour des projets cohérents
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Réalisations</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#132E2A] sm:text-4xl">
+              Des chantiers soignés, des finitions de qualité, une vision globale du projet
             </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              Que votre besoin concerne une installation, une réparation, une rénovation ou une mise en conformité, nous pouvons vous accompagner avec un interlocuteur unique.
-            </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {serviceCards.map((service) => (
-              <article key={service.title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <h3 className="text-xl font-semibold text-slate-900">{service.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{service.description}</p>
+            {realizations.map((item) => (
+              <article key={item.title} className="overflow-hidden rounded-[1.75rem] border border-[#E7E0D7] bg-[#FCFBF7] shadow-[0_15px_45px_-28px_rgba(19,46,42,0.2)]">
+                <div className="aspect-[4/3] bg-[linear-gradient(135deg,_#132E2A,_#93A89D)]" />
+                <div className="p-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">{item.category}</p>
+                  <h3 className="mt-3 text-lg font-semibold text-[#132E2A]">{item.title}</h3>
+                </div>
               </article>
             ))}
           </div>
-          <div className="mt-8">
-            <a href="#devis" className="inline-flex rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-amber-500 hover:text-amber-600">
-              Parler de mon projet
-            </a>
-          </div>
         </section>
 
-        <section id="about" className="bg-slate-900 py-20 text-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">L’entreprise</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Un artisan de proximité, à l’écoute de vos besoins
+        <section id="zones" className="bg-[#F4F1EA] py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Zone d’intervention</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#132E2A] sm:text-4xl">
+                AlloStef se déplace dans l’Oise et le Val-d’Oise pour étudier et réaliser vos projets de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                Chaque projet mérite une solution claire, adaptée et réalisée avec soin. De la première prise de contact jusqu’à la fin des travaux, vous bénéficiez d’un interlocuteur unique pour comprendre vos besoins et vous proposer une intervention cohérente.
-              </p>
             </div>
-            <div className="rounded-3xl border border-white/10 bg-white/10 p-8">
-              <h3 className="text-xl font-semibold">Nos engagements de travail</h3>
-              <ul className="mt-6 space-y-3 text-sm text-slate-300">
-                {[
-                  "Écoute",
-                  "Clarté",
-                  "Soin",
-                  "Ponctualité",
-                  "Respect du logement",
-                  "Solutions adaptées",
-                  "Communication régulière",
-                ].map((value) => (
-                  <li key={value} className="rounded-2xl border border-white/10 bg-slate-800/70 px-4 py-3">
-                    {value}
-                  </li>
+            <div className="mt-10 rounded-[2rem] border border-[#E7E0D7] bg-[#FCFBF7] p-6 shadow-[0_20px_60px_-35px_rgba(19,46,42,0.18)] sm:p-8">
+              <label htmlFor="commune-search" className="text-sm font-semibold text-[#132E2A]">
+                Rechercher une commune ou un code postal
+              </label>
+              <div className="mt-4 flex flex-col gap-3 rounded-[1.25rem] border border-[#E7E0D7] bg-white p-3 sm:flex-row">
+                <input
+                  id="commune-search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Ex. Méru, 60000, Senlis"
+                  className="flex-1 rounded-[0.9rem] border border-[#E7E0D7] bg-[#FCFBF7] px-4 py-3 text-sm outline-none ring-0 focus:border-[#B96F45]"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded={filteredCommunes.length > 0}
+                  aria-controls="commune-list"
+                  aria-label="Rechercher une commune"
+                />
+              </div>
+              <div id="commune-list" className="mt-4 max-h-64 overflow-auto rounded-[1.25rem] border border-[#E7E0D7] bg-white" role="listbox" aria-label="Communes disponibles">
+                {filteredCommunes.map((commune, index) => (
+                  <button
+                    key={`${commune.name}-${commune.postalCodes[0]}`}
+                    type="button"
+                    role="option"
+                    aria-selected={query === commune.name}
+                    onClick={() => handleSelect(commune)}
+                    onMouseEnter={() => setActiveIndex(index)}
+                    className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition ${activeIndex === index ? "bg-[#F4F1EA]" : "bg-white"}`}
+                  >
+                    <span>
+                      <span className="block font-semibold text-[#132E2A]">{commune.name}</span>
+                      <span className="mt-1 block text-[#6A7A74]">{commune.departmentName} · {commune.postalCodes.join(", ")}</span>
+                    </span>
+                    <span className="text-[#B96F45]">{commune.distanceKm.toFixed(1)} km</span>
+                  </button>
                 ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Méthode de travail</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Un parcours simple, organisé et rassurant
-            </h2>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              ["Prise de contact", "Nous recevons votre demande et identifions rapidement le besoin principal."],
-              ["Étude du besoin", "Nous analysons la situation, vos attentes et la nature des travaux à prévoir."],
-              ["Proposition et devis", "Nous vous présentons une approche cohérente et les éléments nécessaires à l’étude du projet."],
-              ["Réalisation des travaux", "Nous mettons en œuvre les interventions avec soin et un suivi clair."],
-            ].map(([title, text], index) => (
-              <div key={title} className="rounded-3xl border border-slate-200 bg-slate-50 p-7">
-                <p className="text-sm font-semibold text-amber-600">0{index + 1}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{text}</p>
               </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="realisations" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Réalisations</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Une galerie prête à accueillir vos futures réalisations
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              Les photos seront ajoutées ultérieurement. Les blocs ci-dessous sont conçus pour être remplacés facilement par de vraies réalisations.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {[
-              ["Plomberie", "Installation et rénovation"],
-              ["Chauffage", "Remplacement et entretien"],
-              ["Électricité", "Mise à niveau et dépannage"],
-              ["Plâtrerie", "Cloisons et finitions"],
-              ["Carrelage", "Revêtements de sol et murs"],
-              ["Rénovation", "Travaux intérieurs coordonnés"],
-            ].map(([title, text]) => (
-              <div key={title} className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <div className="aspect-[4/3] bg-[linear-gradient(135deg,_#0f172a,_#475569)]" />
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">{text}</p>
+              <p className="mt-4 text-sm leading-7 text-[#4F5D58]" aria-live="polite">
+                {statusMessage}
+              </p>
+              {selectedCommune ? (
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 rounded-full bg-[#1F7A58] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#176446]" aria-label="Appeler AlloStef">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                      <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+                    </svg>
+                    Appeler AlloStef
+                  </a>
+                  <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 rounded-full border border-[#CFC5B7] bg-white px-4 py-2.5 text-sm font-semibold text-[#23322F] transition hover:border-[#B96F45] hover:text-[#B96F45]">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                      <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Écrire pour un devis
+                  </a>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="zones" className="bg-slate-50 py-20">
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Zone d’intervention</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-                Interventions dans l’Oise et le Val-d’Oise
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                Basé à {siteConfig.baseCity}, {siteConfig.companyName} se déplace dans l’Oise et le Val-d’Oise pour étudier et réaliser vos projets de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.
-              </p>
-              <a href="#devis" className="mt-8 inline-flex rounded-full bg-amber-600 px-6 py-3 font-semibold text-white transition hover:bg-amber-700">
-                Vérifier si nous intervenons dans votre commune
-              </a>
+              ) : null}
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <h3 className="text-xl font-semibold text-slate-900">Zone d’intervention</h3>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                Nous étudions les projets en fonction de la localisation, de la technicité des travaux et de l’organisation du chantier. L’objectif est de vous proposer une intervention claire et cohérente.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Pourquoi nous contacter</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Un artisan polyvalent pour simplifier votre chantier
-            </h2>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {[
-              "Avoir un interlocuteur unique",
-              "Simplifier l’organisation du chantier",
-              "Obtenir une vision globale du projet",
-              "Assurer une meilleure cohérence entre les différents travaux",
-              "Limiter les échanges avec plusieurs intervenants",
-              "Faciliter le suivi du projet",
-            ].map((item) => (
-              <div key={item} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <p className="text-sm leading-7 text-slate-600">{item}</p>
-              </div>
-            ))}
           </div>
         </section>
 
         <section id="devis" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">Demande de devis</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-                Décrivez votre projet en quelques lignes
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-600">
-                Votre application de messagerie va s’ouvrir avec votre demande préremplie. Il vous suffira de vérifier les informations et d’envoyer l’e-mail.
-              </p>
-              <form className="mt-8 space-y-5" onSubmit={handleSubmit} noValidate>
-                <div className="grid gap-5 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">Nom et prénom *</label>
-                    <input id="name" name="name" value={formData.name} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none" />
-                    {errors.name && <p className="mt-2 text-sm text-red-600">{errors.name}</p>}
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">Adresse e-mail *</label>
-                    <input id="email" name="email" type="email" value={formData.email} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none" />
-                    {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email}</p>}
-                  </div>
-                </div>
-                <div className="grid gap-5 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="phone" className="mb-2 block text-sm font-medium text-slate-700">Téléphone *</label>
-                    <input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none" />
-                    {errors.phone && <p className="mt-2 text-sm text-red-600">{errors.phone}</p>}
-                  </div>
-                  <div>
-                    <label htmlFor="city" className="mb-2 block text-sm font-medium text-slate-700">Ville ou code postal *</label>
-                    <input id="city" name="city" value={formData.city} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none" />
-                    {errors.city && <p className="mt-2 text-sm text-red-600">{errors.city}</p>}
-                  </div>
-                </div>
-                <div className="grid gap-5 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="service" className="mb-2 block text-sm font-medium text-slate-700">Type de prestation *</label>
-                    <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none">
-                      <option value="">Sélectionner</option>
-                      <option>Plomberie</option>
-                      <option>Chauffage</option>
-                      <option>Électricité</option>
-                      <option>Plâtrerie ou plaques de plâtre</option>
-                      <option>Carrelage</option>
-                      <option>Rénovation intérieure</option>
-                      <option>Plusieurs prestations</option>
-                      <option>Autre</option>
-                    </select>
-                    {errors.service && <p className="mt-2 text-sm text-red-600">{errors.service}</p>}
-                  </div>
-                  <div>
-                    <label htmlFor="priority" className="mb-2 block text-sm font-medium text-slate-700">Niveau de priorité *</label>
-                    <select id="priority" name="priority" value={formData.priority} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none">
-                      <option value="">Sélectionner</option>
-                      <option>Demande urgente</option>
-                      <option>Intervention souhaitée rapidement</option>
-                      <option>Projet prévu prochainement</option>
-                      <option>Projet à l’étude</option>
-                    </select>
-                    {errors.priority && <p className="mt-2 text-sm text-red-600">{errors.priority}</p>}
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="description" className="mb-2 block text-sm font-medium text-slate-700">Description du projet *</label>
-                  <textarea id="description" name="description" rows={5} value={formData.description} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none" />
-                  {errors.description && <p className="mt-2 text-sm text-red-600">{errors.description}</p>}
-                </div>
-                <div className="grid gap-5 md:grid-cols-2">
-                  <div>
-                    <label htmlFor="contactPreference" className="mb-2 block text-sm font-medium text-slate-700">Préférence de contact *</label>
-                    <select id="contactPreference" name="contactPreference" value={formData.contactPreference} onChange={handleChange} className="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-amber-500 focus:outline-none">
-                      <option value="">Sélectionner</option>
-                      <option>Téléphone</option>
-                      <option>E-mail</option>
-                      <option>Indifférent</option>
-                    </select>
-                    {errors.contactPreference && <p className="mt-2 text-sm text-red-600">{errors.contactPreference}</p>}
-                  </div>
-                </div>
-                <label className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
-                  <input type="checkbox" name="consent" checked={formData.consent} onChange={handleChange} className="mt-1 h-4 w-4 rounded border-slate-300 text-amber-600 focus:ring-amber-500" />
-                  <span>J’accepte que mes informations soient utilisées pour traiter ma demande de devis.</span>
-                </label>
-                {errors.consent && <p className="mt-2 text-sm text-red-600">{errors.consent}</p>}
-                {mailAlert ? <p className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">{mailAlert}</p> : null}
-                <button type="submit" className="rounded-full bg-amber-600 px-6 py-3 font-semibold text-white transition hover:bg-amber-700">
-                  Envoyer ma demande
-                </button>
-              </form>
-            </div>
-            <aside className="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">Contact</p>
-              <h3 className="mt-3 text-2xl font-semibold">Une réponse claire et rapide</h3>
-              <div className="mt-8 space-y-4 text-sm text-slate-300">
-                <div>
-                  <p className="font-semibold text-white">Téléphone</p>
-                  <a href={`tel:${siteConfig.phoneHref}`} className="mt-1 inline-block text-amber-400" aria-label={`Appeler ${siteConfig.companyName}`}>
-                    {siteConfig.phoneDisplay}
-                  </a>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">E-mail</p>
-                  <a href={`mailto:${siteConfig.email}`} className="mt-1 inline-block text-amber-400">
-                    {siteConfig.email}
-                  </a>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Zone d’intervention</p>
-                  <p className="mt-1">{siteConfig.serviceAreas.join(" et ")}</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Horaires</p>
-                  <p className="mt-1">{siteConfig.businessHours.label}</p>
-                </div>
-                <a href={`tel:${siteConfig.phoneHref}`} className="mt-6 inline-flex rounded-full bg-amber-600 px-5 py-3 font-semibold text-white transition hover:bg-amber-700" aria-label={`Appeler ${siteConfig.companyName}`}>
-                  Appeler directement
-                </a>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section id="faq" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">FAQ</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Questions fréquentes
+          <div className="rounded-[2rem] border border-[#E7E0D7] bg-[#132E2A] p-8 text-[#F4F1EA] shadow-[0_20px_70px_-35px_rgba(19,46,42,0.5)] sm:p-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#93A89D]">Devis</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl">
+              Un projet ? Parlons-en.
             </h2>
-          </div>
-          <div className="mt-10 space-y-4">
-            {faqItems.map((item, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div key={item.question} className="rounded-2xl border border-slate-200 bg-white shadow-sm">
-                  <button
-                    type="button"
-                    className="flex w-full items-center justify-between px-6 py-5 text-left"
-                    aria-expanded={isOpen}
-                    onClick={() => setOpenFaq(isOpen ? null : index)}
-                  >
-                    <span className="text-base font-semibold text-slate-900">{item.question}</span>
-                    <span className="text-2xl text-amber-600">{isOpen ? "−" : "+"}</span>
-                  </button>
-                  {isOpen ? <p className="px-6 pb-6 text-sm leading-7 text-slate-600">{item.answer}</p> : null}
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-900 px-8 py-16 text-center text-white shadow-sm sm:px-12">
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Un projet de travaux dans l’Oise ou le Val-d’Oise ?
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-              Présentez-nous votre besoin et bénéficiez d’un premier échange pour étudier la solution la plus adaptée à votre projet.
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#DDE3DF]">
+              Pour présenter votre besoin et obtenir un premier échange, contactez directement AlloStef par téléphone ou par e-mail.
             </p>
-            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <a href="#devis" className="rounded-full bg-amber-600 px-6 py-3 font-semibold text-white transition hover:bg-amber-700">
-                Demander un devis
+            <div className="mt-8 grid gap-4 lg:grid-cols-2">
+              <a href={`tel:${siteConfig.phoneHref}`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition hover:bg-white/15" aria-label="Appeler AlloStef">
+                <div className="rounded-full bg-[#1F7A58] p-3 text-white">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                    <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#93A89D]">Appel</p>
+                  <p className="mt-1 text-lg font-semibold text-white">{siteConfig.phoneDisplay}</p>
+                </div>
               </a>
-              <a href={`tel:${siteConfig.phoneHref}`} className="rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:border-amber-400 hover:text-amber-400" aria-label={`Appeler ${siteConfig.companyName}`}>
-                Appeler maintenant
+              <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition hover:bg-white/15">
+                <div className="rounded-full bg-[#B96F45] p-3 text-white">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                    <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#93A89D]">E-mail</p>
+                  <p className="mt-1 text-lg font-semibold text-white">{siteConfig.email}</p>
+                </div>
               </a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-3 lg:px-8">
+      <footer className="border-t border-[#E7E0D7] bg-[#FCFBF7]">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.8fr] lg:px-8">
           <div>
-            <h2 className="text-lg font-semibold text-slate-900">{siteConfig.companyName}</h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              Artisan multiservices dans l’Oise et le Val-d’Oise pour la plomberie, le chauffage, l’électricité, la plâtrerie, le carrelage et la rénovation intérieure.
+            <p className="text-xl font-semibold tracking-[-0.02em] text-[#132E2A]">AlloStef</p>
+            <p className="mt-3 max-w-md text-sm leading-7 text-[#4F5D58]">
+              Plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">Contact</h3>
-            <ul className="mt-4 space-y-2 text-sm text-slate-600">
-              <li><a href={`tel:${siteConfig.phoneHref}`} className="hover:text-amber-600">{siteConfig.phoneDisplay}</a></li>
-              <li><a href={`mailto:${siteConfig.email}`} className="hover:text-amber-600">{siteConfig.email}</a></li>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Contact</p>
+            <ul className="mt-4 space-y-2 text-sm text-[#4F5D58]">
+              <li><a href={`tel:${siteConfig.phoneHref}`} className="transition hover:text-[#B96F45]">{siteConfig.phoneDisplay}</a></li>
+              <li><a href={`mailto:${siteConfig.email}`} className="transition hover:text-[#B96F45]">{siteConfig.email}</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">Navigation</h3>
-            <ul className="mt-4 space-y-2 text-sm text-slate-600">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B96F45]">Navigation</p>
+            <ul className="mt-4 space-y-2 text-sm text-[#4F5D58]">
               {siteConfig.navigation.map((item) => (
-                <li key={item.href}><a href={item.href} className="hover:text-amber-600">{item.label}</a></li>
+                <li key={item.href}><a href={item.href} className="transition hover:text-[#B96F45]">{item.label}</a></li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="border-t border-slate-200 px-4 py-6 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
-          <p>© <span>{new Date().getFullYear()}</span> {siteConfig.companyName}. Mentions légales et politique de confidentialité à compléter.</p>
+        <div className="border-t border-[#E7E0D7] px-4 py-6 text-center text-sm text-[#6A7A74] sm:px-6 lg:px-8">
+          <p>© <span>{new Date().getFullYear()}</span> AlloStef. Mentions légales et politique de confidentialité à compléter.</p>
         </div>
       </footer>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#E7E0D7] bg-[#FCFBF7]/95 backdrop-blur md:hidden">
         <div className="mx-auto flex max-w-7xl gap-3 px-3 py-3">
-          <a href={`tel:${siteConfig.phoneHref}`} className="flex-1 rounded-full bg-amber-600 px-4 py-3 text-center text-sm font-semibold text-white" aria-label={`Appeler ${siteConfig.companyName}`}>
+          <a href={`tel:${siteConfig.phoneHref}`} className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#1F7A58] px-4 py-3 text-sm font-semibold text-white" aria-label="Appeler AlloStef">
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+              <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+            </svg>
             Appeler
           </a>
-          <a href="#devis" className="flex-1 rounded-full border border-slate-300 px-4 py-3 text-center text-sm font-semibold text-slate-800">
-            Demander un devis
+          <a href="#devis" className="flex-1 rounded-full border border-[#CFC5B7] px-4 py-3 text-center text-sm font-semibold text-[#23322F]">
+            Devis
           </a>
         </div>
       </div>
