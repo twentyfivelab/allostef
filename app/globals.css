@@ -10,6 +10,8 @@
   --blue-soft: #c6e3f7;
   --blue-accent: #5ca6d2;
   --blue-action: #397da9;
+  --accent-amber: #ddaa62;
+  --accent-turquoise: #67b4b0;
   --gradient-hero: linear-gradient(135deg, #f8fcff 0%, #eff8ff 45%, #ddefff 100%);
   --gradient-button: linear-gradient(135deg, #397da9 0%, #5ca6d2 100%);
 }
@@ -18,7 +20,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-cormorant);
+  --font-serif: var(--font-space-grotesk);
 }
 
 html {
@@ -35,13 +37,37 @@ body {
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-cormorant), Georgia, serif;
+h3,
+.font-display {
+  font-family: var(--font-space-grotesk), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.nav-link,
+.ui-label,
+.btn-display {
+  font-family: var(--font-space-grotesk), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
 }
 
 ::selection {
   background: #5ca6d2;
   color: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-up {
+  animation: fadeInUp 450ms ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -55,5 +81,9 @@ h3 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .reveal-up {
+    animation: none;
   }
 }

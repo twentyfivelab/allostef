@@ -11,7 +11,10 @@ const serviceCards = [
     description:
       "Des interventions soignées pour les installations, réparations et rénovations de salle de bain ou de cuisine.",
     bullets: ["Sanitaires", "Robinetterie", "Raccordements"],
-    accent: "bg-[#EFF8FF]",
+    cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F8FCFF_0%,_#EFF8FF_100%)]",
+    iconWrapClass: "bg-[#EAF6FF] text-[#397DA9]",
+    pillClass: "text-[#397DA9]",
+    dotClass: "bg-[#8CC4E7]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M8 4h8v4l-2 2v4l2 2v4H8v-4l2-2V8L8 6V4Z" strokeLinecap="round" strokeLinejoin="round" />
@@ -24,7 +27,10 @@ const serviceCards = [
     description:
       "Nous étudions les besoins de chauffage pour proposer des solutions adaptées, claires et durables.",
     bullets: ["Radiateurs", "Maintenance", "Confort"],
-    accent: "bg-[#F8FCFF]",
+    cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF9_0%,_#F8F3E9_100%)]",
+    iconWrapClass: "bg-[#F9EEDC] text-[#DDAA62]",
+    pillClass: "text-[#DDAA62]",
+    dotClass: "bg-[#DDAA62]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M6 4h12M8 8h8v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8Z" strokeLinecap="round" strokeLinejoin="round" />
@@ -37,7 +43,10 @@ const serviceCards = [
     description:
       "Installation, rénovation et dépannage pour des circuits fiables et des espaces plus fonctionnels.",
     bullets: ["Prises", "Éclairage", "Tableaux"],
-    accent: "bg-[#F7FBFF]",
+    cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF8_0%,_#F7F0E3_100%)]",
+    iconWrapClass: "bg-[#F7EFD8] text-[#C89A46]",
+    pillClass: "text-[#C89A46]",
+    dotClass: "bg-[#C89A46]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M10 2h4l-2 6h3l-6 10 1-7H7l3-9Z" strokeLinecap="round" strokeLinejoin="round" />
@@ -50,7 +59,10 @@ const serviceCards = [
     description:
       "Des murs et plafonds préparés avec soin pour des chantiers plus propres et plus précis.",
     bullets: ["Cloisons", "Faux plafonds", "Finitions"],
-    accent: "bg-[#EFF8FF]",
+    cardClass: "border-[#A7B8DF] bg-[linear-gradient(145deg,_#F9FAFF_0%,_#F0F3FF_100%)]",
+    iconWrapClass: "bg-[#EEF2FF] text-[#718493]",
+    pillClass: "text-[#718493]",
+    dotClass: "bg-[#A7B8DF]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M5 4h14M7 4v16m10-16v16" strokeLinecap="round" />
@@ -63,7 +75,10 @@ const serviceCards = [
     description:
       "Pose de revêtements avec une attention particulière au rendu, à la propreté et à la cohérence du projet.",
     bullets: ["Sol", "Murs", "Crédences"],
-    accent: "bg-[#F8FCFF]",
+    cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
+    iconWrapClass: "bg-[#EAF8F7] text-[#67B4B0]",
+    pillClass: "text-[#67B4B0]",
+    dotClass: "bg-[#67B4B0]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M4 6h16v12H4zM4 10h16" strokeLinecap="round" strokeLinejoin="round" />
@@ -76,7 +91,10 @@ const serviceCards = [
     description:
       "Un interlocuteur unique pour accompagner un chantier plus global avec une vraie cohérence de réalisation.",
     bullets: ["Coordination", "Cohérence", "Suivi"],
-    accent: "bg-[#EFF8FF]",
+    cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F7FBFF_0%,_#ECF7FF_100%)]",
+    iconWrapClass: "bg-[#E6F3FF] text-[#397DA9]",
+    pillClass: "text-[#397DA9]",
+    dotClass: "bg-[#397DA9]",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
         <path d="M6 5h12v14H6zM9 9h6M9 13h4" strokeLinecap="round" strokeLinejoin="round" />
@@ -229,12 +247,12 @@ export default function Home() {
           </a>
           <nav className="hidden items-center gap-6 text-sm font-medium text-[#5F7484] md:flex">
             {siteConfig.navigation.map((item) => (
-              <a key={item.href} href={item.href} className="transition hover:text-[#397DA9]">
+              <a key={item.href} href={item.href} className="nav-link transition hover:text-[#397DA9]">
                 {item.label}
               </a>
             ))}
           </nav>
-          <a href={`tel:${siteConfig.phoneHref}`} aria-label="Appeler AlloStef" className="inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_-16px_rgba(57,125,169,0.7)] transition hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7] focus:ring-offset-2">
+          <a href={`tel:${siteConfig.phoneHref}`} aria-label="Appeler AlloStef" className="btn-display inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_-16px_rgba(57,125,169,0.7)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7] focus:ring-offset-2">
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
               <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
             </svg>
@@ -245,10 +263,14 @@ export default function Home() {
 
       <main id="top">
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div className="overflow-hidden rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-8 shadow-[0_25px_80px_-40px_rgba(23,50,70,0.45)] sm:p-10 lg:p-12">
-            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="relative overflow-hidden rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-8 shadow-[0_25px_80px_-40px_rgba(23,50,70,0.45)] sm:p-10 lg:p-12">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(103,180,176,0.14),_transparent_42%)]" />
+            <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-[#DDAA62]/18 blur-3xl" />
+            <div className="absolute bottom-8 left-4 h-20 w-20 rounded-full bg-[#C6E3F7]/70 blur-3xl" />
+            <div className="absolute bottom-8 right-12 h-px w-28 bg-[#8CC4E7]/70" />
+            <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div className="max-w-2xl">
-                <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-medium text-[#397DA9]">
+                <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
                   Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
                 </p>
                 <h1 className="text-4xl font-semibold leading-[1.03] tracking-[-0.03em] text-[#173246] sm:text-5xl lg:text-6xl">
@@ -258,13 +280,13 @@ export default function Home() {
                   AlloStef intervient pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Un seul interlocuteur pour des travaux cohérents et soignés.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
+                  <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
                     <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                       <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
                     </svg>
                     Appeler AlloStef
                   </a>
-                  <a href="#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
+                  <a href="#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] transition duration-300 hover:-translate-y-0.5 hover:border-[#8CC4E7] hover:text-[#397DA9]">
                     Demander un devis
                   </a>
                 </div>
@@ -299,7 +321,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-y border-[#DDEFFF] bg-[#F8FCFF]">
+        <section className="border-y border-[#DDEFFF] bg-[linear-gradient(90deg,_#FFFFFF_0%,_#F8FCFF_55%,_#EFF8FF_100%)]">
           <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 py-6 text-sm text-[#5F7484] sm:px-6 lg:px-8">
             {reassuranceItems.map((item, index) => (
               <div key={item.title} className="flex items-center gap-3 rounded-full border border-[#DDEFFF] bg-white px-4 py-2">
@@ -310,7 +332,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <section id="services" className="mx-auto max-w-7xl rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F7FBFF_100%)] px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Services</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
@@ -319,12 +341,15 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {serviceCards.map((service, index) => (
-              <article key={service.title} className={`group rounded-[1.75rem] border border-[#DDEFFF] p-7 shadow-[0_18px_45px_-28px_rgba(23,50,70,0.2)] transition hover:-translate-y-1 ${service.accent}`}>
+              <article key={service.title} className={`group rounded-[1.75rem] border p-7 shadow-[0_18px_45px_-28px_rgba(23,50,70,0.2)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_-24px_rgba(23,50,70,0.25)] ${service.cardClass}`}>
                 <div className="flex items-center justify-between">
-                  <div className="inline-flex rounded-full bg-white p-2.5 text-[#397DA9] shadow-sm">
+                  <div className={`inline-flex rounded-full p-2.5 shadow-sm ${service.iconWrapClass}`}>
                     {service.icon}
                   </div>
-                  <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">0{index + 1}</span>
+                  <div className="flex items-center gap-2">
+                    <span className={`h-2.5 w-2.5 rounded-full ${service.dotClass}`} />
+                    <span className={`text-sm font-semibold uppercase tracking-[0.2em] ${service.pillClass}`}>0{index + 1}</span>
+                  </div>
                 </div>
                 <h3 className="mt-5 text-xl font-semibold text-[#173246]">{service.title}</h3>
                 <p className="mt-2 text-sm font-medium text-[#397DA9]">{service.subtitle}</p>
@@ -341,7 +366,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="method" className="bg-[#173246] py-20 text-[#F8FCFF]">
+        <section id="method" className="bg-[linear-gradient(135deg,_#173246_0%,_#1f4354_100%)] py-20 text-[#F8FCFF]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Notre méthode</p>
@@ -364,7 +389,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="realisations" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <section id="realisations" className="mx-auto max-w-7xl rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F8FCFF_100%)] px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Réalisations</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
@@ -384,7 +409,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="zones" className="bg-[#F8FCFF] py-20">
+        <section id="zones" className="bg-[linear-gradient(120deg,_#F8FCFF_0%,_#EFF8FF_55%,_#F3E4CE_100%)] py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Zone d’intervention</p>
@@ -454,38 +479,42 @@ export default function Home() {
         </section>
 
         <section id="devis" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-8 text-[#173246] shadow-[0_25px_70px_-35px_rgba(23,50,70,0.3)] sm:p-10">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Devis</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
+          <div className="relative overflow-hidden rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#173246_0%,_#1f4354_100%)] p-8 text-[#F8FCFF] shadow-[0_25px_70px_-35px_rgba(23,50,70,0.35)] sm:p-10">
+            <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-[#DDAA62]/20 blur-3xl" />
+            <div className="absolute bottom-8 left-8 h-20 w-20 rounded-full bg-[#67B4B0]/20 blur-3xl" />
+            <div className="relative">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Devis</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl">
               Un projet ? Parlons-en.
             </h2>
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#5F7484]">
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#DDEFFF]">
               Pour présenter votre besoin et obtenir un premier échange, contactez directement AlloStef par téléphone ou par e-mail.
             </p>
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
-              <a href={`tel:${siteConfig.phoneHref}`} className="flex items-center gap-4 rounded-[1.5rem] border border-[#DDEFFF] bg-white/90 p-5 transition hover:-translate-y-0.5" aria-label="Appeler AlloStef">
+              <a href={`tel:${siteConfig.phoneHref}`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition duration-300 hover:-translate-y-0.5" aria-label="Appeler AlloStef">
                 <div className="rounded-full bg-[#397DA9] p-3 text-white">
                   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                     <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Appel</p>
-                  <p className="mt-1 text-lg font-semibold text-[#173246]">{siteConfig.phoneDisplay}</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Appel</p>
+                  <p className="mt-1 text-lg font-semibold text-white">{siteConfig.phoneDisplay}</p>
                 </div>
               </a>
-              <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="flex items-center gap-4 rounded-[1.5rem] border border-[#DDEFFF] bg-white/90 p-5 transition hover:-translate-y-0.5">
-                <div className="rounded-full bg-[#5CA6D2] p-3 text-white">
+              <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition duration-300 hover:-translate-y-0.5">
+                <div className="rounded-full bg-[#DDAA62] p-3 text-white">
                   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                     <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">E-mail</p>
-                  <p className="mt-1 text-lg font-semibold text-[#173246]">{siteConfig.email}</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">E-mail</p>
+                  <p className="mt-1 text-lg font-semibold text-white">{siteConfig.email}</p>
                 </div>
               </a>
             </div>
+          </div>
           </div>
         </section>
       </main>
