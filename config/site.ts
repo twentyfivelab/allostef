@@ -1,0 +1,37 @@
+export const siteConfig = {
+  companyName: "[NOM_ARTISAN]",
+  phoneDisplay: "[TELEPHONE_A_REMPLACER]",
+  phoneHref: "[TELEPHONE_FORMAT_TEL]",
+  email: "[EMAIL_A_REMPLACER]",
+  baseCity: "[VILLE_DE_BASE]",
+  websiteUrl: "[URL_DU_SITE]",
+  serviceAreas: ["Oise", "Val-d’Oise"],
+  services: [
+    "Plomberie",
+    "Chauffage",
+    "Électricité",
+    "Plâtrerie et pose de plaques de plâtre",
+    "Carrelage",
+    "Rénovation intérieure",
+  ],
+  businessHours: {
+    label: "Horaires à confirmer",
+    values: [
+      { day: "Lundi", hours: "À confirmer" },
+      { day: "Mardi", hours: "À confirmer" },
+      { day: "Mercredi", hours: "À confirmer" },
+      { day: "Jeudi", hours: "À confirmer" },
+      { day: "Vendredi", hours: "À confirmer" },
+      { day: "Samedi", hours: "À confirmer" },
+      { day: "Dimanche", hours: "À confirmer" },
+    ],
+  },
+  navigation: [
+    { label: "Services", href: "#services" },
+    { label: "L’entreprise", href: "#about" },
+    { label: "Zone d’intervention", href: "#zones" },
+    { label: "Réalisations", href: "#realisations" },
+    { label: "FAQ", href: "#faq" },
+    { label: "Devis", href: "#devis" },
+  ],
+};
