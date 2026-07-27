@@ -3,15 +3,15 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { siteConfig } from "@/config/site";
-import communesData from "@/data/service-area-communes.json";
+import { serviceAreaCommunes, type ServiceAreaCommune } from "@/data/service-area";
 
 const serviceCards = [
   {
     title: "Plomberie",
-    subtitle: "Fuites, robinetterie, sanitaires, raccordements",
+    subtitle: "Installation, dépannage, sanitaires et recherche de fuite",
     description:
-      "Des interventions soignées pour les installations, réparations et rénovations de salle de bain ou de cuisine.",
-    bullets: ["Sanitaires", "Robinetterie", "Raccordements"],
+      "AlloStef intervient pour tous types de dépannages de plomberie, l’installation ou le remplacement de WC, éviers, lavabos, vasques et robinetterie, ainsi que pour les raccordements et évacuations. Nous réalisons également la recherche de fuites d’eau ou de gaz, à l’intérieur comme à l’extérieur, selon la nature de l’intervention.",
+    bullets: ["Dépannage plomberie", "Sanitaires", "Recherche de fuite"],
     imageSrc: "/images/realizations/realisation-plomberie.png",
     imageAlt: "Illustration d’une intervention de plomberie dans une salle de bain moderne",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F8FCFF_0%,_#EFF8FF_100%)]",
@@ -26,10 +26,10 @@ const serviceCards = [
   },
   {
     title: "Chauffage",
-    subtitle: "Radiateurs, entretien, confort thermique",
+    subtitle: "Chaudières, radiateurs, circuits de chauffage et entretien",
     description:
-      "Nous étudions les besoins de chauffage pour proposer des solutions adaptées, claires et durables.",
-    bullets: ["Radiateurs", "Maintenance", "Confort"],
+      "Installation, entretien et dépannage de systèmes de chauffage, radiateurs, circuits et chaudières de tout type. AlloStef intervient également pour le remplacement de chaudières et de ballons d’eau chaude, ainsi que pour l’entretien des climatisations réversibles. La pose de climatisation n’est pas proposée.",
+    bullets: ["Dépannage chauffage", "Chaudières", "Entretien"],
     imageSrc: "/images/realizations/realisation-chauffage.png",
     imageAlt: "Illustration d’une installation de chauffage soignée et moderne",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF9_0%,_#F8F3E9_100%)]",
@@ -44,10 +44,10 @@ const serviceCards = [
   },
   {
     title: "Électricité",
-    subtitle: "Prises, éclairage, tableaux électriques",
+    subtitle: "Installation, rénovation et dépannage électrique",
     description:
-      "Installation, rénovation et dépannage pour des circuits fiables et des espaces plus fonctionnels.",
-    bullets: ["Prises", "Éclairage", "Tableaux"],
+      "Installation, rénovation et dépannage pour les prises, éclairages, circuits et tableaux électriques. AlloStef intervient également sur les besoins électriques liés aux projets de salle de bain et de rénovation intérieure.",
+    bullets: ["Installation", "Dépannage", "Rénovation"],
     imageSrc: "/images/realizations/realisation-electricite.png",
     imageAlt: "Illustration d’une intervention électrique professionnelle",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF8_0%,_#F7F0E3_100%)]",
@@ -62,10 +62,10 @@ const serviceCards = [
   },
   {
     title: "Plâtrerie",
-    subtitle: "Cloisons, faux plafonds, finitions",
+    subtitle: "Finitions, cloisons et murs",
     description:
-      "Des murs et plafonds préparés avec soin pour des chantiers plus propres et plus précis.",
-    bullets: ["Cloisons", "Faux plafonds", "Finitions"],
+      "Des travaux de plâtrerie soignés pour les cloisons, faux plafonds, finitions et préparations de murs avant la pose de revêtements.",
+    bullets: ["Cloisons", "Finitions", "Murs"],
     imageSrc: "/images/realizations/realisation-platrerie.png",
     imageAlt: "Illustration d’une réalisation de plâtrerie et de finition",
     cardClass: "border-[#A7B8DF] bg-[linear-gradient(145deg,_#F9FAFF_0%,_#F0F3FF_100%)]",
@@ -80,10 +80,10 @@ const serviceCards = [
   },
   {
     title: "Carrelage",
-    subtitle: "Sol, murs, crédences, salles d’eau",
+    subtitle: "Carrelage, faïence, sols et murs",
     description:
-      "Pose de revêtements avec une attention particulière au rendu, à la propreté et à la cohérence du projet.",
-    bullets: ["Sol", "Murs", "Crédences"],
+      "Pose de carrelage au sol et au mur, faïence, crédences et revêtements de salle de bain ou de cuisine, avec un soin particulier aux finitions et à la cohérence du projet.",
+    bullets: ["Carrelage", "Faïence", "Crédences"],
     imageSrc: "/images/realizations/realisation-carrelage-faience.png",
     imageAlt: "Illustration d’une pose de carrelage et de faïence précise",
     cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
@@ -98,10 +98,10 @@ const serviceCards = [
   },
   {
     title: "Rénovation intérieure",
-    subtitle: "Coordination de plusieurs travaux",
+    subtitle: "Création de salle de bain et rénovation complète",
     description:
-      "Un interlocuteur unique pour accompagner un chantier plus global avec une vraie cohérence de réalisation.",
-    bullets: ["Coordination", "Cohérence", "Suivi"],
+      "AlloStef vous accompagne pour la création ou la rénovation complète de votre salle de bain : plomberie, équipements sanitaires, électricité, plâtrerie, carrelage, faïence et finitions. Un interlocuteur unique assure la cohérence des différentes étapes du projet.",
+    bullets: ["Salle de bain", "Plomberie", "Électricité"],
     imageSrc: "/images/realizations/realisation-renovation-interieure.png",
     imageAlt: "Illustration d’un intérieur moderne, lumineux et abouti",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F7FBFF_0%,_#ECF7FF_100%)]",
@@ -130,15 +130,6 @@ const methodSteps = [
   { title: "Réalisation des travaux", text: "Nous mettons en œuvre les interventions avec méthode et respect du logement." },
 ];
 
-type Commune = {
-  name: string;
-  postalCodes: string[];
-  departmentCode: string;
-  departmentName: string;
-  latitude?: number;
-  longitude?: number;
-};
-
 const normalize = (value: string) =>
   value
     .normalize("NFD")
@@ -154,8 +145,7 @@ export default function Home() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const communes = useMemo(() => {
-    const items = communesData as Commune[];
-    return [...items].sort((a, b) => a.name.localeCompare(b.name, "fr", { sensitivity: "base" }));
+    return serviceAreaCommunes;
   }, []);
 
   const filteredCommunes = useMemo(() => {
@@ -183,12 +173,12 @@ export default function Home() {
 
   const statusMessage = useMemo(() => {
     const trimmed = query.trim();
-    if (!trimmed) return "Saisissez une commune ou un code postal.";
+    if (!trimmed) return null;
     if (exactMatch) {
       const postalCode = exactMatch.postalCodes[0] ?? "";
       return `AlloStef intervient dans votre secteur : ${exactMatch.name}${postalCode ? ` (${postalCode})` : ""}.`;
     }
-    return "Cette commune ne figure pas dans notre zone habituelle. Contactez tout de même AlloStef : selon l’urgence ou l’ampleur des travaux, une solution peut être envisagée.";
+    return null;
   }, [exactMatch, query]);
 
   useEffect(() => {
@@ -202,7 +192,7 @@ export default function Home() {
     return () => document.removeEventListener("mousedown", handleOutsideClick);
   }, []);
 
-  const handleSelect = (commune: Commune) => {
+  const handleSelect = (commune: ServiceAreaCommune) => {
     setQuery(commune.name);
     setActiveIndex(-1);
     setIsSuggestionsOpen(false);
@@ -253,7 +243,26 @@ export default function Home() {
       areaServed: siteConfig.serviceAreas,
       serviceType: siteConfig.services,
       description:
-        "AlloStef intervient dans l’Oise et le Val-d’Oise pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.",
+        "AlloStef intervient dans l’Oise et le Val-d’Oise pour l’installation, le dépannage, l’entretien et la rénovation en plomberie, chauffage, électricité, plâtrerie, carrelage et salle de bain.",
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Services AlloStef",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage de plomberie" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de sanitaires" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Recherche de fuite d’eau et de gaz" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation, entretien et dépannage de chauffage" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien et dépannage de chaudières" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Remplacement de chaudières et de ballons d’eau chaude" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de circuits de chauffage" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien de climatisation réversible sans pose" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage électrique" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Création et rénovation de salles de bain" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Plâtrerie" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pose de carrelage et de faïence" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rénovation intérieure" } },
+        ],
+      },
     }),
     [],
   );
@@ -297,20 +306,20 @@ export default function Home() {
                 <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
                   Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
                 </p>
-                <h1 className="text-4xl font-semibold leading-[1.03] tracking-[-0.03em] text-[#173246] sm:text-5xl lg:text-6xl">
-                  Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
+                <h1 className="text-4xl font-semibold leading-[1.03] tracking-[-0.03em] text-[#173246] sm:text-5xl lg:text-6xl" style={{ textWrap: "balance" }}>
+                  Installation, dépannage et rénovation en plomberie, chauffage et électricité dans l’Oise et le Val-d’Oise
                 </h1>
-                <p className="mt-6 max-w-xl text-lg leading-8 text-[#5F7484]">
-                  AlloStef intervient pour vos travaux de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure. Un seul interlocuteur pour des travaux cohérents et soignés.
+                <p className="mt-6 max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
+                  AlloStef accompagne les particuliers et les professionnels pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité, sanitaires, recherche de fuite ou création de salle de bain : vous bénéficiez d’un interlocuteur unique pour des travaux étudiés avec soin.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
+                  <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
                     <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                       <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
                     </svg>
                     Appeler AlloStef
                   </a>
-                  <a href="#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] transition duration-300 hover:-translate-y-0.5 hover:border-[#8CC4E7] hover:text-[#397DA9]">
+                  <a href="#devis" className="btn-display inline-flex items-center justify-center whitespace-nowrap rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] transition duration-300 hover:-translate-y-0.5 hover:border-[#8CC4E7] hover:text-[#397DA9]">
                     Demander un devis
                   </a>
                 </div>
@@ -359,8 +368,8 @@ export default function Home() {
         <section id="services" className="mx-auto max-w-7xl rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F7FBFF_100%)] px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Services</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
-              Une offre complète pour les travaux du quotidien et les projets plus ambitieux
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl" style={{ textWrap: "balance" }}>
+              Une offre complète pour les installations, le dépannage et l’entretien
             </h2>
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -433,8 +442,8 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Zone d’intervention</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
-                AlloStef se déplace dans l’Oise et le Val-d’Oise pour étudier et réaliser vos projets de plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.
+              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl" style={{ textWrap: "balance" }}>
+                AlloStef se déplace dans l’Oise et le Val-d’Oise pour étudier et réaliser vos installations, dépannages, entretiens et projets de rénovation.
               </h2>
             </div>
             <div className="mt-10 rounded-[2rem] border border-[#DDEFFF] bg-white p-6 shadow-[0_20px_60px_-35px_rgba(23,50,70,0.2)] sm:p-8">
@@ -466,39 +475,35 @@ export default function Home() {
                   aria-label="Rechercher une commune"
                 />
               </div>
-              {query.trim() && isSuggestionsOpen ? (
+              {query.trim() && isSuggestionsOpen && filteredCommunes.length > 0 ? (
                 <div id="commune-list" className="mt-4 max-h-64 overflow-auto rounded-[1.25rem] border border-[#DDEFFF] bg-white" role="listbox" aria-label="Communes disponibles">
-                  {filteredCommunes.length > 0 ? (
-                    filteredCommunes.map((commune, index) => (
-                      <button
-                        key={`${commune.name}-${commune.postalCodes[0]}`}
-                        type="button"
-                        role="option"
-                        aria-selected={activeIndex === index}
-                        onMouseDown={(event) => event.preventDefault()}
-                        onClick={() => handleSelect(commune)}
-                        onMouseEnter={() => setActiveIndex(index)}
-                        className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition ${activeIndex === index ? "bg-[#EFF8FF]" : "bg-white"}`}
-                      >
-                        <span>
-                          <span className="block font-semibold text-[#173246]">{commune.name}</span>
-                          <span className="mt-1 block text-[#5F7484]">{commune.departmentName} · {commune.postalCodes.join(", ")}</span>
-                        </span>
-                      </button>
-                    ))
-                  ) : (
-                    <div className="px-4 py-3 text-sm text-[#5F7484]">Aucune commune ne correspond à votre recherche.</div>
-                  )}
+                  {filteredCommunes.map((commune, index) => (
+                    <button
+                      key={`${commune.name}-${commune.postalCodes[0]}`}
+                      type="button"
+                      role="option"
+                      aria-selected={activeIndex === index}
+                      onMouseDown={(event) => event.preventDefault()}
+                      onClick={() => handleSelect(commune)}
+                      onMouseEnter={() => setActiveIndex(index)}
+                      className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition ${activeIndex === index ? "bg-[#EFF8FF]" : "bg-white"}`}
+                    >
+                      <span>
+                        <span className="block font-semibold text-[#173246]">{commune.name}</span>
+                        <span className="mt-1 block text-[#5F7484]">{commune.departmentName} · {commune.postalCodes.join(", ")}</span>
+                      </span>
+                    </button>
+                  ))}
                 </div>
               ) : null}
               <div className="mt-5 flex flex-wrap gap-3">
-                <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2F6F98]" aria-label="Appeler AlloStef">
+                <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2F6F98]" aria-label="Appeler AlloStef">
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                     <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
                   </svg>
                   Appeler AlloStef
                 </a>
-                <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 rounded-full border border-[#DDEFFF] bg-white px-4 py-2.5 text-sm font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
+                <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[#DDEFFF] bg-white px-4 py-2.5 text-sm font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
                     <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -508,9 +513,11 @@ export default function Home() {
               <div className="mt-4 rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF] px-4 py-3 text-sm leading-7 text-[#5F7484]">
                 Votre commune ne figure pas dans notre zone d’intervention habituelle ? Contactez tout de même AlloStef. Selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être étudiée au cas par cas.
               </div>
-              <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
-                {statusMessage}
-              </p>
+              {statusMessage ? (
+                <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
+                  {statusMessage}
+                </p>
+              ) : null}
             </div>
           </div>
         </section>
@@ -521,11 +528,11 @@ export default function Home() {
             <div className="absolute bottom-8 left-8 h-20 w-20 rounded-full bg-[#67B4B0]/20 blur-3xl" />
             <div className="relative">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Devis</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl" style={{ textWrap: "balance" }}>
               Un projet ? Parlons-en.
             </h2>
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#DDEFFF]">
-              Pour présenter votre besoin et obtenir un premier échange, contactez directement AlloStef par téléphone ou par e-mail.
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#DDEFFF]" style={{ textWrap: "pretty" }}>
+              Besoin d’une installation, d’un dépannage, d’un entretien ou d’un projet de rénovation ? Présentez votre demande à AlloStef par téléphone ou par e-mail afin d’étudier la solution la plus adaptée.
             </p>
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
               <a href={`tel:${siteConfig.phoneHref}`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition duration-300 hover:-translate-y-0.5" aria-label="Appeler AlloStef">
@@ -562,8 +569,8 @@ export default function Home() {
             <div className="flex items-center">
               <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
             </div>
-            <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
-              Plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
+            <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>
+              Installation, dépannage et entretien en plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
             </p>
           </div>
           <div>
@@ -583,7 +590,12 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t border-[#DDEFFF] px-4 py-6 text-center text-sm text-[#5F7484] sm:px-6 lg:px-8">
-          <p>© <span>{new Date().getFullYear()}</span> AlloStef. Mentions légales et politique de confidentialité à compléter.</p>
+          <p>
+            © <span>{new Date().getFullYear()}</span> AlloStef. {" "}
+            <a href="/mentions-legales" className="transition hover:text-[#397DA9]">Mentions légales</a>
+            {" · "}
+            <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialité</a>
+          </p>
         </div>
       </footer>
 
