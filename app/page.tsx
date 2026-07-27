@@ -135,12 +135,16 @@ type Commune = {
   postalCodes: string[];
   departmentCode: string;
   departmentName: string;
+  latitude?: number;
+  longitude?: number;
 };
 
 const normalize = (value: string) =>
   value
     .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u2019’']/g, "")
+    .replace(/[-\s/.,()]/g, "")
     .toLowerCase();
 
 export default function Home() {
@@ -177,12 +181,6 @@ export default function Home() {
     }) ?? null;
   }, [communes, query]);
 
-  const selectedCommune = useMemo(() => {
-    const trimmed = query.trim();
-    if (!trimmed) return null;
-    return exactMatch;
-  }, [exactMatch, query]);
-
   const statusMessage = useMemo(() => {
     const trimmed = query.trim();
     if (!trimmed) return "Saisissez une commune ou un code postal.";
@@ -190,7 +188,7 @@ export default function Home() {
       const postalCode = exactMatch.postalCodes[0] ?? "";
       return `AlloStef intervient dans votre secteur : ${exactMatch.name}${postalCode ? ` (${postalCode})` : ""}.`;
     }
-    return "Aucune commune ne correspond à votre recherche.";
+    return "Cette commune ne figure pas dans notre zone habituelle. Contactez tout de même AlloStef : selon l’urgence ou l’ampleur des travaux, une solution peut être envisagée.";
   }, [exactMatch, query]);
 
   useEffect(() => {
@@ -493,25 +491,26 @@ export default function Home() {
                   )}
                 </div>
               ) : null}
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2F6F98]" aria-label="Appeler AlloStef">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                    <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
+                  </svg>
+                  Appeler AlloStef
+                </a>
+                <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 rounded-full border border-[#DDEFFF] bg-white px-4 py-2.5 text-sm font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+                    <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  Écrire pour un devis
+                </a>
+              </div>
+              <div className="mt-4 rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF] px-4 py-3 text-sm leading-7 text-[#5F7484]">
+                Votre commune ne figure pas dans notre zone d’intervention habituelle ? Contactez tout de même AlloStef. Selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être étudiée au cas par cas.
+              </div>
               <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
                 {statusMessage}
               </p>
-              {selectedCommune ? (
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2F6F98]" aria-label="Appeler AlloStef">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-                      <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-                    </svg>
-                    Appeler AlloStef
-                  </a>
-                  <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 rounded-full border border-[#DDEFFF] bg-white px-4 py-2.5 text-sm font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-                      <path d="M4.5 7.5h15v9a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-9Zm0 0 7.5 6 7.5-6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    Écrire pour un devis
-                  </a>
-                </div>
-              ) : null}
             </div>
           </div>
         </section>
