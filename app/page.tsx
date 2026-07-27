@@ -12,6 +12,8 @@ const serviceCards = [
     description:
       "Des interventions soignées pour les installations, réparations et rénovations de salle de bain ou de cuisine.",
     bullets: ["Sanitaires", "Robinetterie", "Raccordements"],
+    imageSrc: "/images/realizations/realisation-plomberie.png",
+    imageAlt: "Illustration d’une intervention de plomberie dans une salle de bain moderne",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F8FCFF_0%,_#EFF8FF_100%)]",
     iconWrapClass: "bg-[#EAF6FF] text-[#397DA9]",
     pillClass: "text-[#397DA9]",
@@ -28,6 +30,8 @@ const serviceCards = [
     description:
       "Nous étudions les besoins de chauffage pour proposer des solutions adaptées, claires et durables.",
     bullets: ["Radiateurs", "Maintenance", "Confort"],
+    imageSrc: "/images/realizations/realisation-chauffage.png",
+    imageAlt: "Illustration d’une installation de chauffage soignée et moderne",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF9_0%,_#F8F3E9_100%)]",
     iconWrapClass: "bg-[#F9EEDC] text-[#DDAA62]",
     pillClass: "text-[#DDAA62]",
@@ -44,6 +48,8 @@ const serviceCards = [
     description:
       "Installation, rénovation et dépannage pour des circuits fiables et des espaces plus fonctionnels.",
     bullets: ["Prises", "Éclairage", "Tableaux"],
+    imageSrc: "/images/realizations/realisation-electricite.png",
+    imageAlt: "Illustration d’une intervention électrique professionnelle",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF8_0%,_#F7F0E3_100%)]",
     iconWrapClass: "bg-[#F7EFD8] text-[#C89A46]",
     pillClass: "text-[#C89A46]",
@@ -60,6 +66,8 @@ const serviceCards = [
     description:
       "Des murs et plafonds préparés avec soin pour des chantiers plus propres et plus précis.",
     bullets: ["Cloisons", "Faux plafonds", "Finitions"],
+    imageSrc: "/images/realizations/realisation-platrerie.png",
+    imageAlt: "Illustration d’une réalisation de plâtrerie et de finition",
     cardClass: "border-[#A7B8DF] bg-[linear-gradient(145deg,_#F9FAFF_0%,_#F0F3FF_100%)]",
     iconWrapClass: "bg-[#EEF2FF] text-[#718493]",
     pillClass: "text-[#718493]",
@@ -76,6 +84,8 @@ const serviceCards = [
     description:
       "Pose de revêtements avec une attention particulière au rendu, à la propreté et à la cohérence du projet.",
     bullets: ["Sol", "Murs", "Crédences"],
+    imageSrc: "/images/realizations/realisation-carrelage-faience.png",
+    imageAlt: "Illustration d’une pose de carrelage et de faïence précise",
     cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
     iconWrapClass: "bg-[#EAF8F7] text-[#67B4B0]",
     pillClass: "text-[#67B4B0]",
@@ -92,6 +102,8 @@ const serviceCards = [
     description:
       "Un interlocuteur unique pour accompagner un chantier plus global avec une vraie cohérence de réalisation.",
     bullets: ["Coordination", "Cohérence", "Suivi"],
+    imageSrc: "/images/realizations/realisation-renovation-interieure.png",
+    imageAlt: "Illustration d’un intérieur moderne, lumineux et abouti",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F7FBFF_0%,_#ECF7FF_100%)]",
     iconWrapClass: "bg-[#E6F3FF] text-[#397DA9]",
     pillClass: "text-[#397DA9]",
@@ -116,51 +128,6 @@ const methodSteps = [
   { title: "Étude du besoin", text: "Nous examinons la situation, les contraintes et la nature des travaux à prévoir." },
   { title: "Proposition et devis", text: "Nous vous présentons une approche claire avant toute réalisation." },
   { title: "Réalisation des travaux", text: "Nous mettons en œuvre les interventions avec méthode et respect du logement." },
-];
-
-const realizations = [
-  {
-    title: "Plomberie",
-    category: "Raccordements et sanitaires",
-    imageSrc: "/images/realizations/realisation-plomberie.png",
-    imageAlt: "Illustration d’une intervention de plomberie dans une salle de bain moderne",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
-  {
-    title: "Chauffage",
-    category: "Remplacement et confort thermique",
-    imageSrc: "/images/realizations/realisation-chauffage.png",
-    imageAlt: "Illustration d’une installation de chauffage soignée et moderne",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
-  {
-    title: "Électricité",
-    category: "Éclairage et mise à niveau",
-    imageSrc: "/images/realizations/realisation-electricite.png",
-    imageAlt: "Illustration d’une intervention électrique professionnelle",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
-  {
-    title: "Plâtrerie",
-    category: "Cloisons et finitions",
-    imageSrc: "/images/realizations/realisation-platrerie.png",
-    imageAlt: "Illustration d’une réalisation de plâtrerie et de finition",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
-  {
-    title: "Carrelage / Faïence",
-    category: "Revêtements de sol et murs",
-    imageSrc: "/images/realizations/realisation-carrelage-faience.png",
-    imageAlt: "Illustration d’une pose de carrelage et de faïence précise",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
-  {
-    title: "Rénovation intérieure",
-    category: "Projets plus globaux",
-    imageSrc: "/images/realizations/realisation-renovation-interieure.png",
-    imageAlt: "Illustration d’un intérieur moderne, lumineux et abouti",
-    caption: "Visuel illustrant le domaine d’intervention",
-  },
 ];
 
 type Commune = {
@@ -400,8 +367,8 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {serviceCards.map((service, index) => (
-              <article key={service.title} className={`group rounded-[1.75rem] border p-7 shadow-[0_18px_45px_-28px_rgba(23,50,70,0.2)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_-24px_rgba(23,50,70,0.25)] ${service.cardClass}`}>
-                <div className="flex items-center justify-between">
+              <article key={service.title} className={`group overflow-hidden rounded-[1.75rem] border shadow-[0_18px_45px_-28px_rgba(23,50,70,0.2)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_-24px_rgba(23,50,70,0.25)] ${service.cardClass}`}>
+                <div className="flex items-center justify-between p-7">
                   <div className={`inline-flex rounded-full p-2.5 shadow-sm ${service.iconWrapClass}`}>
                     {service.icon}
                   </div>
@@ -410,16 +377,32 @@ export default function Home() {
                     <span className={`text-sm font-semibold uppercase tracking-[0.2em] ${service.pillClass}`}>0{index + 1}</span>
                   </div>
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-[#173246]">{service.title}</h3>
-                <p className="mt-2 text-sm font-medium text-[#397DA9]">{service.subtitle}</p>
-                <p className="mt-4 text-sm leading-7 text-[#5F7484]">{service.description}</p>
-                <ul className="mt-5 flex flex-wrap gap-2">
-                  {service.bullets.map((bullet) => (
-                    <li key={bullet} className="rounded-full border border-[#DDEFFF] bg-white/80 px-3 py-1.5 text-xs font-medium text-[#5F7484]">
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                <div className="grid gap-5 px-7 pb-7 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.4fr)] lg:items-center">
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#173246]">{service.title}</h3>
+                    <p className="mt-2 text-sm font-medium text-[#397DA9]">{service.subtitle}</p>
+                    <p className="mt-4 text-sm leading-7 text-[#5F7484]">{service.description}</p>
+                    <ul className="mt-5 flex flex-wrap gap-2">
+                      {service.bullets.map((bullet) => (
+                        <li key={bullet} className="rounded-full border border-[#DDEFFF] bg-white/80 px-3 py-1.5 text-xs font-medium text-[#5F7484]">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="overflow-hidden rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF]">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image
+                        src={service.imageSrc}
+                        alt={service.imageAlt}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 35vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                        loading={index < 2 ? "eager" : "lazy"}
+                      />
+                    </div>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
@@ -445,37 +428,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section id="realisations" className="mx-auto max-w-7xl rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(180deg,_#FFFFFF_0%,_#F8FCFF_100%)] px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Réalisations</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl">
-              Des chantiers soignés, des finitions de qualité, une vision globale du projet
-            </h2>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {realizations.map((item, index) => (
-              <article key={item.title} className="overflow-hidden rounded-[1.75rem] border border-[#DDEFFF] bg-[linear-gradient(120deg,_#FFFFFF_0%,_#EAF6FF_55%,_#CFE8F8_100%)] shadow-[0_18px_45px_-28px_rgba(23,50,70,0.18)]">
-                <div className="group relative aspect-[4/3] overflow-hidden bg-[#EAF6FF]">
-                  <Image
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                    priority={index < 2}
-                    loading={index < 2 ? "eager" : "lazy"}
-                  />
-                </div>
-                <div className="p-6">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">{item.category}</p>
-                  <h3 className="mt-3 text-lg font-semibold text-[#173246]">{item.title}</h3>
-                  <p className="mt-2 text-sm text-[#5F7484]">{item.caption}</p>
-                </div>
-              </article>
-            ))}
           </div>
         </section>
 

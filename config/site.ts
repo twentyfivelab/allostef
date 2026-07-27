@@ -19,7 +19,6 @@ export const siteConfig = {
   navigation: [
     { label: "Services", href: "#services" },
     { label: "Notre méthode", href: "#method" },
-    { label: "Réalisations", href: "#realisations" },
     { label: "Zone d’intervention", href: "#zones" },
     { label: "Devis", href: "#devis" },
   ],
