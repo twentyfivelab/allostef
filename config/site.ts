@@ -1,9 +1,9 @@
 export const siteConfig = {
   brandName: "AlloStef",
   companyName: "AlloStef",
-  phoneDisplay: "06 12 34 56 78",
-  phoneHref: "+33612345678",
-  email: "contact@allostef.fr",
+  phoneDisplay: "06 15 26 78 47",
+  phoneHref: "+33615267847",
+  email: "allostef60@gmail.com",
   siteUrl: "https://allostef.vercel.app",
   serviceRadiusKm: 40,
   serviceCenterCommuneCode: "60395",
