@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://allostef.vercel.app/sitemap.xml
