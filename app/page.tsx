@@ -103,12 +103,10 @@ const serviceCards: {
     bullets: [
       "Dépannage de systèmes de chauffage",
       "Dépannage et entretien de chaudières de différents types",
-      "Installation et remplacement de chaudières",
-      "Installation et remplacement de ballons d’eau chaude",
+      "Installation et remplacement de chaudières et de ballons d’eau chaude",
       "Installation et modification de circuits de chauffage",
       "Installation et remplacement de radiateurs",
       "Entretien de climatisations réversibles",
-      "La pose de climatisation n’est pas proposée",
     ],
     imageSrc: "/images/realizations/realisation-chauffage.png",
     imageAlt: "Installation de chauffage avec radiateurs et réglages techniques",
