@@ -419,7 +419,7 @@ export default function Home() {
       <main id="top">
         <section className="mx-auto max-w-[1200px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
-            <div className="max-w-2xl space-y-5 md:space-y-6 lg:space-y-7">
+            <div className="max-w-2xl space-y-5 md:space-y-6 lg:space-y-7 lg:relative lg:z-10">
               <p className="inline-flex rounded-full border border-[#D8E6F2] bg-[#F5F9FC] px-3 py-1 text-[0.78rem] font-medium leading-5 text-[#176BC0] sm:text-xs">
                 Plomberie, chauffage, électricité et rénovation dans l’Oise et le Val-d’Oise
               </p>
@@ -440,7 +440,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-              <div className="hero-visual relative aspect-[3/2] w-full rounded-[2rem]">
+              <div className="hero-visual relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src="/assets/sdb-allostef.webp"
                   alt="Intervention de plomberie avec équipements sanitaires installés"
@@ -449,6 +449,14 @@ export default function Home() {
                   className="object-cover object-center"
                   priority
                 />
+                <div className="hidden lg:block absolute inset-0 pointer-events-none">
+                  <div className="absolute inset-0" style={{
+                    background: "linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%)"
+                  }} />
+                  <div className="absolute inset-0" style={{
+                    background: "linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,0.15) 100%)"
+                  }} />
+                </div>
               </div>
             </div>
           </div>
@@ -473,8 +481,8 @@ export default function Home() {
                 key={service.title}
                 className={`group w-full overflow-hidden rounded-[1.5rem] border ${service.tintBorder} ${service.tintBg} p-5 shadow-[0_14px_34px_-26px_rgba(13,35,69,0.22)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_-22px_rgba(13,35,69,0.28)] sm:p-6 lg:p-7`}
               >
-                <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-8">
-                  <div className="min-w-0 lg:flex-1">
+                <div className="flex flex-col gap-5">
+                  <div className="min-w-0">
                     <div className="flex items-center gap-2.5">
                       <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#176BC0] shadow-[0_6px_16px_-10px_rgba(13,35,69,0.3)]">
                         {service.icon}
@@ -497,13 +505,13 @@ export default function Home() {
                       </p>
                     ) : null}
                   </div>
-                  <div className="overflow-hidden rounded-[1.1rem] border border-white/70 bg-white lg:w-[42%] lg:flex-none">
+                  <div className="overflow-hidden rounded-[1.1rem] border border-white/70 bg-white w-full">
                     <div className="service-visual relative aspect-[4/3] min-h-[220px]">
                       <Image
                         src={service.imageSrc}
                         alt={service.imageAlt}
                         fill
-                        sizes="(max-width: 1024px) 100vw, 42vw"
+                        sizes="(max-width: 1024px) 100vw, 100vw"
                         className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
                         loading="lazy"
                       />
