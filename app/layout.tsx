@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 
@@ -77,6 +78,32 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+const globalStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteConfig.siteUrl}/#organization`,
+      name: siteConfig.brandName,
+      legalName: siteConfig.legalEntityName,
+      url: siteConfig.siteUrl,
+      telephone: siteConfig.phoneHref,
+      email: siteConfig.email,
+      areaServed: siteConfig.serviceAreas,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.siteUrl}/#website`,
+      url: siteConfig.siteUrl,
+      name: siteConfig.brandName,
+      inLanguage: "fr-FR",
+      publisher: {
+        "@id": `${siteConfig.siteUrl}/#organization`,
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,7 +111,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#F8FCFF] text-[#173246]">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#F8FCFF] text-[#173246]">
+        <Script id="schema-global" type="application/ld+json" strategy="beforeInteractive">
+          {JSON.stringify(globalStructuredData)}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }

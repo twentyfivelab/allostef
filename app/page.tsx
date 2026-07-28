@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { siteConfig } from "@/config/site";
 import { serviceAreaCommunes, type ServiceAreaCommune } from "@/data/service-area";
@@ -214,44 +215,73 @@ export default function Home() {
   const structuredData = useMemo(
     () => ({
       "@context": "https://schema.org",
-      "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
-      name: siteConfig.brandName,
-      url: siteConfig.siteUrl,
-      telephone: siteConfig.phoneHref,
-      email: siteConfig.email,
-      areaServed: siteConfig.serviceAreas,
-      serviceType: siteConfig.services,
-      description:
-        "AlloStef intervient dans l’Oise et le Val-d’Oise pour l’installation, le dépannage, l’entretien et la rénovation en plomberie, chauffage, électricité, plâtrerie, carrelage et salle de bain.",
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Services AlloStef",
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage de plomberie" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de sanitaires" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Recherche de fuite d’eau et de gaz" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation, entretien et dépannage de chauffage" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien et dépannage de chaudières" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Remplacement de chaudières et de ballons d’eau chaude" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de circuits de chauffage" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien de climatisation réversible sans pose" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage électrique" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Création et rénovation de salles de bain" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Plâtrerie" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pose de carrelage et de faïence" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rénovation intérieure" } },
-        ],
-      },
+      "@graph": [
+        {
+          "@type": ["ProfessionalService", "LocalBusiness", "HomeAndConstructionBusiness"],
+          "@id": `${siteConfig.siteUrl}/#localbusiness`,
+          name: siteConfig.brandName,
+          url: siteConfig.siteUrl,
+          telephone: siteConfig.phoneHref,
+          email: siteConfig.email,
+          areaServed: siteConfig.serviceAreas.map((area) => ({ "@type": "AdministrativeArea", name: area })),
+          serviceType: siteConfig.services,
+          description:
+            "AlloStef intervient dans l’Oise et le Val-d’Oise pour l’installation, le dépannage, l’entretien et la rénovation en plomberie, chauffage, électricité, plâtrerie, carrelage et salle de bain.",
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Services AlloStef",
+            itemListElement: [
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage de plomberie" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de sanitaires" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Recherche de fuite d’eau et de gaz" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation, entretien et dépannage de chauffage" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien et dépannage de chaudières" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Remplacement de chaudières et de ballons d’eau chaude" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation de circuits de chauffage" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien de climatisation réversible sans pose" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation et dépannage électrique" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Création et rénovation de salles de bain" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Plâtrerie" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pose de carrelage et de faïence" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rénovation intérieure" } },
+            ],
+          },
+        },
+        {
+          "@type": "WebPage",
+          "@id": `${siteConfig.siteUrl}/#webpage`,
+          url: siteConfig.siteUrl,
+          name: "AlloStef | Plombier chauffagiste dans l’Oise et le Val-d’Oise",
+          isPartOf: {
+            "@id": `${siteConfig.siteUrl}/#website`,
+          },
+          about: {
+            "@id": `${siteConfig.siteUrl}/#localbusiness`,
+          },
+          inLanguage: "fr-FR",
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${siteConfig.siteUrl}/#breadcrumb`,
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Accueil",
+              item: siteConfig.siteUrl,
+            },
+          ],
+        },
+      ],
     }),
     [],
   );
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <Script id="schema-home" type="application/ld+json" strategy="beforeInteractive">
+        {JSON.stringify(structuredData)}
+      </Script>
       <header className="sticky top-0 z-50 border-b border-[#DDEFFF] bg-[rgba(248,252,255,0.94)] backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <a href="#top" className="flex items-center" aria-label="AlloStef accueil">
@@ -287,7 +317,7 @@ export default function Home() {
                   Installation, dépannage et rénovation dans l’Oise et le Val-d’Oise
                 </h1>
                 <p className="max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
-                  AlloStef accompagne les particuliers et les professionnels dans l’Oise et le Val-d’Oise pour leurs installations, dépannages, entretiens et projets de rénovation. En plomberie, chauffage, électricité ou aménagement intérieur, un interlocuteur unique coordonne les métiers nécessaires pour des travaux étudiés et réalisés avec soin.
+                  AlloStef accompagne les particuliers et les professionnels dans l’Oise et le Val-d’Oise pour leurs installations, dépannages, entretiens et projets de rénovation. Artisan plombier, chauffagiste et électricien, AlloStef coordonne les métiers nécessaires pour des travaux étudiés et réalisés avec soin.
                 </p>
                 <div className="flex flex-col gap-3 pt-1 sm:flex-row sm:gap-3.5">
                   <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
@@ -311,6 +341,9 @@ export default function Home() {
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>
               AlloStef intervient également dans le cadre de projets de rénovation intérieure, avec coordination des métiers nécessaires selon les besoins du chantier.
+            </p>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>
+              Vous pouvez vérifier votre commune dans la <a href="#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> et demander rapidement un <a href="#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a> selon votre besoin.
             </p>
           </div>
           <div className="mt-10 space-y-6 sm:space-y-7 lg:space-y-8">

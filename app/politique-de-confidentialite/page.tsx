@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
@@ -15,8 +16,45 @@ export const metadata: Metadata = {
 };
 
 export default function PolitiqueDeConfidentialitePage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${siteConfig.siteUrl}/politique-de-confidentialite#webpage`,
+        url: `${siteConfig.siteUrl}/politique-de-confidentialite`,
+        name: "Politique de confidentialité | AlloStef",
+        inLanguage: "fr-FR",
+        isPartOf: {
+          "@id": `${siteConfig.siteUrl}/#website`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteConfig.siteUrl}/politique-de-confidentialite#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Accueil",
+            item: siteConfig.siteUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Politique de confidentialité",
+            item: `${siteConfig.siteUrl}/politique-de-confidentialite`,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <Script id="schema-politique-confidentialite" type="application/ld+json" strategy="beforeInteractive">
+        {JSON.stringify(structuredData)}
+      </Script>
       <header className="sticky top-0 z-50 border-b border-[#DDEFFF] bg-[rgba(248,252,255,0.94)] backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center" aria-label="AlloStef accueil">
