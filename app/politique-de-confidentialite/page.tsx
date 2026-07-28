@@ -203,7 +203,16 @@ export default function PolitiqueDeConfidentialitePage() {
             {" · "}
             <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialite</a>
           </p>
-          <p className="mt-1 text-xs text-[#7D93A3]">Site conçu par DZRT.</p>
+          <p className="mt-1 text-xs text-[#7D93A3]">
+            <a
+              href="https://dzrt.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-[#5F7484] hover:underline focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6E3F7] focus-visible:ring-offset-2"
+            >
+              Site conçu par DZRT.
+            </a>
+          </p>
         </div>
       </footer>
     </>
