@@ -75,3 +75,33 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Search Console priority URLs list: `docs/search-console-priority-urls.txt`
 - Weekly tracking template: `docs/seo-weekly-tracker.csv`
 - Off-site local SEO checklist: `docs/local-seo-offsite-checklist.md`
+
+### 5) Automated SEO Smoke Test
+
+Run these commands after each deploy:
+
+```bash
+npm run seo:smoke:prod
+```
+
+Each run also generates a dated log file in `docs/reports/seo-smoke/`.
+
+For local validation:
+
+```bash
+npm run seo:smoke:local
+```
+
+To list report history:
+
+```bash
+npm run seo:smoke:reports
+```
+
+What is checked:
+
+- `robots.txt` and `sitemap.xml` return HTTP 200
+- each priority URL returns HTTP 200
+- `<title>` exists
+- canonical matches the expected URL
+- structured data (`application/ld+json`) is present

@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verify:service-area": "node scripts/verify-service-area.mjs"
+    "verify:service-area": "node scripts/verify-service-area.mjs",
+    "seo:smoke:prod": "bash scripts/seo-smoke-check.sh https://allostef.fr",
+    "seo:smoke:local": "bash scripts/seo-smoke-check.sh http://localhost:3000",
+    "seo:smoke:reports": "find docs/reports/seo-smoke -type f -name '*.log' -print | sort -r"
   },
   "dependencies": {
     "next": "16.2.12",

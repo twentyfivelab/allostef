@@ -1,0 +1,77 @@
+Running SEO smoke checks on https://allostef.fr
+Report file: docs/reports/seo-smoke/2026-07-28_15-43-57_allostef.fr.log
+[OK]   https://allostef.fr/robots.txt -> HTTP 200
+[OK]   https://allostef.fr/sitemap.xml -> HTTP 200
+[OK]   https://allostef.fr/chauffagiste-meru -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/chauffagiste-beauvais -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/chauffagiste-cergy -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/chauffagiste-pontoise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/chauffagiste-compiegne -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-meru -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-beauvais -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-cergy -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-pontoise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-compiegne -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plombier-meru -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plombier-beauvais -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plombier-compiegne -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plombier-cergy -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plombier-pontoise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/plomberie-oise-val-doise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/chauffagiste-oise-val-doise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+[OK]   https://allostef.fr/electricien-oise-val-doise -> HTTP 200
+[OK]   Title tag present
+[OK]   Canonical matches
+[OK]   Structured data present
+SEO smoke check passed with zero failures.
