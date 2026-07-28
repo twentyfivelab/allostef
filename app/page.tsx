@@ -272,24 +272,24 @@ export default function Home() {
       </header>
 
       <main id="top">
-        <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div className="relative overflow-hidden rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-8 shadow-[0_25px_80px_-40px_rgba(23,50,70,0.45)] sm:p-10 lg:p-12">
+        <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+          <div className="relative overflow-hidden rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 shadow-[0_25px_80px_-40px_rgba(23,50,70,0.45)] sm:p-10 lg:p-12">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(103,180,176,0.14),_transparent_42%)]" />
             <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-[#DDAA62]/18 blur-3xl" />
             <div className="absolute bottom-8 left-4 h-20 w-20 rounded-full bg-[#C6E3F7]/70 blur-3xl" />
             <div className="absolute bottom-8 right-12 h-px w-28 bg-[#8CC4E7]/70" />
             <div className="relative md:mx-auto md:max-w-4xl lg:max-w-[58rem]">
-              <div className="max-w-2xl md:mx-auto md:max-w-3xl lg:max-w-[46rem]">
-                <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
+              <div className="max-w-2xl space-y-5 md:mx-auto md:max-w-3xl md:space-y-6 lg:max-w-[46rem] lg:space-y-7">
+                <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-[0.78rem] font-medium leading-5 text-[#397DA9] sm:text-xs">
                   Plomberie, chauffage, électricité et rénovation dans l’Oise et le Val-d’Oise
                 </p>
                 <h1 className="max-w-[18ch] text-[clamp(2.1rem,4.5vw,3.6rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-[#173246]" style={{ textWrap: "balance" }}>
                   Installation, dépannage et rénovation dans l’Oise et le Val-d’Oise
                 </h1>
-                <p className="mt-6 max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
-                  AlloStef accompagne les particuliers et les professionnels dans l’Oise et le Val-d’Oise pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité ou aménagement intérieur : un interlocuteur unique coordonne les métiers nécessaires pour des travaux étudiés et réalisés avec soin.
+                <p className="max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
+                  AlloStef accompagne les particuliers et les professionnels dans l’Oise et le Val-d’Oise pour leurs installations, dépannages, entretiens et projets de rénovation. En plomberie, chauffage, électricité ou aménagement intérieur, un interlocuteur unique coordonne les métiers nécessaires pour des travaux étudiés et réalisés avec soin.
                 </p>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <div className="flex flex-col gap-3 pt-1 sm:flex-row sm:gap-3.5">
                   <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
                     <PhoneIcon className="h-4 w-4" />
                     Appeler AlloStef
