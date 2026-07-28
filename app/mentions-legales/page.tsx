@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function MentionsLegalesPage() {
             ))}
           </nav>
           <a href={`tel:${siteConfig.phoneHref}`} aria-label="Appeler AlloStef" className="inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_-16px_rgba(57,125,169,0.7)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7] focus:ring-offset-2">
+            <PhoneIcon className="h-4 w-4" />
             Appeler
           </a>
         </div>
@@ -137,7 +139,12 @@ export default function MentionsLegalesPage() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnées</p>
             <ul className="mt-4 space-y-2 text-sm text-[#5F7484]">
-              <li><a href={`tel:${siteConfig.phoneHref}`} className="transition hover:text-[#397DA9]">{siteConfig.phoneDisplay}</a></li>
+              <li>
+                <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 transition hover:text-[#397DA9]">
+                  <PhoneIcon className="h-4 w-4" />
+                  <span>{siteConfig.phoneDisplay}</span>
+                </a>
+              </li>
               <li><a href={`mailto:${siteConfig.email}`} className="transition hover:text-[#397DA9]">{siteConfig.email}</a></li>
             </ul>
           </div>

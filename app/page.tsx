@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { siteConfig } from "@/config/site";
 import { serviceAreaCommunes, type ServiceAreaCommune } from "@/data/service-area";
+import { PhoneIcon } from "@/components/phone-icon";
 
 const serviceCards = [
   {
@@ -81,18 +82,6 @@ const serviceCards = [
     cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
   },
 ];
-
-function PhoneIcon({ className }: { className: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <path
-        d="M2.25 4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .964.351 1.091.852l1.106 4.423a1.125 1.125 0 0 1-.417 1.131l-1.293 1.034a11.038 11.038 0 0 0 5.516 5.516l1.034-1.293a1.125 1.125 0 0 1 1.13-.417l4.424 1.106c.501.125.852.575.852 1.091V19.5A2.25 2.25 0 0 1 18.75 21.75h-1.5C9.656 21.75 2.25 14.344 2.25 5.25V4.5Z"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 const normalize = (value: string) =>
   value
@@ -276,9 +265,7 @@ export default function Home() {
             ))}
           </nav>
           <a href={`tel:${siteConfig.phoneHref}`} aria-label="Appeler AlloStef" className="btn-display inline-flex items-center gap-2 rounded-full bg-[#397DA9] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_30px_-16px_rgba(57,125,169,0.7)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7] focus:ring-offset-2">
-            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-              <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-            </svg>
+            <PhoneIcon className="h-4 w-4" />
             <span className="hidden sm:inline">Appeler</span>
           </a>
         </div>
@@ -291,8 +278,8 @@ export default function Home() {
             <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-[#DDAA62]/18 blur-3xl" />
             <div className="absolute bottom-8 left-4 h-20 w-20 rounded-full bg-[#C6E3F7]/70 blur-3xl" />
             <div className="absolute bottom-8 right-12 h-px w-28 bg-[#8CC4E7]/70" />
-            <div className="relative max-w-3xl">
-              <div className="max-w-2xl">
+            <div className="relative md:mx-auto md:max-w-4xl lg:max-w-[58rem]">
+              <div className="max-w-2xl md:mx-auto md:max-w-3xl lg:max-w-[46rem]">
                 <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
                   Plomberie, chauffage, électricité et rénovation dans l’Oise et le Val-d’Oise
                 </p>
@@ -388,7 +375,7 @@ export default function Home() {
                   }}
                   onKeyDown={handleKeyDown}
                   placeholder="Ex. Méru, 60000, Senlis"
-                  className="w-full rounded-[0.9rem] border border-[#DDEFFF] bg-white px-4 py-3 text-sm text-[#173246] outline-none focus:border-[#5CA6D2]"
+                  className="w-full rounded-[0.9rem] border border-[#DDEFFF] bg-white px-4 py-3 text-base text-[#173246] outline-none focus:border-[#5CA6D2]"
                   role="combobox"
                   aria-autocomplete="list"
                   aria-expanded={isSuggestionsOpen && filteredCommunes.length > 0}
@@ -511,7 +498,12 @@ export default function Home() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnées</p>
             <ul className="mt-4 space-y-2 text-sm text-[#5F7484]">
-              <li><a href={`tel:${siteConfig.phoneHref}`} className="transition hover:text-[#397DA9]">{siteConfig.phoneDisplay}</a></li>
+              <li>
+                <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 transition hover:text-[#397DA9]">
+                  <PhoneIcon className="h-4 w-4" />
+                  <span>{siteConfig.phoneDisplay}</span>
+                </a>
+              </li>
               <li><a href={`mailto:${siteConfig.email}`} className="transition hover:text-[#397DA9]">{siteConfig.email}</a></li>
             </ul>
           </div>
