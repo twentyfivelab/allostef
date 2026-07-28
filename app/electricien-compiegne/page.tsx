@@ -5,7 +5,7 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Compiègne (60200) | Dépannage et travaux électriques | AlloStef",
+  title: "Électricien Compiègne (60200) | Dépannage et travaux électriques | AlloStef",
   description:
     "Intervention électrique à Compiègne: dépannage, prises, éclairages, tableau électrique et travaux de rénovation avec AlloStef.",
   alternates: {
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Compiègne pour dépannage électrique ?",
     answer:
-      "Oui. Les pannes électriques à Compiègne sont étudiées selon disponibilité, avec diagnostic et remise en fonctionnement en sécurité.",
+      "Les pannes électriques à Compiègne sont étudiées selon disponibilité, avec diagnostic et remise en fonctionnement en sécurité.",
   },
   {
     question: "Pouvez-vous intervenir sur prises et éclairages ?",
     answer:
-      "Oui. Le remplacement de prises, interrupteurs et éclairages fait partie des interventions courantes selon l'etat de l'installation.",
+      "Le remplacement de prises, interrupteurs et éclairages fait partie des interventions courantes selon l’état de l’installation.",
   },
   {
-    question: "Prenez-vous en charge l'électricité en rénovation ?",
+    question: "Prenez-vous en charge l’électricité en rénovation ?",
     answer:
-      "Oui. AlloStef realise les travaux électriques nécessaires dans le cadre de rénovations partielles ou completes.",
+      "AlloStef réalise les travaux électriques nécessaires dans le cadre de rénovations partielles ou complètes.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ElectricienCompiegnePage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-compiegne#service`,
-        name: "Electricien à Compiègne",
+        name: "Électricien à Compiègne",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Compiègne" },
@@ -61,7 +61,7 @@ export default function ElectricienCompiegnePage() {
         "@id": `${siteConfig.siteUrl}/electricien-compiegne#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Accueil", item: siteConfig.siteUrl },
-          { "@type": "ListItem", position: 2, name: "Electricien Compiègne", item: `${siteConfig.siteUrl}/electricien-compiegne` },
+          { "@type": "ListItem", position: 2, name: "Électricien Compiègne", item: `${siteConfig.siteUrl}/electricien-compiegne` },
         ],
       },
     ],
@@ -73,16 +73,16 @@ export default function ElectricienCompiegnePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
-        <span>Electricien Compiègne</span>
+        <span>Électricien Compiègne</span>
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Compiègne (60200) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien à Compiègne pour dépannage, installation et rénovation
+          Électricien à Compiègne pour dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
           À Compiègne, AlloStef intervient pour les besoins électriques du quotidien: dépannage, prises, éclairages, tableau électrique et adaptation des installations en rénovation.

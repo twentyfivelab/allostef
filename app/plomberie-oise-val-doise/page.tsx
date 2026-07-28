@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Plombier Oise et Val-d'Oise | Dépannage, installation et rénovation | AlloStef",
+  title: "Plombier Oise et Val-d’Oise | Dépannage, installation et rénovation | AlloStef",
   description:
-    "Besoin d'un plombier dans l'Oise ou le Val-d'Oise ? AlloStef intervient pour dépannage, recherche de fuite, installation sanitaire et rénovation, avec devis clair et intervention soignee.",
+    "Besoin d’un plombier dans l’Oise ou le Val-d’Oise ? AlloStef intervient pour dépannage, recherche de fuite, installation sanitaire et rénovation, avec devis clair et intervention soignée.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/plomberie-oise-val-doise`,
   },
@@ -15,29 +15,29 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Intervenez-vous pour une fuite d'eau en urgence ?",
+    question: "Intervenez-vous pour une fuite d’eau en urgence ?",
     answer:
-      "Oui. Selon la situation et la zone d'intervention, AlloStef peut etudier une intervention rapide pour limiter les degats et remettre votre installation en sécurité.",
+      "Selon la situation et la zone d’intervention, AlloStef peut étudier une intervention rapide pour limiter les dégâts et remettre votre installation en sécurité.",
   },
   {
-    question: "Realisez-vous le remplacement de WC, lavabos et robinetterie ?",
+    question: "Réalisez-vous le remplacement de WC, lavabos et robinetterie ?",
     answer:
-      "Oui. AlloStef prend en charge l'installation et le remplacement de sanitaires, de robinetterie et les raccordements associes.",
+      "AlloStef prend en charge l’installation et le remplacement de sanitaires, de robinetterie et les raccordements associés.",
   },
   {
-    question: "Proposez-vous la rénovation complete de plomberie de salle de bain ?",
+    question: "Proposez-vous la rénovation complète de plomberie de salle de bain ?",
     answer:
-      "Oui. Le reseau alimentation/evacuation, les équipements sanitaires et les finitions peuvent être coordonnes pour une rénovation complete et coherente.",
+      "Le réseau alimentation/évacuation, les équipements sanitaires et les finitions peuvent être coordonnés pour une rénovation complète et cohérente.",
   },
   {
     question: "Comment se passe le devis ?",
     answer:
-      "Vous decrivez votre besoin par telephone ou e-mail, puis un devis detaille est propose apres etude de la situation et des contraintes techniques.",
+      "Vous décrivez votre besoin par téléphone ou e-mail, puis un devis détaillé est proposé après étude de la situation et des contraintes techniques.",
   },
   {
     question: "Intervenez-vous en dehors de votre zone habituelle ?",
     answer:
-      "Pour certains projets, une intervention hors zone peut être étudiée au cas par cas selon le delai, l'urgence et la nature des travaux.",
+      "Pour certains projets, une intervention hors zone peut être étudiée au cas par cas selon le délai, l’urgence et la nature des travaux.",
   },
 ];
 
@@ -48,11 +48,11 @@ export default function PlomberiePage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/plomberie-oise-val-doise#service`,
-        name: "Plomberie dans l'Oise et le Val-d'Oise",
+        name: "Plomberie dans l’Oise et le Val-d’Oise",
         provider: {
           "@id": `${siteConfig.siteUrl}/#organization`,
         },
-        areaServed: [{ "@type": "AdministrativeArea", name: "Oise" }, { "@type": "AdministrativeArea", name: "Val-d'Oise" }],
+        areaServed: [{ "@type": "AdministrativeArea", name: "Oise" }, { "@type": "AdministrativeArea", name: "Val-d’Oise" }],
         serviceType: "Dépannage, installation et rénovation plomberie",
         url: `${siteConfig.siteUrl}/plomberie-oise-val-doise`,
       },
@@ -85,7 +85,7 @@ export default function PlomberiePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Plomberie</span>
@@ -93,10 +93,10 @@ export default function PlomberiePage() {
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">
-          Plomberie Oise et Val-d'Oise
+          Plomberie Oise et Val-d’Oise
         </p>
         <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Plomberie dans l'Oise et le Val-d'Oise : dépannage, installation et rénovation
+          Plomberie dans l’Oise et le Val-d’Oise : dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
           AlloStef accompagne particuliers et professionnels pour leurs besoins en plomberie : dépannage, installation sanitaire, recherche de fuite et rénovation de salle de bain. Chaque intervention est étudiée pour proposer une solution fiable, lisible et adaptée à votre logement ou local.
@@ -114,35 +114,35 @@ export default function PlomberiePage() {
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Dépannage plomberie rapide et soigne</h2>
+          <h2 className="text-2xl font-semibold text-[#173246]">Dépannage plomberie rapide et soigné</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Fuite, probleme d'evacuation, pression instable ou équipement defaillant : AlloStef intervient pour diagnostiquer la panne, securiser l'installation et remettre en service dans les meilleures conditions.
+            Fuite, problème d’évacuation, pression instable ou équipement défaillant : AlloStef intervient pour diagnostiquer la panne, sécuriser l’installation et remettre en service dans les meilleures conditions.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Installation et remplacement de sanitaires</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Pose et remplacement de WC, lavabos, eviers, vasques et robinetterie, avec verifications des raccordements alimentation et evacuation pour un fonctionnement durable.
+            Pose et remplacement de WC, lavabos, éviers, vasques et robinetterie, avec vérifications des raccordements alimentation et évacuation pour un fonctionnement durable.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Recherche de fuite et mise en sécurité</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Detection de fuites d'eau ou de gaz, interventions de mise en sécurité, et recommandations claires pour eviter aggravation, pertes et dommages supplementaires.
+            Détection de fuites d’eau ou de gaz, interventions de mise en sécurité, et recommandations claires pour éviter aggravation, pertes et dommages supplémentaires.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Plomberie pour rénovation de salle de bain</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Reprise ou création des reseaux plomberie dans le cadre d'une rénovation, coordination des autres corps de metier et priorité donnee à la fonctionnalité quotidienne.
+            Reprise ou création des réseaux plomberie dans le cadre d’une rénovation, coordination des autres corps de métier et priorité donnée à la fonctionnalité quotidienne.
           </p>
         </article>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Zone d'intervention en Oise et Val-d'Oise</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Zone d’intervention en Oise et Val-d’Oise</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          AlloStef intervient principalement dans l'Oise et le Val-d'Oise. Consultez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a> pour verifier votre commune, puis presentez votre besoin via la section <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a>.
+          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Consultez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> pour vérifier votre commune, puis présentez votre besoin via la section <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a>.
         </p>
       </section>
 

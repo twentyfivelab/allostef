@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +6,8 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialite | AlloStef",
-  description: "Politique de confidentialite du site AlloStef.",
+  title: "Politique de confidentialité | AlloStef",
+  description: "Politique de confidentialité du site AlloStef.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/politique-de-confidentialite`,
   },
@@ -76,119 +74,119 @@ export default function PolitiqueDeConfidentialitePage() {
 
       <main className="mx-auto w-full max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <Link href="/" className="text-sm font-semibold text-[#397DA9] transition hover:text-[#2F6F98]">
-          Retour à l'accueil
+          Retour à l’accueil
         </Link>
 
-        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Politique de confidentialite</h1>
-        <p className="mt-4 text-sm text-[#5F7484]">Derniere mise a jour: {siteConfig.privacyLastUpdated}</p>
+        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Politique de confidentialité</h1>
+        <p className="mt-4 text-sm text-[#5F7484]">Dernière mise à jour: {siteConfig.privacyLastUpdated}</p>
 
         <section className="mt-10 space-y-8 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Responsable du traitement</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le responsable du traitement est l'activite <strong>{siteConfig.legalEntityName}</strong> (nom commercial du site: <strong>{siteConfig.brandName}</strong>), {siteConfig.legalForm}, SIRET {siteConfig.siret}.<br />
-              Nom et prenom de l'entrepreneur: [NOM ET PRENOM DE L'ENTREPRENEUR A CONFIRMER]<br />
-              Adresse professionnelle: [ADRESSE PROFESSIONNELLE A CONFIRMER]<br />
-              Telephone: {siteConfig.phoneDisplay}<br />
+              Le responsable du traitement est l’activité <strong>{siteConfig.legalEntityName}</strong> (nom commercial du site: <strong>{siteConfig.brandName}</strong>), {siteConfig.legalForm}, SIRET {siteConfig.siret}.<br />
+              Nom et prénom de l’entrepreneur: [NOM ET PRÉNOM DE L’ENTREPRENEUR À CONFIRMER]<br />
+              Adresse professionnelle: [ADRESSE PROFESSIONNELLE À CONFIRMER]<br />
+              Téléphone: {siteConfig.phoneDisplay}<br />
               E-mail: {siteConfig.email}
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Donnees personnelles concernees</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Données personnelles concernées</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site ne propose pas de formulaire en ligne. Les donnees personnelles sont celles que vous transmettez volontairement lors de la prise de contact, notamment par telephone ou par e-mail (identite, coordonnees et contenu de la demande).
+              Le site ne propose pas de formulaire en ligne. Les données personnelles sont celles que vous transmettez volontairement lors de la prise de contact, notamment par téléphone ou par e-mail (identité, coordonnées et contenu de la demande).
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Methodes de collecte</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Méthodes de collecte</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Contact telephonique via les liens tel: presents sur le site.</li>
-              <li>Contact par e-mail via les liens mailto: presents sur le site.</li>
-              <li>Aucun formulaire interne n'est soumis depuis le site a ce jour.</li>
+              <li>Contact téléphonique via les liens tel: présents sur le site.</li>
+              <li>Contact par e-mail via les liens mailto: présents sur le site.</li>
+              <li>Aucun formulaire interne n’est soumis depuis le site à ce jour.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Finalites des traitements</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Finalités des traitements</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Repondre aux demandes entrantes et recontacter les clients.</li>
-              <li>Etudier les besoins et les projets.</li>
-              <li>Etablir des devis et assurer le suivi de la relation commerciale.</li>
-              <li>Respecter les obligations legales et comptables applicables.</li>
+              <li>Répondre aux demandes entrantes et recontacter les clients.</li>
+              <li>Étudier les besoins et les projets.</li>
+              <li>Établir des devis et assurer le suivi de la relation commerciale.</li>
+              <li>Respecter les obligations légales et comptables applicables.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Bases legales</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Bases légales</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Mesures precontractuelles à la demande de la personne concernee (reponse à une demande de devis ou de contact).</li>
-              <li>Execution contractuelle lorsque la demande donne lieu à une prestation.</li>
-              <li>Obligation legale pour les obligations administratives, fiscales et comptables.</li>
-              <li>Interet legitime pour l'organisation, la securisation et le suivi des echanges professionnels.</li>
+              <li>Mesures précontractuelles à la demande de la personne concernée (réponse à une demande de devis ou de contact).</li>
+              <li>Exécution contractuelle lorsque la demande donne lieu à une prestation.</li>
+              <li>Obligation légale pour les obligations administratives, fiscales et comptables.</li>
+              <li>Intérêt légitime pour l’organisation, la sécurisation et le suivi des échanges professionnels.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Caractere obligatoire ou facultatif des informations</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Caractère obligatoire ou facultatif des informations</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les informations strictement nécessaires au traitement de votre demande (moyen de contact, description du besoin, localisation du chantier) sont indispensables pour obtenir une reponse utile. Les autres informations sont facultatives.
+              Les informations strictement nécessaires au traitement de votre demande (moyen de contact, description du besoin, localisation du chantier) sont indispensables pour obtenir une réponse utile. Les autres informations sont facultatives.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Destinataires et sous-traitants</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les donnees sont destinees a {siteConfig.legalEntityName}. Elles peuvent également être traitees par les prestataires techniques nécessaires au fonctionnement du site et des moyens de communication utilises (hebergeur, messagerie), dans la limite de leurs attributions.
+              Les données sont destinées à {siteConfig.legalEntityName}. Elles peuvent également être traitées par les prestataires techniques nécessaires au fonctionnement du site et des moyens de communication utilisés (hébergeur, messagerie), dans la limite de leurs attributions.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Hebergement et eventuels transferts hors de l'Union europeenne</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Hébergement et éventuels transferts hors de l’Union européenne</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site est heberge sur l'infrastructure de Vercel Inc. (Etats-Unis). Selon la configuration technique de l'hebergeur, certaines donnees techniques (ex. journaux de connexion) peuvent transiter ou être traitees hors Union europeenne.
-              Les garanties contractuelles applicables: [GARANTIES DE TRANSFERT A CONFIRMER LE CAS ECHEANT].
+              Le site est hébergé sur l’infrastructure de Vercel Inc. (États-Unis). Selon la configuration technique de l’hébergeur, certaines données techniques (ex. journaux de connexion) peuvent transiter ou être traitées hors Union européenne.
+              Les garanties contractuelles applicables: [GARANTIES DE TRANSFERT À CONFIRMER LE CAS ÉCHÉANT].
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Durees de conservation</h2>
-            <p className="mt-3 leading-7 text-[#5F7484]">[DUREE A CONFIRMER]</p>
+            <h2 className="text-2xl font-semibold text-[#173246]">Durées de conservation</h2>
+            <p className="mt-3 leading-7 text-[#5F7484]">[DURÉE À CONFIRMER]</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Sécurité des donnees</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Sécurité des données</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Des mesures techniques et organisationnelles raisonnables sont mises en oeuvre pour proteger les donnees contre l'acces non autorise, la divulgation, l'alteration ou la destruction.
+              Des mesures techniques et organisationnelles raisonnables sont mises en œuvre pour protéger les données contre l’accès non autorisé, la divulgation, l’altération ou la destruction.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Droits des utilisateurs</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Vous disposez, selon la reglementation applicable, d'un droit d'acces, de rectification, d'effacement, d'opposition et de limitation du traitement de vos donnees personnelles.
+              Vous disposez, selon la réglementation applicable, d’un droit d’accès, de rectification, d’effacement, d’opposition et de limitation du traitement de vos données personnelles.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Exercice des droits</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Pour exercer vos droits, vous pouvez ecrire a: <a href={`mailto:${siteConfig.email}`} className="text-[#397DA9] underline underline-offset-4">{siteConfig.email}</a>.
+              Pour exercer vos droits, vous pouvez écrire à: <a href={`mailto:${siteConfig.email}`} className="text-[#397DA9] underline underline-offset-4">{siteConfig.email}</a>.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Reclamation aupres de la CNIL</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Réclamation auprès de la CNIL</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Si vous estimez que vos droits ne sont pas respectes, vous pouvez introduire une reclamation aupres de la CNIL: <a href="https://www.cnil.fr" className="text-[#397DA9] underline underline-offset-4">https://www.cnil.fr</a>.
+              Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL: <a href="https://www.cnil.fr" className="text-[#397DA9] underline underline-offset-4">https://www.cnil.fr</a>.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Cookies et traceurs</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              D'apres l'audit du code au {siteConfig.privacyLastUpdated}, le site n'embarque pas d'outil de mesure d'audience, de publicite ou de suivi tiers, et ne depose pas de traceur non indispensable. Aucun bandeau de consentement supplementaire n'est active a ce stade.
+              D’après l’audit du code au {siteConfig.privacyLastUpdated}, le site n’embarque pas d’outil de mesure d’audience, de publicité ou de suivi tiers, et ne dépose pas de traceur non indispensable. Aucun bandeau de consentement supplémentaire n’est activé à ce stade.
             </p>
           </div>
 
@@ -197,14 +195,14 @@ export default function PolitiqueDeConfidentialitePage() {
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
               <li>Liens tel: pour initier un appel vers {siteConfig.phoneDisplay}.</li>
               <li>Liens mailto: pour initier un e-mail vers {siteConfig.email}.</li>
-              <li>Hebergement du site par Vercel.</li>
+              <li>Hébergement du site par Vercel.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Mise a jour de la politique</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Mise à jour de la politique</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Cette politique peut evoluer en fonction des changements techniques, legaux ou organisationnels. La date de derniere mise a jour est indiquee en tete de page.
+              Cette politique peut évoluer en fonction des changements techniques, légaux ou organisationnels. La date de dernière mise à jour est indiquée en tête de page.
             </p>
           </div>
         </section>
@@ -217,7 +215,7 @@ export default function PolitiqueDeConfidentialitePage() {
               <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
-              Installation, dépannage et entretien en plomberie, chauffage, électricité, platrerie, carrelage et rénovation intérieure dans l'Oise et le Val-d'Oise.
+              Installation, dépannage et entretien en plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
             </p>
           </div>
           <div>
@@ -229,7 +227,7 @@ export default function PolitiqueDeConfidentialitePage() {
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnees</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnées</p>
             <ul className="mt-4 space-y-2 text-sm text-[#5F7484]">
               <li>
                 <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 transition hover:text-[#397DA9]">
@@ -244,9 +242,9 @@ export default function PolitiqueDeConfidentialitePage() {
         <div className="border-t border-[#DDEFFF] px-4 py-6 text-center text-sm text-[#5F7484] sm:px-6 lg:px-8">
           <p>
             © <span>{new Date().getFullYear()}</span> AlloStef. {" "}
-            <a href="/mentions-legales" className="transition hover:text-[#397DA9]">Mentions legales</a>
+            <a href="/mentions-legales" className="transition hover:text-[#397DA9]">Mentions légales</a>
             {" · "}
-            <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialite</a>
+            <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialité</a>
           </p>
           <p className="mt-1 text-xs text-[#7D93A3]">
             <a

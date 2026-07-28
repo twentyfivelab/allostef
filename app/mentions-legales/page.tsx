@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -76,7 +74,7 @@ export default function MentionsLegalesPage() {
 
       <main className="mx-auto w-full max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <Link href="/" className="text-sm font-semibold text-[#397DA9] transition hover:text-[#2F6F98]">
-          Retour à l'accueil
+          Retour à l’accueil
         </Link>
 
         <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Mentions légales</h1>
@@ -86,12 +84,12 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Éditeur du site</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site est exploité sous le nom commercial <strong>AlloStef</strong>. L'activité professionnelle est exercée par <strong>{siteConfig.legalEntityName}</strong>.
+              Le site est exploité sous le nom commercial <strong>AlloStef</strong>. L’activité professionnelle est exercée par <strong>{siteConfig.legalEntityName}</strong>.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Informations sur l'entreprise</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Informations sur l’entreprise</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
               <li>Activité / entreprise: {siteConfig.legalEntityName}</li>
               <li>Nom commercial: {siteConfig.brandName}</li>
@@ -114,7 +112,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Conception et réalisation du site</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Site vitrine conçu et développé pour l'activité {siteConfig.legalEntityName} exploitée sous le nom commercial AlloStef.
+              Site vitrine conçu et développé pour l’activité {siteConfig.legalEntityName} exploitée sous le nom commercial AlloStef.
             </p>
           </div>
 
@@ -128,14 +126,14 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Responsabilité</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les informations publiées sur ce site sont fournies à titre indicatif. Elles peuvent évoluer et être mises à jour. L'éditeur ne peut garantir l'absence totale d'erreurs ou d'interruptions.
+              Les informations publiées sur ce site sont fournies à titre indicatif. Elles peuvent évoluer et être mises à jour. L’éditeur ne peut garantir l’absence totale d’erreurs ou d’interruptions.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Liens externes</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site peut contenir des liens vers des sites tiers. L'éditeur n'exerce aucun contrôle sur ces contenus et décline toute responsabilité quant à leur disponibilité ou leur politique.
+              Le site peut contenir des liens vers des sites tiers. L’éditeur n’exerce aucun contrôle sur ces contenus et décline toute responsabilité quant à leur disponibilité ou leur politique.
             </p>
           </div>
 
@@ -163,7 +161,7 @@ export default function MentionsLegalesPage() {
               <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
-              Installation, dépannage et entretien en plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l'Oise et le Val-d'Oise.
+              Installation, dépannage et entretien en plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l’Oise et le Val-d’Oise.
             </p>
           </div>
           <div>

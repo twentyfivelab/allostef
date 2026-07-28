@@ -101,12 +101,12 @@ const hasUnexpectedCommune = rawCommunes.some((commune) => {
 });
 
 if (hasUnexpectedCommune) {
-  throw new Error("La liste des communes contient des entrées hors zone d'intervention.");
+  throw new Error("La liste des communes contient des entrées hors zone d’intervention.");
 }
 
 const hasMeru = validatedCommunes.some((commune) => normalize(commune.name) === "meru");
 if (!hasMeru) {
-  throw new Error("La commune de Meru doit figurer dans la zone d'intervention.");
+  throw new Error("La commune de Meru doit figurer dans la zone d’intervention.");
 }
 
 export const serviceAreaCommunes: ServiceAreaCommune[] = validatedCommunes

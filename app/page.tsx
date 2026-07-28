@@ -11,7 +11,7 @@ const serviceCards = [
   {
     title: "Plomberie",
     pageHref: "/plomberie-oise-val-doise",
-    subtitle: "Interventions de plomberie pour le dépannage, l'installation et la rénovation.",
+    subtitle: "Interventions de plomberie pour le dépannage, l’installation et la rénovation.",
     bullets: [
       "Dépannage de plomberie, quelle que soit la nature du problème",
       "Installation et remplacement de WC, éviers, lavabos et vasques",
@@ -27,7 +27,7 @@ const serviceCards = [
   {
     title: "Chauffage",
     pageHref: "/chauffagiste-oise-val-doise",
-    subtitle: "Solutions de chauffage pour l'entretien, le dépannage et le remplacement d'équipements.",
+    subtitle: "Solutions de chauffage pour l’entretien, le dépannage et le remplacement d’équipements.",
     bullets: [
       "Dépannage de systèmes de chauffage",
       "Dépannage et entretien de chaudières de différents types",
@@ -53,8 +53,8 @@ const serviceCards = [
       "Intervention sur les tableaux électriques",
       "Travaux électriques dans le cadre d’une rénovation",
     ],
-    imageSrc: "/images/realizations/realisation-électricité.png",
-    imageAlt: "Travaux d'électricité sur prises, éclairages et tableau électrique",
+    imageSrc: "/images/realizations/realisation-electricite.png",
+    imageAlt: "Travaux d’électricité sur prises, éclairages et tableau électrique",
     cardClass: "border-[#EBCB8C] bg-[linear-gradient(145deg,_#FFFCF5_0%,_#FBEED4_100%)]",
   },
   {
@@ -75,7 +75,7 @@ const serviceCards = [
   {
     title: "Carrelage et faïence",
     pageHref: null,
-    subtitle: "Revêtements et finitions pour les pièces d'eau et les espaces de vie.",
+    subtitle: "Revêtements et finitions pour les pièces d’eau et les espaces de vie.",
     bullets: [
       "Pose de carrelage",
       "Pose de faïence",
@@ -93,7 +93,7 @@ const normalize = (value: string) =>
   value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[\u2019’']/g, "")
+    .replace(/[\u2019’’]/g, "")
     .replace(/[-\s/.,()]/g, "")
     .toLowerCase();
 
@@ -101,7 +101,7 @@ const getSearchVariants = (value: string) => {
   const normalizedSource = value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[\u2019’']/g, " ")
+    .replace(/[\u2019’’]/g, " ")
     .replace(/[-/.,()]/g, " ")
     .toLowerCase()
     .trim()
@@ -374,7 +374,7 @@ export default function Home() {
                     ) : null}
                   </div>
                   <div className="overflow-hidden rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF]">
-                    <div className="relative aspect-[4/3] min-h-[220px] overflow-hidden sm:min-h-[260px]">
+                    <div className="service-visual relative aspect-[4/3] min-h-[220px] sm:min-h-[260px]">
                       <Image
                         src={service.imageSrc}
                         alt={service.imageAlt}

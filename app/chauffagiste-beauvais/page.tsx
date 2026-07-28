@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Chauffagiste Beauvais (60000) | Dépannage et entretien | AlloStef",
   description:
-    "À Beauvais, AlloStef intervient pour dépannage chauffage, entretien de chaudière, remplacement d'équipements et réglage des circuits.",
+    "À Beauvais, AlloStef intervient pour dépannage chauffage, entretien de chaudière, remplacement d’équipements et réglage des circuits.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-beauvais`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Pouvez-vous intervenir en dépannage chauffage à Beauvais ?",
     answer:
-      "Oui. Les pannes de chauffage à Beauvais peuvent être traitees selon disponibilité, avec recherche de cause et solution adaptée.",
+      "Les pannes de chauffage à Beauvais peuvent être traitées selon disponibilité, avec recherche de cause et solution adaptée.",
   },
   {
-    question: "Proposez-vous l'entretien des installations de chauffage ?",
+    question: "Proposez-vous l’entretien des installations de chauffage ?",
     answer:
-      "Oui. L'entretien et les contrôles de fonctionnement permettent de fiabiliser l'installation et d'eviter certaines pannes.",
+      "L’entretien et les contrôles de fonctionnement permettent de fiabiliser l’installation et d’éviter certaines pannes.",
   },
   {
     question: "Intervenez-vous aussi pour remplacement de chaudière ?",
     answer:
-      "Oui. Le remplacement est étudié selon l'etat de votre équipement, vos usages et la configuration du logement.",
+      "Le remplacement est étudié selon l’état de votre équipement, vos usages et la configuration du logement.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function ChauffagisteBeauvaisPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Chauffagiste Beauvais</span>
@@ -85,7 +85,7 @@ export default function ChauffagisteBeauvaisPage() {
           Chauffagiste à Beauvais pour dépannage et entretien soignés
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          À Beauvais, AlloStef intervient sur les installations de chauffage pour remettre en service, entretenir les équipements et etudier les remplacements nécessaires selon votre usage.
+          À Beauvais, AlloStef intervient sur les installations de chauffage pour remettre en service, entretenir les équipements et étudier les remplacements nécessaires selon votre usage.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">

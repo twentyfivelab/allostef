@@ -5,7 +5,7 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Pontoise (95300) | Dépannage et installation électrique | AlloStef",
+  title: "Électricien Pontoise (95300) | Dépannage et installation électrique | AlloStef",
   description:
     "À Pontoise, AlloStef intervient pour dépannage électrique, prises, éclairages, tableau électrique et travaux de rénovation.",
   alternates: {
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Pontoise pour une panne électrique ?",
     answer:
-      "Oui. Les interventions à Pontoise sont traitees selon disponibilité avec diagnostic de la panne et remise en service en sécurité.",
+      "Les interventions à Pontoise sont traitées selon disponibilité avec diagnostic de la panne et remise en service en sécurité.",
   },
   {
     question: "Pouvez-vous remplacer un tableau électrique à Pontoise ?",
     answer:
-      "Oui. Un contrôle est realise puis une solution d'adaptation ou de remplacement est proposee selon l'installation existante.",
+      "Un contrôle est réalisé puis une solution d’adaptation ou de remplacement est proposée selon l’installation existante.",
   },
   {
-    question: "Realisez-vous les travaux électriques lors d'une rénovation ?",
+    question: "Réalisez-vous les travaux électriques lors d’une rénovation ?",
     answer:
-      "Oui. AlloStef peut integrer l'électricité à une rénovation pour ameliorer fonctionnalité, confort et fiabilité des usages.",
+      "AlloStef peut intégrer l’électricité à une rénovation pour améliorer fonctionnalité, confort et fiabilité des usages.",
   },
 ];
 
@@ -38,11 +38,11 @@ export default function ElectricienPontoisePage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-pontoise#service`,
-        name: "Electricien à Pontoise",
+        name: "Électricien à Pontoise",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Pontoise" },
-          { "@type": "AdministrativeArea", name: "Val-d'Oise" },
+          { "@type": "AdministrativeArea", name: "Val-d’Oise" },
         ],
         serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-pontoise`,
@@ -61,7 +61,7 @@ export default function ElectricienPontoisePage() {
         "@id": `${siteConfig.siteUrl}/electricien-pontoise#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Accueil", item: siteConfig.siteUrl },
-          { "@type": "ListItem", position: 2, name: "Electricien Pontoise", item: `${siteConfig.siteUrl}/electricien-pontoise` },
+          { "@type": "ListItem", position: 2, name: "Électricien Pontoise", item: `${siteConfig.siteUrl}/electricien-pontoise` },
         ],
       },
     ],
@@ -73,16 +73,16 @@ export default function ElectricienPontoisePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
-        <span>Electricien Pontoise</span>
+        <span>Électricien Pontoise</span>
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Pontoise (95300) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien à Pontoise pour dépannage, installation et modernisation
+          Électricien à Pontoise pour dépannage, installation et modernisation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
           AlloStef accompagne les besoins électriques à Pontoise: dépannage, remplacement de prises et éclairages, intervention sur tableau et adaptation des circuits en rénovation.

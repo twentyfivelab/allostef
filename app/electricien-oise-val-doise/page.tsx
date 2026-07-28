@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Oise et Val-d'Oise | Dépannage et rénovation électrique | AlloStef",
+  title: "Électricien Oise et Val-d’Oise | Dépannage et rénovation électrique | AlloStef",
   description:
-    "Besoin d'un electricien dans l'Oise ou le Val-d'Oise ? AlloStef intervient pour dépannage, prises, éclairages, tableau électrique et travaux de rénovation en toute fiabilité.",
+    "Besoin d’un électricien dans l’Oise ou le Val-d’Oise ? AlloStef intervient pour dépannage, prises, éclairages, tableau électrique et travaux de rénovation en toute fiabilité.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/electricien-oise-val-doise`,
   },
@@ -17,27 +17,27 @@ const faqItems = [
   {
     question: "Intervenez-vous pour une panne partielle ou totale ?",
     answer:
-      "Oui. AlloStef intervient pour diagnostiquer l'origine de la panne et remettre l'installation en etat de fonctionnement en sécurité.",
+      "AlloStef intervient pour diagnostiquer l’origine de la panne et remettre l’installation en état de fonctionnement en sécurité.",
   },
   {
     question: "Pouvez-vous moderniser un tableau électrique ?",
     answer:
-      "Oui. Le tableau peut être adapte ou remplace selon l'etat de l'installation et les besoins en sécurité et en distribution.",
+      "Le tableau peut être adapté ou remplacé selon l’état de l’installation et les besoins en sécurité et en distribution.",
   },
   {
     question: "Faites-vous les travaux électriques en rénovation ?",
     answer:
-      "Oui. Les travaux électriques peuvent être integres à une rénovation partielle ou globale en coordination avec les autres interventions.",
+      "Les travaux électriques peuvent être intégrés à une rénovation partielle ou globale en coordination avec les autres interventions.",
   },
   {
     question: "Comment obtenir un devis électricité ?",
     answer:
-      "Il suffit d'expliquer votre besoin par telephone ou e-mail. Une etude est realisee pour fournir un devis clair et adapte au projet.",
+      "Il suffit d’expliquer votre besoin par téléphone ou e-mail. Une étude est réalisée pour fournir un devis clair et adapté au projet.",
   },
   {
     question: "Travaillez-vous pour particuliers et professionnels ?",
     answer:
-      "Oui. AlloStef accompagne les particuliers comme les professionnels dans l'Oise et le Val-d'Oise.",
+      "AlloStef accompagne les particuliers comme les professionnels dans l’Oise et le Val-d’Oise.",
   },
 ];
 
@@ -48,11 +48,11 @@ export default function ElectricitePage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-oise-val-doise#service`,
-        name: "Électricité dans l'Oise et le Val-d'Oise",
+        name: "Électricité dans l’Oise et le Val-d’Oise",
         provider: {
           "@id": `${siteConfig.siteUrl}/#organization`,
         },
-        areaServed: [{ "@type": "AdministrativeArea", name: "Oise" }, { "@type": "AdministrativeArea", name: "Val-d'Oise" }],
+        areaServed: [{ "@type": "AdministrativeArea", name: "Oise" }, { "@type": "AdministrativeArea", name: "Val-d’Oise" }],
         serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-oise-val-doise`,
       },
@@ -85,7 +85,7 @@ export default function ElectricitePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Électricité</span>
@@ -93,13 +93,13 @@ export default function ElectricitePage() {
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">
-          Electricien Oise et Val-d'Oise
+          Électricien Oise et Val-d’Oise
         </p>
         <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Électricité dans l'Oise et le Val-d'Oise : dépannage, installation et rénovation
+          Électricité dans l’Oise et le Val-d’Oise : dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef realise les travaux électriques indispensables au bon fonctionnement du logement : dépannage, prise et éclairage, intervention sur tableau électrique et adaptation en rénovation.
+          AlloStef réalise les travaux électriques indispensables au bon fonctionnement du logement : dépannage, prise et éclairage, intervention sur tableau électrique et adaptation en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -116,33 +116,33 @@ export default function ElectricitePage() {
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Dépannage électrique du quotidien</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Recherche de panne, remise en fonctionnement et contrôles de sécurité pour retablir l'usage normal de l'installation.
+            Recherche de panne, remise en fonctionnement et contrôles de sécurité pour rétablir l’usage normal de l’installation.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Installation et remplacement de prises et éclairages</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Pose ou remplacement d'équipements électriques avec attention portee au confort d'usage et à la fiabilité des branchements.
+            Pose ou remplacement d’équipements électriques avec attention portée au confort d’usage et à la fiabilité des branchements.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Intervention sur tableau électrique</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Diagnostic du tableau, ajustement de la distribution et securisation des circuits selon la configuration de votre bien.
+            Diagnostic du tableau, ajustement de la distribution et sécurisation des circuits selon la configuration de votre bien.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Électricité pour rénovation intérieure</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Integration des travaux électriques dans un projet de rénovation pour une installation plus pratique, plus sure et mieux adaptée aux usages.
+            Intégration des travaux électriques dans un projet de rénovation pour une installation plus pratique, plus sûre et mieux adaptée aux usages.
           </p>
         </article>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Zone d'intervention en Oise et Val-d'Oise</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Zone d’intervention en Oise et Val-d’Oise</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          AlloStef intervient principalement dans l'Oise et le Val-d'Oise. Utilisez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a> pour verifier votre secteur et la section <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a> pour presenter votre besoin.
+          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Utilisez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> pour vérifier votre secteur et la section <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a> pour présenter votre besoin.
         </p>
       </section>
 

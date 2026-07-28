@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Chauffagiste Meru (60110) | Dépannage et entretien chauffage | AlloStef",
   description:
-    "AlloStef intervient à Meru pour dépannage chauffage, entretien de chaudière, remplacement d'équipements et ajustement des circuits.",
+    "AlloStef intervient à Meru pour dépannage chauffage, entretien de chaudière, remplacement d’équipements et ajustement des circuits.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-meru`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous pour une panne de chauffage à Meru ?",
     answer:
-      "Oui. Les pannes de chauffage à Meru sont traitees selon disponibilité et priorité, avec diagnostic et remise en service si possible.",
+      "Les pannes de chauffage à Meru sont traitées selon disponibilité et priorité, avec diagnostic et remise en service si possible.",
   },
   {
-    question: "Faites-vous l'entretien de chaudière à Meru ?",
+    question: "Faites-vous l’entretien de chaudière à Meru ?",
     answer:
-      "Oui. AlloStef realise l'entretien et les contrôles de base pour maintenir le confort et limiter les pannes recurrentes.",
+      "AlloStef réalise l’entretien et les contrôles de base pour maintenir le confort et limiter les pannes récurrentes.",
   },
   {
-    question: "Pouvez-vous remplacer une chaudière ou un ballon d'eau chaude ?",
+    question: "Pouvez-vous remplacer une chaudière ou un ballon d’eau chaude ?",
     answer:
-      "Oui. Le remplacement peut être étudié selon l'etat de l'installation et les besoins de votre logement.",
+      "Le remplacement peut être étudié selon l’état de l’installation et les besoins de votre logement.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function ChauffagisteMeruPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Chauffagiste Meru</span>
@@ -85,7 +85,7 @@ export default function ChauffagisteMeruPage() {
           Chauffagiste à Meru pour dépannage, entretien et remplacement
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient à Meru pour le chauffage: dépannage, entretien de chaudière, remplacement de ballon d'eau chaude et adaptation de circuits. L'objectif est de retablir rapidement un confort durable.
+          AlloStef intervient à Meru pour le chauffage: dépannage, entretien de chaudière, remplacement de ballon d’eau chaude et adaptation de circuits. L’objectif est de rétablir rapidement un confort durable.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -103,7 +103,7 @@ export default function ChauffagisteMeruPage() {
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
           <li>Dépannage de systèmes de chauffage</li>
           <li>Entretien et suivi de chaudière</li>
-          <li>Remplacement de chaudière et ballon d'eau chaude</li>
+          <li>Remplacement de chaudière et ballon d’eau chaude</li>
           <li>Adaptation de circuits et radiateurs</li>
         </ul>
       </section>

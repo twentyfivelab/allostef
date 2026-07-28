@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Plombier Meru (60110) | Dépannage et installation | AlloStef",
   description:
-    "AlloStef intervient à Meru pour le dépannage plomberie, la recherche de fuite, l'installation sanitaire et la rénovation. Devis clair et intervention soignee.",
+    "AlloStef intervient à Meru pour le dépannage plomberie, la recherche de fuite, l’installation sanitaire et la rénovation. Devis clair et intervention soignée.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/plombier-meru`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous rapidement à Meru en cas de fuite ?",
     answer:
-      "Oui, selon disponibilité. AlloStef étudié en priorité les demandes urgentes à Meru pour limiter les degats et securiser l'installation.",
+      "Selon disponibilité, AlloStef étudie en priorité les demandes urgentes à Meru pour limiter les dégâts et sécuriser l’installation.",
   },
   {
     question: "Prenez-vous en charge les remplacements de sanitaires à Meru ?",
     answer:
-      "Oui. WC, lavabo, robinetterie, raccordements et evacuations peuvent être remplaces ou adaptés selon votre configuration.",
+      "WC, lavabo, robinetterie, raccordements et évacuations peuvent être remplacés ou adaptés selon votre configuration.",
   },
   {
     question: "Puis-je demander un devis pour une rénovation de salle de bain à Meru ?",
     answer:
-      "Oui. Un devis detaille peut être etabli apres etude de votre projet, des contraintes techniques et du niveau de finition souhaite.",
+      "Un devis détaillé peut être établi après étude de votre projet, des contraintes techniques et du niveau de finition souhaité.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function PlombierMeruPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Plombier Meru</span>
@@ -85,7 +85,7 @@ export default function PlombierMeruPage() {
           Plombier à Meru pour dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef accompagne les habitants et professionnels de Meru pour leurs besoins en plomberie : fuite d'eau, remplacement sanitaire, raccordements et travaux de rénovation. Chaque intervention est preparee avec une approche claire, fiable et adaptée à votre situation.
+          AlloStef accompagne les habitants et professionnels de Meru pour leurs besoins en plomberie : fuite d’eau, remplacement sanitaire, raccordements et travaux de rénovation. Chaque intervention est préparée avec une approche claire, fiable et adaptée à votre situation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -102,9 +102,9 @@ export default function PlombierMeruPage() {
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Interventions fréquentes à Meru</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-            <li>Dépannage fuite, chasse d'eau, evacuation et robinetterie</li>
+            <li>Dépannage fuite, chasse d’eau, évacuation et robinetterie</li>
             <li>Installation et remplacement de sanitaires</li>
-            <li>Recherche de fuite d'eau ou de gaz</li>
+            <li>Recherche de fuite d’eau ou de gaz</li>
             <li>Travaux plomberie en rénovation de salle de bain</li>
           </ul>
         </article>
@@ -114,7 +114,7 @@ export default function PlombierMeruPage() {
             Selon disponibilité, les interventions peuvent aussi être étudiées sur les secteurs proches de Meru comme Amblainville, Andeville, Bornel et Chambly.
           </p>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Verifiez votre commune dans la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a>.
+            Vérifiez votre commune dans la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a>.
           </p>
         </article>
       </section>
@@ -132,7 +132,7 @@ export default function PlombierMeruPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Services complementaires</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Services complémentaires</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
           Selon votre besoin, consultez aussi <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
         </p>

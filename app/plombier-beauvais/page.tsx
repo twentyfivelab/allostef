@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Pouvez-vous intervenir en plomberie sur Beauvais et sa peripherie ?",
+    question: "Pouvez-vous intervenir en plomberie sur Beauvais et sa périphérie ?",
     answer:
-      "Oui. Les demandes sur Beauvais et les alentours peuvent être traitees selon disponibilité et priorité des interventions.",
+      "Les demandes sur Beauvais et les alentours peuvent être traitées selon disponibilité et priorité des interventions.",
   },
   {
-    question: "Faites-vous le remplacement de ballon d'eau chaude et raccordements ?",
+    question: "Faites-vous le remplacement de ballon d’eau chaude et raccordements ?",
     answer:
-      "Oui. Le remplacement et les raccordements associes peuvent être pris en charge avec contrôle du bon fonctionnement.",
+      "Le remplacement et les raccordements associés peuvent être pris en charge avec contrôle du bon fonctionnement.",
   },
   {
     question: "Prenez-vous en charge les projets de salle de bain à Beauvais ?",
     answer:
-      "Oui. Les travaux de plomberie pour rénovation de salle de bain sont étudiés avec une vision complete de l'installation.",
+      "Les travaux de plomberie pour rénovation de salle de bain sont étudiés avec une vision complète de l’installation.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function PlombierBeauvaisPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Plombier Beauvais</span>
@@ -82,10 +82,10 @@ export default function PlombierBeauvaisPage() {
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Beauvais (60000) - Oise</p>
         <h1 className="mt-4 max-w-[18ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Plombier à Beauvais pour dépannage et travaux d'installation
+          Plombier à Beauvais pour dépannage et travaux d’installation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          À Beauvais, AlloStef intervient sur les besoins de plomberie du quotidien et les projets plus complets : dépannage, remplacement d'équipements sanitaires, recherche de fuite et adaptation des reseaux en rénovation.
+          À Beauvais, AlloStef intervient sur les besoins de plomberie du quotidien et les projets plus complets : dépannage, remplacement d’équipements sanitaires, recherche de fuite et adaptation des réseaux en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -100,10 +100,10 @@ export default function PlombierBeauvaisPage() {
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Besoins traités regulierement</h2>
+          <h2 className="text-2xl font-semibold text-[#173246]">Besoins traités régulièrement</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-            <li>Fuites d'eau, robinets et mecanismes de chasse</li>
-            <li>Problemes d'alimentation et d'evacuation</li>
+            <li>Fuites d’eau, robinets et mécanismes de chasse</li>
+            <li>Problèmes d’alimentation et d’évacuation</li>
             <li>Remplacement de sanitaires et raccordements</li>
             <li>Reprise de plomberie dans un projet de rénovation</li>
           </ul>
@@ -111,10 +111,10 @@ export default function PlombierBeauvaisPage() {
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Beauvais et communes proches</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Les interventions peuvent aussi être étudiées autour de Beauvais, notamment vers Tille, Allonne, Saint-Paul et Goincourt, selon les besoins et les délais.
+            Les interventions peuvent aussi être étudiées autour de Beauvais, notamment vers Tillé, Allonne, Saint-Paul et Goincourt, selon les besoins et les délais.
           </p>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Consultez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a> pour confirmer votre secteur.
+            Consultez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> pour confirmer votre secteur.
           </p>
         </article>
       </section>
@@ -132,9 +132,9 @@ export default function PlombierBeauvaisPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Services complementaires</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Services complémentaires</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Si votre besoin depasse la plomberie, consultez aussi <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
+          Si votre besoin dépasse la plomberie, consultez aussi <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
         </p>
       </section>
     </main>

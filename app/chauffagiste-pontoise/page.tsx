@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Chauffagiste Pontoise (95300) | Dépannage et entretien chauffage | AlloStef",
   description:
-    "AlloStef intervient à Pontoise pour dépannage chauffage, entretien de chaudière, remplacement d'équipements et ajustement des circuits.",
+    "AlloStef intervient à Pontoise pour dépannage chauffage, entretien de chaudière, remplacement d’équipements et ajustement des circuits.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-pontoise`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Pontoise pour une panne de chauffage ?",
     answer:
-      "Oui. Les pannes de chauffage à Pontoise sont traitees selon disponibilité avec diagnostic et solution adaptée à l'installation.",
+      "Les pannes de chauffage à Pontoise sont traitées selon disponibilité avec diagnostic et solution adaptée à l’installation.",
   },
   {
-    question: "Proposez-vous l'entretien de chaudière à Pontoise ?",
+    question: "Proposez-vous l’entretien de chaudière à Pontoise ?",
     answer:
-      "Oui. L'entretien regulier de chaudière est realise pour fiabiliser le chauffage et reduire les risques de panne.",
+      "L’entretien régulier de chaudière est réalisé pour fiabiliser le chauffage et réduire les risques de panne.",
   },
   {
-    question: "Pouvez-vous remplacer un ballon d'eau chaude ou une chaudière ?",
+    question: "Pouvez-vous remplacer un ballon d’eau chaude ou une chaudière ?",
     answer:
-      "Oui. Le remplacement est étudié selon l'etat de l'équipement et la configuration de votre logement.",
+      "Le remplacement est étudié selon l’état de l’équipement et la configuration de votre logement.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function ChauffagistePontoisePage() {
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Pontoise" },
-          { "@type": "AdministrativeArea", name: "Val-d'Oise" },
+          { "@type": "AdministrativeArea", name: "Val-d’Oise" },
         ],
         serviceType: "Dépannage, entretien et remplacement chauffage",
         url: `${siteConfig.siteUrl}/chauffagiste-pontoise`,
@@ -73,7 +73,7 @@ export default function ChauffagistePontoisePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Chauffagiste Pontoise</span>
@@ -85,7 +85,7 @@ export default function ChauffagistePontoisePage() {
           Chauffagiste à Pontoise pour dépannage, entretien et remplacement
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          À Pontoise, AlloStef intervient pour vos besoins en chauffage: dépannage, entretien de chaudière, remplacement d'équipements et ajustement des circuits pour un confort durable.
+          À Pontoise, AlloStef intervient pour vos besoins en chauffage: dépannage, entretien de chaudière, remplacement d’équipements et ajustement des circuits pour un confort durable.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -103,7 +103,7 @@ export default function ChauffagistePontoisePage() {
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
           <li>Dépannage de systèmes de chauffage</li>
           <li>Entretien et suivi de chaudière</li>
-          <li>Remplacement de chaudière et ballon d'eau chaude</li>
+          <li>Remplacement de chaudière et ballon d’eau chaude</li>
           <li>Ajustement de circuits et radiateurs</li>
         </ul>
       </section>

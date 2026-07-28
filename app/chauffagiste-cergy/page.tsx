@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Chauffagiste Cergy (95000) | Dépannage et entretien chauffage | AlloStef",
   description:
-    "Intervention chauffage à Cergy: dépannage, entretien de chaudière, remplacement d'équipements et optimisation des circuits avec AlloStef.",
+    "Intervention chauffage à Cergy: dépannage, entretien de chaudière, remplacement d’équipements et optimisation des circuits avec AlloStef.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-cergy`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Cergy pour une panne de chauffage ?",
     answer:
-      "Oui. Les interventions à Cergy sont étudiées selon disponibilité avec un diagnostic clair et une solution adaptée.",
+      "Les interventions à Cergy sont étudiées selon disponibilité avec un diagnostic clair et une solution adaptée.",
   },
   {
-    question: "Pouvez-vous assurer l'entretien de chaudière à Cergy ?",
+    question: "Pouvez-vous assurer l’entretien de chaudière à Cergy ?",
     answer:
-      "Oui. L'entretien permet d'ameliorer la fiabilité du chauffage et de reduire le risque de panne en saison froide.",
+      "L’entretien permet d’améliorer la fiabilité du chauffage et de réduire le risque de panne en saison froide.",
   },
   {
     question: "Intervenez-vous sur radiateurs et circuits de chauffage ?",
     answer:
-      "Oui. AlloStef peut ajuster et adapter les circuits ainsi que les radiateurs selon la configuration du logement.",
+      "AlloStef peut ajuster et adapter les circuits ainsi que les radiateurs selon la configuration du logement.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function ChauffagisteCergyPage() {
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Cergy" },
-          { "@type": "AdministrativeArea", name: "Val-d'Oise" },
+          { "@type": "AdministrativeArea", name: "Val-d’Oise" },
         ],
         serviceType: "Dépannage, entretien et remplacement chauffage",
         url: `${siteConfig.siteUrl}/chauffagiste-cergy`,
@@ -73,7 +73,7 @@ export default function ChauffagisteCergyPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Chauffagiste Cergy</span>
@@ -85,7 +85,7 @@ export default function ChauffagisteCergyPage() {
           Chauffagiste à Cergy pour dépannage, entretien et remplacement
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient à Cergy pour vos besoins en chauffage: dépannage, entretien, remplacement d'équipements et adaptation de circuits pour un confort maîtrisé.
+          AlloStef intervient à Cergy pour vos besoins en chauffage: dépannage, entretien, remplacement d’équipements et adaptation de circuits pour un confort maîtrisé.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -103,7 +103,7 @@ export default function ChauffagisteCergyPage() {
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
           <li>Dépannage de chauffage et diagnostic de panne</li>
           <li>Entretien de chaudière</li>
-          <li>Remplacement d'équipements chauffage</li>
+          <li>Remplacement d’équipements chauffage</li>
           <li>Ajustement de radiateurs et circuits</li>
         </ul>
       </section>

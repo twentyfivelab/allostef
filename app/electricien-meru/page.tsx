@@ -5,7 +5,7 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Meru (60110) | Dépannage et rénovation électrique | AlloStef",
+  title: "Électricien Meru (60110) | Dépannage et rénovation électrique | AlloStef",
   description:
     "AlloStef intervient à Meru pour dépannage électrique, remplacement de prises, éclairages, tableau électrique et travaux de rénovation.",
   alternates: {
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Meru pour une panne électrique ?",
     answer:
-      "Oui. Les pannes électriques à Meru sont traitees selon disponibilité, avec diagnostic de l'origine et remise en service en sécurité.",
+      "Les pannes électriques à Meru sont traitées selon disponibilité, avec diagnostic de l’origine et remise en service en sécurité.",
   },
   {
     question: "Pouvez-vous remplacer prises et interrupteurs à Meru ?",
     answer:
-      "Oui. Le remplacement de prises, interrupteurs et points d'éclairage peut être realise selon l'etat de l'installation.",
+      "Le remplacement de prises, interrupteurs et points d’éclairage peut être réalisé selon l’état de l’installation.",
   },
   {
-    question: "Realisez-vous les travaux électriques en rénovation ?",
+    question: "Réalisez-vous les travaux électriques en rénovation ?",
     answer:
-      "Oui. AlloStef integre les travaux électriques dans un projet de rénovation partielle ou complete, avec approche adaptée au logement.",
+      "AlloStef intègre les travaux électriques dans un projet de rénovation partielle ou complète, avec approche adaptée au logement.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ElectricienMeruPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-meru#service`,
-        name: "Electricien à Meru",
+        name: "Électricien à Meru",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Meru" },
@@ -61,7 +61,7 @@ export default function ElectricienMeruPage() {
         "@id": `${siteConfig.siteUrl}/electricien-meru#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Accueil", item: siteConfig.siteUrl },
-          { "@type": "ListItem", position: 2, name: "Electricien Meru", item: `${siteConfig.siteUrl}/electricien-meru` },
+          { "@type": "ListItem", position: 2, name: "Électricien Meru", item: `${siteConfig.siteUrl}/electricien-meru` },
         ],
       },
     ],
@@ -73,16 +73,16 @@ export default function ElectricienMeruPage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
-        <span>Electricien Meru</span>
+        <span>Électricien Meru</span>
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Meru (60110) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien à Meru pour dépannage, installation et rénovation
+          Électricien à Meru pour dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
           AlloStef intervient à Meru pour vos besoins en électricité: recherche de panne, remplacement de prises et éclairages, intervention sur tableau électrique et adaptation des circuits.

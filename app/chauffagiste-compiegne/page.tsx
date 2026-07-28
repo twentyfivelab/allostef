@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Chauffagiste Compiègne (60200) | Dépannage et entretien chauffage | AlloStef",
   description:
-    "AlloStef intervient à Compiègne pour dépannage chauffage, entretien de chaudière, remplacement d'équipements et adaptation des circuits.",
+    "AlloStef intervient à Compiègne pour dépannage chauffage, entretien de chaudière, remplacement d’équipements et adaptation des circuits.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-compiegne`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous à Compiègne pour une panne de chauffage ?",
     answer:
-      "Oui. Les interventions chauffage à Compiègne sont étudiées selon disponibilité avec diagnostic et remise en service adaptée.",
+      "Les interventions chauffage à Compiègne sont étudiées selon disponibilité avec diagnostic et remise en service adaptée.",
   },
   {
     question: "Pouvez-vous entretenir ma chaudière à Compiègne ?",
     answer:
-      "Oui. L'entretien et les contrôles de chaudière sont realises pour fiabiliser l'installation et reduire les pannes.",
+      "L’entretien et les contrôles de chaudière sont réalisés pour fiabiliser l’installation et réduire les pannes.",
   },
   {
     question: "Proposez-vous le remplacement de chaudière ou de ballon ?",
     answer:
-      "Oui. Le remplacement d'équipements est étudié selon l'etat du systeme et les besoins du logement.",
+      "Le remplacement d’équipements est étudié selon l’état du système et les besoins du logement.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function ChauffagisteCompiegnePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Chauffagiste Compiègne</span>
@@ -85,7 +85,7 @@ export default function ChauffagisteCompiegnePage() {
           Chauffagiste à Compiègne pour dépannage, entretien et remplacement
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient à Compiègne pour le chauffage: dépannage, entretien de chaudière, remplacement de ballon d'eau chaude et adaptation des circuits selon vos besoins.
+          AlloStef intervient à Compiègne pour le chauffage: dépannage, entretien de chaudière, remplacement de ballon d’eau chaude et adaptation des circuits selon vos besoins.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -103,7 +103,7 @@ export default function ChauffagisteCompiegnePage() {
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
           <li>Dépannage de systèmes de chauffage</li>
           <li>Entretien et suivi de chaudière</li>
-          <li>Remplacement de chaudière et ballon d'eau chaude</li>
+          <li>Remplacement de chaudière et ballon d’eau chaude</li>
           <li>Ajustement de circuits et radiateurs</li>
         </ul>
       </section>

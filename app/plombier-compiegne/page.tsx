@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Plombier Compiègne (60200) | Dépannage et rénovation | AlloStef",
   description:
-    "AlloStef intervient à Compiègne pour le dépannage plomberie, l'installation sanitaire, la recherche de fuite et les travaux de rénovation intérieure.",
+    "AlloStef intervient à Compiègne pour le dépannage plomberie, l’installation sanitaire, la recherche de fuite et les travaux de rénovation intérieure.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/plombier-compiegne`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Intervenez-vous pour des dépannages plomberie à Compiègne ?",
     answer:
-      "Oui. AlloStef traite les demandes de dépannage plomberie à Compiègne selon disponibilité et niveau d'urgence.",
+      "AlloStef traite les demandes de dépannage plomberie à Compiègne selon disponibilité et niveau d’urgence.",
   },
   {
     question: "Pouvez-vous intervenir dans un logement ancien à Compiègne ?",
     answer:
-      "Oui. Les interventions sont adaptées aux contraintes des installations existantes, avec solutions claires avant engagement.",
+      "Les interventions sont adaptées aux contraintes des installations existantes, avec solutions claires avant engagement.",
   },
   {
     question: "Faites-vous aussi les projets de rénovation de salle de bain ?",
     answer:
-      "Oui. La plomberie de salle de bain peut être renovee de maniere complete avec coordination des metiers utiles au projet.",
+      "La plomberie de salle de bain peut être rénovée de manière complète avec coordination des métiers utiles au projet.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function PlombierCompiegnePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d'ariane" className="text-sm text-[#5F7484]">
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
         <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
         <span> · </span>
         <span>Plombier Compiègne</span>
@@ -102,8 +102,8 @@ export default function PlombierCompiegnePage() {
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Interventions courantes</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-            <li>Fuite d'eau, robinetterie, chasses d'eau et evacuations</li>
-            <li>Raccordements et remplacements d'équipements sanitaires</li>
+            <li>Fuite d’eau, robinetterie, chasses d’eau et évacuations</li>
+            <li>Raccordements et remplacements d’équipements sanitaires</li>
             <li>Recherche de fuite et mise en sécurité</li>
             <li>Travaux de plomberie en rénovation de salle de bain</li>
           </ul>
@@ -111,10 +111,10 @@ export default function PlombierCompiegnePage() {
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Compiègne et alentours</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Les interventions peuvent également être étudiées autour de Compiègne vers Margny-les-Compiègne, Venette, Jaux et Lacroix-Saint-Ouen.
+            Les interventions peuvent également être étudiées autour de Compiègne vers Margny-lès-Compiègne, Venette, Jaux et Lacroix-Saint-Ouen.
           </p>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Verifiez votre secteur sur la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a>.
+            Vérifiez votre secteur sur la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a>.
           </p>
         </article>
       </section>
@@ -132,7 +132,7 @@ export default function PlombierCompiegnePage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Services complementaires</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Services complémentaires</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
           Vous pouvez aussi consulter <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link> selon votre besoin.
         </p>
