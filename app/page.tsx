@@ -10,6 +10,7 @@ import { PhoneIcon } from "@/components/phone-icon";
 const serviceCards = [
   {
     title: "Plomberie",
+    pageHref: "/plomberie-oise-val-doise",
     subtitle: "Interventions de plomberie pour le dépannage, l'installation et la rénovation.",
     bullets: [
       "Dépannage de plomberie, quelle que soit la nature du problème",
@@ -25,6 +26,7 @@ const serviceCards = [
   },
   {
     title: "Chauffage",
+    pageHref: "/chauffagiste-oise-val-doise",
     subtitle: "Solutions de chauffage pour l'entretien, le dépannage et le remplacement d'équipements.",
     bullets: [
       "Dépannage de systèmes de chauffage",
@@ -42,6 +44,7 @@ const serviceCards = [
   },
   {
     title: "Électricité",
+    pageHref: "/electricien-oise-val-doise",
     subtitle: "Travaux électriques adaptés aux besoins du logement et des rénovations.",
     bullets: [
       "Dépannage électrique",
@@ -56,6 +59,7 @@ const serviceCards = [
   },
   {
     title: "Plâtrerie",
+    pageHref: null,
     subtitle: "Travaux de plâtrerie intérieure pour structurer et préparer les espaces.",
     bullets: [
       "Création de cloisons",
@@ -70,6 +74,7 @@ const serviceCards = [
   },
   {
     title: "Carrelage et faïence",
+    pageHref: null,
     subtitle: "Revêtements et finitions pour les pièces d'eau et les espaces de vie.",
     bullets: [
       "Pose de carrelage",
@@ -360,6 +365,13 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
+                    {service.pageHref ? (
+                      <p className="mt-4 text-sm font-semibold">
+                        <a href={service.pageHref} className="text-[#397DA9] transition hover:text-[#2F6F98]">
+                          En savoir plus sur {service.title.toLowerCase()}
+                        </a>
+                      </p>
+                    ) : null}
                   </div>
                   <div className="overflow-hidden rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF]">
                     <div className="relative aspect-[4/3] min-h-[220px] overflow-hidden sm:min-h-[260px]">
