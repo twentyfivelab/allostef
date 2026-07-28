@@ -164,7 +164,7 @@ export default function ChauffagePage() {
           Pour un besoin connexe, consultez la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">plomberie</Link> ou la page <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">electricite</Link>.
         </p>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link> et <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>.
+          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/chauffagiste-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
         </p>
       </section>
     </main>

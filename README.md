@@ -34,3 +34,38 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## SEO Runbook (Production)
+
+### 1) Deploy and Submit Sitemap
+
+1. Deploy the latest main branch.
+2. Confirm these URLs are live and return 200:
+	- `https://allostef.fr/sitemap.xml`
+	- `https://allostef.fr/robots.txt`
+3. In Google Search Console:
+	- Add/verify property `https://allostef.fr`
+	- Submit `https://allostef.fr/sitemap.xml`
+	- Request indexing for new local pages (priority):
+	  - `/chauffagiste-pontoise`, `/chauffagiste-compiegne`
+	  - `/electricien-meru`, `/electricien-beauvais`, `/electricien-cergy`, `/electricien-pontoise`, `/electricien-compiegne`
+
+### 2) Local Authority (Off-site)
+
+1. Optimize Google Business Profile (categories, services, service areas, photos).
+2. Acquire reviews continuously with city + service context when natural.
+3. Create/clean citations on trusted local directories (same NAP format everywhere).
+4. Build local backlinks (partners, city/community sites, supplier pages).
+
+### 3) Weekly SEO Monitoring (8 weeks)
+
+1. In Search Console, track for each new URL:
+	- indexed status
+	- impressions
+	- average position
+	- CTR
+2. If a page is indexed but low-visibility after 3-4 weeks:
+	- add 2-3 new internal links from relevant pages
+	- expand FAQ by 2 real-world questions
+	- strengthen title/description with clearer local intent
+3. Keep sitemap and internal links aligned with every new page.

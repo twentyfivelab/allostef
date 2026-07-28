@@ -119,6 +119,13 @@ export default function ChauffagisteBeauvaisPage() {
           ))}
         </div>
       </section>
+
+      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes chauffage</h2>
+        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+          Consultez aussi: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/chauffagiste-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+        </p>
+      </section>
     </main>
   );
 }
