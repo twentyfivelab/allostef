@@ -80,20 +80,6 @@ const serviceCards = [
     imageAlt: "Pose de carrelage et de faïence avec finitions soignées",
     cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
   },
-  {
-    title: "Rénovation intérieure",
-    subtitle: "Accompagnement global pour les projets de rénovation intérieure.",
-    bullets: [
-      "Rénovation de pièces intérieures",
-      "Création et rénovation de salles de bain",
-      "Coordination de plusieurs corps de métier",
-      "Remise en état des murs, sols et équipements",
-      "Accompagnement pour les projets de rénovation",
-    ],
-    imageSrc: "/images/realizations/realisation-renovation-interieure.png",
-    imageAlt: "Rénovation intérieure avec coordination de plusieurs travaux",
-    cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F7FBFF_0%,_#ECF7FF_100%)]",
-  },
 ];
 
 const reassuranceItems = [
@@ -154,12 +140,24 @@ export default function Home() {
   const statusMessage = useMemo(() => {
     const trimmed = query.trim();
     if (!trimmed) return null;
+
+    const shouldEvaluateOutsideZone = trimmed.length >= 2 || /^\d{5}$/.test(trimmed);
+
     if (exactMatch) {
       const postalCode = exactMatch.postalCodes[0] ?? "";
       return `AlloStef intervient dans votre secteur : ${exactMatch.name}${postalCode ? ` (${postalCode})` : ""}.`;
     }
+
+    if (shouldEvaluateOutsideZone && filteredCommunes.length === 0) {
+      return "Votre commune ne figure pas dans notre zone d’intervention habituelle. Contactez tout de même AlloStef : selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être envisagée au cas par cas.";
+    }
+
     return null;
-  }, [exactMatch, query]);
+  }, [exactMatch, filteredCommunes.length, query]);
+
+  const isOutOfAreaMessage = useMemo(() => {
+    return statusMessage?.startsWith("Votre commune ne figure pas dans notre zone d’intervention habituelle.") ?? false;
+  }, [statusMessage]);
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -351,6 +349,9 @@ export default function Home() {
             <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-4xl" style={{ textWrap: "balance" }}>
               Une offre complète pour les installations, le dépannage et l’entretien
             </h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>
+              AlloStef intervient également dans le cadre de projets de rénovation intérieure, en réunissant plusieurs corps de métier selon les besoins du chantier.
+            </p>
           </div>
           <div className="mt-10 space-y-6 sm:space-y-7 lg:space-y-8">
             {serviceCards.map((service) => (
@@ -484,9 +485,29 @@ export default function Home() {
                 Votre commune ne figure pas dans notre zone d’intervention habituelle ? Contactez tout de même AlloStef. Selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être étudiée au cas par cas.
               </div>
               {statusMessage ? (
-                <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
-                  {statusMessage}
-                </p>
+                isOutOfAreaMessage ? (
+                  <div
+                    className="mt-4 rounded-[1.25rem] border border-[#8CC4E7] bg-[linear-gradient(145deg,_#F3FAFF_0%,_#EAF6FF_100%)] px-4 py-4 text-sm leading-7 text-[#2B4E66] sm:px-5"
+                    role="status"
+                    aria-live="polite"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="mt-1 inline-flex rounded-full bg-white p-1.5 text-[#397DA9]" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
+                          <path d="M12 8.5v.1M12 11.5V16" strokeLinecap="round" />
+                          <circle cx="12" cy="12" r="8.5" />
+                        </svg>
+                      </span>
+                      <p>
+                        Votre commune ne figure pas dans notre zone d’intervention habituelle. <strong>Contactez tout de même AlloStef</strong> : selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être envisagée au cas par cas.
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
+                    {statusMessage}
+                  </p>
+                )
               ) : null}
             </div>
           </div>
