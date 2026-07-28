@@ -141,23 +141,13 @@ export default function Home() {
     const trimmed = query.trim();
     if (!trimmed) return null;
 
-    const shouldEvaluateOutsideZone = trimmed.length >= 2 || /^\d{5}$/.test(trimmed);
-
     if (exactMatch) {
       const postalCode = exactMatch.postalCodes[0] ?? "";
       return `AlloStef intervient dans votre secteur : ${exactMatch.name}${postalCode ? ` (${postalCode})` : ""}.`;
     }
 
-    if (shouldEvaluateOutsideZone && filteredCommunes.length === 0) {
-      return "Votre commune ne figure pas dans notre zone d’intervention habituelle. Contactez tout de même AlloStef : selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être envisagée au cas par cas.";
-    }
-
     return null;
-  }, [exactMatch, filteredCommunes.length, query]);
-
-  const isOutOfAreaMessage = useMemo(() => {
-    return statusMessage?.startsWith("Votre commune ne figure pas dans notre zone d’intervention habituelle.") ?? false;
-  }, [statusMessage]);
+  }, [exactMatch, query]);
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -495,29 +485,9 @@ export default function Home() {
                 </div>
               </div>
               {statusMessage ? (
-                isOutOfAreaMessage ? (
-                  <div
-                    className="mt-4 rounded-[1.25rem] border border-[#8CC4E7] bg-[linear-gradient(145deg,_#F3FAFF_0%,_#EAF6FF_100%)] px-4 py-4 text-sm leading-7 text-[#2B4E66] sm:px-5"
-                    role="status"
-                    aria-live="polite"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="mt-1 inline-flex rounded-full bg-white p-1.5 text-[#397DA9]" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
-                          <path d="M12 8.5v.1M12 11.5V16" strokeLinecap="round" />
-                          <circle cx="12" cy="12" r="8.5" />
-                        </svg>
-                      </span>
-                      <p>
-                        Votre commune ne figure pas dans notre zone d’intervention habituelle. <strong>Contactez tout de même AlloStef</strong> : selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être envisagée au cas par cas.
-                      </p>
-                    </div>
-                  </div>
-                ) : (
-                  <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
-                    {statusMessage}
-                  </p>
-                )
+                <p className="mt-4 text-sm leading-7 text-[#5F7484]" aria-live="polite">
+                  {statusMessage}
+                </p>
               ) : null}
             </div>
           </div>
