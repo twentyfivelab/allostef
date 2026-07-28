@@ -69,3 +69,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 	- expand FAQ by 2 real-world questions
 	- strengthen title/description with clearer local intent
 3. Keep sitemap and internal links aligned with every new page.
+
+### 4) Ready-to-use Assets
+
+- Search Console priority URLs list: `docs/search-console-priority-urls.txt`
+- Weekly tracking template: `docs/seo-weekly-tracker.csv`
+- Off-site local SEO checklist: `docs/local-seo-offsite-checklist.md`
