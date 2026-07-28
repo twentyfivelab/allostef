@@ -481,8 +481,18 @@ export default function Home() {
                   Écrire pour un devis
                 </a>
               </div>
-              <div className="mt-4 rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF] px-4 py-3 text-sm leading-7 text-[#5F7484]">
-                Votre commune ne figure pas dans notre zone d’intervention habituelle ? Contactez tout de même AlloStef. Selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être étudiée au cas par cas.
+              <div className="mt-4 rounded-[1.25rem] border border-[#BBDDF4] bg-[linear-gradient(145deg,_#F3FAFF_0%,_#EAF6FF_100%)] px-4 py-4 text-sm leading-7 text-[#2B4E66] shadow-[0_10px_24px_-20px_rgba(23,50,70,0.45)] sm:px-5" aria-label="Information sur la zone d’intervention">
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 inline-flex rounded-full bg-white p-1.5 text-[#397DA9]" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
+                      <path d="M12 8.5v.1M12 11.5V16" strokeLinecap="round" />
+                      <circle cx="12" cy="12" r="8.5" />
+                    </svg>
+                  </span>
+                  <p>
+                    Votre commune ne figure pas dans notre zone d’intervention habituelle ? <strong>Contactez tout de même AlloStef</strong>. Selon le degré d’urgence ou l’ampleur des travaux, une intervention peut être étudiée au cas par cas.
+                  </p>
+                </div>
               </div>
               {statusMessage ? (
                 isOutOfAreaMessage ? (
