@@ -82,13 +82,6 @@ const serviceCards = [
   },
 ];
 
-const reassuranceItems = [
-  { title: "Un interlocuteur unique", text: "Une seule personne pour comprendre le besoin et suivre l’avancement." },
-  { title: "Plusieurs corps de métier", text: "Plomberie, chauffage, électricité, plâtrerie et carrelage, réunis autour d’un même projet." },
-  { title: "Des projets étudiés avec soin", text: "Chaque intervention est pensée pour être cohérente, propre et adaptée au logement." },
-  { title: "Une intervention locale", text: "AlloStef intervient dans l’Oise et le Val-d’Oise selon la zone du chantier." },
-];
-
 function PhoneIcon({ className }: { className: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
@@ -109,6 +102,29 @@ const normalize = (value: string) =>
     .replace(/[-\s/.,()]/g, "")
     .toLowerCase();
 
+const getSearchVariants = (value: string) => {
+  const normalizedSource = value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u2019’']/g, " ")
+    .replace(/[-/.,()]/g, " ")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+
+  const compact = (input: string) => input.replace(/\s+/g, "");
+
+  const expandedTokens = normalizedSource.split(" ").map((token) => {
+    if (token === "st") return "saint";
+    if (token === "ste") return "sainte";
+    if (token.startsWith("ste") && token.length > 3) return `sainte${token.slice(3)}`;
+    if (token.startsWith("st") && token.length > 2) return `saint${token.slice(2)}`;
+    return token;
+  });
+
+  return [...new Set([compact(normalizedSource), compact(expandedTokens.join(" "))])].filter(Boolean);
+};
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -123,10 +139,10 @@ export default function Home() {
     const trimmed = query.trim();
     if (!trimmed) return [];
 
-    const normalized = normalize(trimmed);
+    const normalizedQueries = getSearchVariants(trimmed);
     return communes.filter((commune) => {
       const searchable = [commune.name, ...commune.postalCodes, commune.departmentName].map(normalize).join(" ");
-      return searchable.includes(normalized);
+      return normalizedQueries.some((normalizedQuery) => searchable.includes(normalizedQuery));
     });
   }, [communes, query]);
 
@@ -134,11 +150,12 @@ export default function Home() {
     const trimmed = query.trim();
     if (!trimmed) return null;
 
+    const normalizedQueries = getSearchVariants(trimmed);
+
     return communes.find((entry) => {
-      const normalizedInput = normalize(trimmed);
       const normalizedName = normalize(entry.name);
       const normalizedPostal = entry.postalCodes.map(normalize);
-      return normalizedName === normalizedInput || normalizedPostal.includes(normalizedInput);
+      return normalizedQueries.some((normalizedInput) => normalizedName === normalizedInput || normalizedPostal.includes(normalizedInput));
     }) ?? null;
   }, [communes, query]);
 
@@ -283,7 +300,7 @@ export default function Home() {
                   Installation, dépannage et rénovation dans l’Oise et le Val-d’Oise
                 </h1>
                 <p className="mt-6 max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
-                  AlloStef accompagne les particuliers et les professionnels pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité ou aménagement intérieur : vous bénéficiez d’un interlocuteur unique pour des travaux étudiés et réalisés avec soin.
+                  AlloStef accompagne les particuliers et les professionnels dans l’Oise et le Val-d’Oise pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité ou aménagement intérieur : un interlocuteur unique coordonne les métiers nécessaires pour des travaux étudiés et réalisés avec soin.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
@@ -294,24 +311,8 @@ export default function Home() {
                     Demander un devis
                   </a>
                 </div>
-                <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#5F7484]">
-                  <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Oise et Val-d’Oise</span>
-                  <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Particuliers et professionnels</span>
-                  <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Plusieurs corps de métier</span>
-                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="border-y border-[#DDEFFF] bg-[linear-gradient(90deg,_#FFFFFF_0%,_#F8FCFF_55%,_#EFF8FF_100%)]">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 py-6 text-sm text-[#5F7484] sm:px-6 lg:px-8">
-            {reassuranceItems.map((item, index) => (
-              <div key={item.title} className="flex items-center gap-3 rounded-full border border-[#DDEFFF] bg-white px-4 py-2">
-                {index > 0 ? <span className="h-1.5 w-1.5 rounded-full bg-[#8CC4E7]" /> : null}
-                <span className="font-medium text-[#173246]">{item.title}</span>
-              </div>
-            ))}
           </div>
         </section>
 
@@ -322,7 +323,7 @@ export default function Home() {
               Une offre complète pour les installations, le dépannage et l’entretien
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>
-              AlloStef intervient également dans le cadre de projets de rénovation intérieure, en réunissant plusieurs corps de métier selon les besoins du chantier.
+              AlloStef intervient également dans le cadre de projets de rénovation intérieure, avec coordination des métiers nécessaires selon les besoins du chantier.
             </p>
           </div>
           <div className="mt-10 space-y-6 sm:space-y-7 lg:space-y-8">
