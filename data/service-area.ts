@@ -26,6 +26,9 @@ const MAX_DISTANCE_KM_BY_DEPARTMENT: Record<string, number> = {
   "95": 33,
 };
 
+const EXCLUDED_NORMALIZED_NAMES = new Set(["creil"]);
+const EXCLUDED_POSTAL_CODES = new Set(["60100"]);
+
 const toRadians = (value: number) => (value * Math.PI) / 180;
 
 const haversineKm = (lat1: number, lon1: number, lat2: number, lon2: number) => {
@@ -48,7 +51,20 @@ const normalize = (value: string) =>
 
 const rawCommunes = communesData as RawCommune[];
 
+const isExplicitlyExcluded = (commune: RawCommune) => {
+  const normalizedName = normalize(commune.name);
+  if (EXCLUDED_NORMALIZED_NAMES.has(normalizedName)) {
+    return true;
+  }
+
+  return commune.postalCodes.some((postalCode) => EXCLUDED_POSTAL_CODES.has(postalCode));
+};
+
 const validatedCommunes = rawCommunes.filter((commune) => {
+  if (isExplicitlyExcluded(commune)) {
+    return false;
+  }
+
   const maxDistanceKm = MAX_DISTANCE_KM_BY_DEPARTMENT[commune.departmentCode];
   if (!maxDistanceKm) {
     return false;
@@ -65,6 +81,10 @@ const validatedCommunes = rawCommunes.filter((commune) => {
 });
 
 const hasUnexpectedCommune = rawCommunes.some((commune) => {
+  if (isExplicitlyExcluded(commune)) {
+    return true;
+  }
+
   const maxDistanceKm = MAX_DISTANCE_KM_BY_DEPARTMENT[commune.departmentCode];
   if (!maxDistanceKm) {
     return true;

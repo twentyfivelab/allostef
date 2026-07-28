@@ -13,6 +13,9 @@ const MAX_DISTANCE_KM_BY_DEPARTMENT = {
   "95": 33,
 };
 
+const EXCLUDED_NORMALIZED_NAMES = new Set(["creil"]);
+const EXCLUDED_POSTAL_CODES = new Set(["60100"]);
+
 const toRadians = (value) => (value * Math.PI) / 180;
 
 const haversineKm = (lat1, lon1, lat2, lon2) => {
@@ -36,6 +39,16 @@ const normalize = (value) =>
 const errors = [];
 
 for (const commune of communes) {
+  const normalizedName = normalize(commune.name);
+  const hasExcludedPostalCode = (commune.postalCodes || []).some((postalCode) =>
+    EXCLUDED_POSTAL_CODES.has(postalCode),
+  );
+
+  if (EXCLUDED_NORMALIZED_NAMES.has(normalizedName) || hasExcludedPostalCode) {
+    errors.push(`Commune explicitement exclue presente: ${commune.name} (${(commune.postalCodes || []).join(", ")})`);
+    continue;
+  }
+
   const maxDistance = MAX_DISTANCE_KM_BY_DEPARTMENT[commune.departmentCode];
   if (!maxDistance) {
     errors.push(`Departement non autorise: ${commune.departmentCode} (${commune.name})`);

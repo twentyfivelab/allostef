@@ -8,111 +8,91 @@ import { serviceAreaCommunes, type ServiceAreaCommune } from "@/data/service-are
 const serviceCards = [
   {
     title: "Plomberie",
-    subtitle: "Installation, dépannage, sanitaires et recherche de fuite",
-    description:
-      "AlloStef intervient pour tous types de dépannages de plomberie, l’installation ou le remplacement de WC, éviers, lavabos, vasques et robinetterie, ainsi que pour les raccordements et évacuations. Nous réalisons également la recherche de fuites d’eau ou de gaz, à l’intérieur comme à l’extérieur, selon la nature de l’intervention.",
-    bullets: ["Dépannage plomberie", "Sanitaires", "Recherche de fuite"],
+    subtitle: "Interventions de plomberie pour le dépannage, l'installation et la rénovation.",
+    bullets: [
+      "Dépannage de plomberie, quelle que soit la nature du problème",
+      "Installation et remplacement de WC, éviers, lavabos et vasques",
+      "Installation et remplacement de robinetterie",
+      "Raccordements, alimentations et évacuations",
+      "Recherche de fuites d’eau ou de gaz, à l’intérieur comme à l’extérieur",
+      "Travaux de plomberie pour la création ou la rénovation de salles de bain",
+    ],
     imageSrc: "/images/realizations/realisation-plomberie.png",
-    imageAlt: "Illustration d’une intervention de plomberie dans une salle de bain moderne",
+    imageAlt: "Intervention de plomberie avec équipements sanitaires installés",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F8FCFF_0%,_#EFF8FF_100%)]",
-    iconWrapClass: "bg-[#EAF6FF] text-[#397DA9]",
-    pillClass: "text-[#397DA9]",
-    dotClass: "bg-[#8CC4E7]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M8 4h8v4l-2 2v4l2 2v4H8v-4l2-2V8L8 6V4Z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
   },
   {
     title: "Chauffage",
-    subtitle: "Chaudières, radiateurs, circuits de chauffage et entretien",
-    description:
-      "Installation, entretien et dépannage de systèmes de chauffage, radiateurs, circuits et chaudières de tout type. AlloStef intervient également pour le remplacement de chaudières et de ballons d’eau chaude, ainsi que pour l’entretien des climatisations réversibles. La pose de climatisation n’est pas proposée.",
-    bullets: ["Dépannage chauffage", "Chaudières", "Entretien"],
+    subtitle: "Solutions de chauffage pour l'entretien, le dépannage et le remplacement d'équipements.",
+    bullets: [
+      "Dépannage de systèmes de chauffage",
+      "Dépannage et entretien de chaudières de différents types",
+      "Installation et remplacement de chaudières",
+      "Installation et remplacement de ballons d’eau chaude",
+      "Installation et modification de circuits de chauffage",
+      "Installation et remplacement de radiateurs",
+      "Entretien de climatisations réversibles",
+      "La pose de climatisation n’est pas proposée",
+    ],
     imageSrc: "/images/realizations/realisation-chauffage.png",
-    imageAlt: "Illustration d’une installation de chauffage soignée et moderne",
+    imageAlt: "Installation de chauffage avec radiateurs et réglages techniques",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF9_0%,_#F8F3E9_100%)]",
-    iconWrapClass: "bg-[#F9EEDC] text-[#DDAA62]",
-    pillClass: "text-[#DDAA62]",
-    dotClass: "bg-[#DDAA62]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M6 4h12M8 8h8v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8Z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
   },
   {
     title: "Électricité",
-    subtitle: "Installation, rénovation et dépannage électrique",
-    description:
-      "Installation, rénovation et dépannage pour les prises, éclairages, circuits et tableaux électriques. AlloStef intervient également sur les besoins électriques liés aux projets de salle de bain et de rénovation intérieure.",
-    bullets: ["Installation", "Dépannage", "Rénovation"],
+    subtitle: "Travaux électriques adaptés aux besoins du logement et des rénovations.",
+    bullets: [
+      "Dépannage électrique",
+      "Installation et remplacement de prises",
+      "Installation d’éclairages",
+      "Intervention sur les tableaux électriques",
+      "Travaux électriques dans le cadre d’une rénovation",
+    ],
     imageSrc: "/images/realizations/realisation-electricite.png",
-    imageAlt: "Illustration d’une intervention électrique professionnelle",
+    imageAlt: "Travaux d'électricité sur prises, éclairages et tableau électrique",
     cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF8_0%,_#F7F0E3_100%)]",
-    iconWrapClass: "bg-[#F7EFD8] text-[#C89A46]",
-    pillClass: "text-[#C89A46]",
-    dotClass: "bg-[#C89A46]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M10 2h4l-2 6h3l-6 10 1-7H7l3-9Z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
   },
   {
     title: "Plâtrerie",
-    subtitle: "Finitions, cloisons et murs",
-    description:
-      "Des travaux de plâtrerie soignés pour les cloisons, faux plafonds, finitions et préparations de murs avant la pose de revêtements.",
-    bullets: ["Cloisons", "Finitions", "Murs"],
+    subtitle: "Travaux de plâtrerie intérieure pour structurer et préparer les espaces.",
+    bullets: [
+      "Création de cloisons",
+      "Pose de plaques de plâtre",
+      "Création de faux plafonds",
+      "Préparation des murs et des plafonds",
+      "Travaux de finition intérieure",
+    ],
     imageSrc: "/images/realizations/realisation-platrerie.png",
-    imageAlt: "Illustration d’une réalisation de plâtrerie et de finition",
+    imageAlt: "Travaux de plâtrerie avec cloisons et finitions intérieures",
     cardClass: "border-[#A7B8DF] bg-[linear-gradient(145deg,_#F9FAFF_0%,_#F0F3FF_100%)]",
-    iconWrapClass: "bg-[#EEF2FF] text-[#718493]",
-    pillClass: "text-[#718493]",
-    dotClass: "bg-[#A7B8DF]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M5 4h14M7 4v16m10-16v16" strokeLinecap="round" />
-      </svg>
-    ),
   },
   {
-    title: "Carrelage",
-    subtitle: "Carrelage, faïence, sols et murs",
-    description:
-      "Pose de carrelage au sol et au mur, faïence, crédences et revêtements de salle de bain ou de cuisine, avec un soin particulier aux finitions et à la cohérence du projet.",
-    bullets: ["Carrelage", "Faïence", "Crédences"],
+    title: "Carrelage et faïence",
+    subtitle: "Revêtements et finitions pour les pièces d'eau et les espaces de vie.",
+    bullets: [
+      "Pose de carrelage",
+      "Pose de faïence",
+      "Revêtements de sols et de murs",
+      "Travaux pour salles de bain et cuisines",
+      "Finitions et rénovation des surfaces",
+    ],
     imageSrc: "/images/realizations/realisation-carrelage-faience.png",
-    imageAlt: "Illustration d’une pose de carrelage et de faïence précise",
+    imageAlt: "Pose de carrelage et de faïence avec finitions soignées",
     cardClass: "border-[#E2F3F1] bg-[linear-gradient(145deg,_#FCFEFF_0%,_#F3FBFA_100%)]",
-    iconWrapClass: "bg-[#EAF8F7] text-[#67B4B0]",
-    pillClass: "text-[#67B4B0]",
-    dotClass: "bg-[#67B4B0]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M4 6h16v12H4zM4 10h16" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
   },
   {
     title: "Rénovation intérieure",
-    subtitle: "Création de salle de bain et rénovation complète",
-    description:
-      "AlloStef vous accompagne pour la création ou la rénovation complète de votre salle de bain : plomberie, équipements sanitaires, électricité, plâtrerie, carrelage, faïence et finitions. Un interlocuteur unique assure la cohérence des différentes étapes du projet.",
-    bullets: ["Salle de bain", "Plomberie", "Électricité"],
+    subtitle: "Accompagnement global pour les projets de rénovation intérieure.",
+    bullets: [
+      "Rénovation de pièces intérieures",
+      "Création et rénovation de salles de bain",
+      "Coordination de plusieurs corps de métier",
+      "Remise en état des murs, sols et équipements",
+      "Accompagnement pour les projets de rénovation",
+    ],
     imageSrc: "/images/realizations/realisation-renovation-interieure.png",
-    imageAlt: "Illustration d’un intérieur moderne, lumineux et abouti",
+    imageAlt: "Rénovation intérieure avec coordination de plusieurs travaux",
     cardClass: "border-[#C6E3F7] bg-[linear-gradient(145deg,_#F7FBFF_0%,_#ECF7FF_100%)]",
-    iconWrapClass: "bg-[#E6F3FF] text-[#397DA9]",
-    pillClass: "text-[#397DA9]",
-    dotClass: "bg-[#397DA9]",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <path d="M6 5h12v14H6zM9 9h6M9 13h4" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
   },
 ];
 
@@ -304,13 +284,13 @@ export default function Home() {
             <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div className="max-w-2xl">
                 <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
-                  Plomberie, chauffage et rénovation dans l’Oise et le Val-d’Oise
+                  Plomberie, chauffage, électricité et rénovation dans l’Oise et le Val-d’Oise
                 </p>
-                <h1 className="text-4xl font-semibold leading-[1.03] tracking-[-0.03em] text-[#173246] sm:text-5xl lg:text-6xl" style={{ textWrap: "balance" }}>
-                  Installation, dépannage et rénovation en plomberie, chauffage et électricité dans l’Oise et le Val-d’Oise
+                <h1 className="max-w-[18ch] text-[clamp(2.1rem,4.5vw,3.6rem)] font-semibold leading-[1.06] tracking-[-0.03em] text-[#173246]" style={{ textWrap: "balance" }}>
+                  Installation, dépannage et rénovation dans l’Oise et le Val-d’Oise
                 </h1>
                 <p className="mt-6 max-w-xl text-lg leading-8 text-[#5F7484]" style={{ textWrap: "pretty" }}>
-                  AlloStef accompagne les particuliers et les professionnels pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité, sanitaires, recherche de fuite ou création de salle de bain : vous bénéficiez d’un interlocuteur unique pour des travaux étudiés avec soin.
+                  AlloStef accompagne les particuliers et les professionnels pour leurs installations, dépannages, entretiens et projets de rénovation. Plomberie, chauffage, électricité ou aménagement intérieur : vous bénéficiez d’un interlocuteur unique pour des travaux étudiés et réalisés avec soin.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
@@ -335,7 +315,7 @@ export default function Home() {
                   <div className="flex items-center justify-between border-b border-[#DDEFFF] pb-4">
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Intervention</p>
-                      <p className="mt-2 text-xl font-semibold text-[#173246]">Une vraie continuité de chantier</p>
+                      <p className="mt-2 text-xl font-semibold text-[#173246]">Une intervention suivie du diagnostic aux finitions</p>
                     </div>
                     <div className="rounded-full bg-[#397DA9] p-3 text-white">
                       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
@@ -344,9 +324,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-6 space-y-3 text-sm leading-7 text-[#5F7484]">
-                    <p>• Plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure.</p>
-                    <p>• Une approche claire pour les travaux de petite ou grande ampleur.</p>
-                    <p>• Un cadre de travail soigné jusqu’à la fin des travaux.</p>
+                    <p>• Installation, entretien, dépannage et rénovation.</p>
+                    <p>• Plusieurs corps de métier réunis pour simplifier les travaux.</p>
+                    <p>• Un accompagnement clair et des finitions réalisées avec soin.</p>
                   </div>
                 </div>
               </div>
@@ -372,40 +352,30 @@ export default function Home() {
               Une offre complète pour les installations, le dépannage et l’entretien
             </h2>
           </div>
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {serviceCards.map((service, index) => (
+          <div className="mt-10 space-y-6 sm:space-y-7 lg:space-y-8">
+            {serviceCards.map((service) => (
               <article key={service.title} className={`group overflow-hidden rounded-[1.75rem] border shadow-[0_18px_45px_-28px_rgba(23,50,70,0.2)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_-24px_rgba(23,50,70,0.25)] ${service.cardClass}`}>
-                <div className="flex items-center justify-between p-7">
-                  <div className={`inline-flex rounded-full p-2.5 shadow-sm ${service.iconWrapClass}`}>
-                    {service.icon}
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className={`h-2.5 w-2.5 rounded-full ${service.dotClass}`} />
-                    <span className={`text-sm font-semibold uppercase tracking-[0.2em] ${service.pillClass}`}>0{index + 1}</span>
-                  </div>
-                </div>
-                <div className="grid gap-5 px-7 pb-7 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.4fr)] lg:items-center">
-                  <div>
-                    <h3 className="text-xl font-semibold text-[#173246]">{service.title}</h3>
-                    <p className="mt-2 text-sm font-medium text-[#397DA9]">{service.subtitle}</p>
-                    <p className="mt-4 text-sm leading-7 text-[#5F7484]">{service.description}</p>
-                    <ul className="mt-5 flex flex-wrap gap-2">
+                <div className="grid gap-6 p-6 sm:p-7 lg:grid-cols-[58%_42%] lg:items-center lg:gap-8">
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-semibold text-[#173246]" style={{ textWrap: "balance" }}>{service.title}</h3>
+                    <p className="mt-2 text-sm leading-7 text-[#5F7484]" style={{ textWrap: "pretty" }}>{service.subtitle}</p>
+                    <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
                       {service.bullets.map((bullet) => (
-                        <li key={bullet} className="rounded-full border border-[#DDEFFF] bg-white/80 px-3 py-1.5 text-xs font-medium text-[#5F7484]">
+                        <li key={bullet}>
                           {bullet}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div className="overflow-hidden rounded-[1.25rem] border border-[#DDEFFF] bg-[#F8FCFF]">
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="relative aspect-[4/3] min-h-[220px] overflow-hidden sm:min-h-[260px]">
                       <Image
                         src={service.imageSrc}
                         alt={service.imageAlt}
                         fill
-                        sizes="(max-width: 1024px) 100vw, 35vw"
+                        sizes="(max-width: 1024px) 100vw, 42vw"
                         className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                        loading={index < 2 ? "eager" : "lazy"}
+                        loading="lazy"
                       />
                     </div>
                   </div>
