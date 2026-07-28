@@ -89,12 +89,17 @@ const reassuranceItems = [
   { title: "Une intervention locale", text: "AlloStef intervient dans l’Oise et le Val-d’Oise selon la zone du chantier." },
 ];
 
-const methodSteps = [
-  { title: "Prise de contact", text: "Nous recevons votre besoin et repérons les priorités d’intervention." },
-  { title: "Étude du besoin", text: "Nous examinons la situation, les contraintes et la nature des travaux à prévoir." },
-  { title: "Proposition et devis", text: "Nous vous présentons une approche claire avant toute réalisation." },
-  { title: "Réalisation des travaux", text: "Nous mettons en œuvre les interventions avec méthode et respect du logement." },
-];
+function PhoneIcon({ className }: { className: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+      <path
+        d="M2.25 4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .964.351 1.091.852l1.106 4.423a1.125 1.125 0 0 1-.417 1.131l-1.293 1.034a11.038 11.038 0 0 0 5.516 5.516l1.034-1.293a1.125 1.125 0 0 1 1.13-.417l4.424 1.106c.501.125.852.575.852 1.091V19.5A2.25 2.25 0 0 1 18.75 21.75h-1.5C9.656 21.75 2.25 14.344 2.25 5.25V4.5Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 const normalize = (value: string) =>
   value
@@ -269,7 +274,7 @@ export default function Home() {
             <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-[#DDAA62]/18 blur-3xl" />
             <div className="absolute bottom-8 left-4 h-20 w-20 rounded-full bg-[#C6E3F7]/70 blur-3xl" />
             <div className="absolute bottom-8 right-12 h-px w-28 bg-[#8CC4E7]/70" />
-            <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="relative max-w-3xl">
               <div className="max-w-2xl">
                 <p className="mb-5 inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3.5 py-1.5 text-sm font-semibold text-[#397DA9]">
                   Plomberie, chauffage, électricité et rénovation dans l’Oise et le Val-d’Oise
@@ -282,9 +287,7 @@ export default function Home() {
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#2F6F98] focus:outline-none focus:ring-2 focus:ring-[#C6E3F7]" aria-label="Appeler AlloStef">
-                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-                      <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-                    </svg>
+                    <PhoneIcon className="h-4 w-4" />
                     Appeler AlloStef
                   </a>
                   <a href="#devis" className="btn-display inline-flex items-center justify-center whitespace-nowrap rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] transition duration-300 hover:-translate-y-0.5 hover:border-[#8CC4E7] hover:text-[#397DA9]">
@@ -295,27 +298,6 @@ export default function Home() {
                   <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Oise et Val-d’Oise</span>
                   <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Particuliers et professionnels</span>
                   <span className="rounded-full border border-[#DDEFFF] bg-white/90 px-3 py-2">Plusieurs corps de métier</span>
-                </div>
-              </div>
-
-              <div className="rounded-[1.75rem] border border-[#DDEFFF] bg-white/80 p-6 shadow-[0_20px_60px_-35px_rgba(23,50,70,0.3)]">
-                <div className="rounded-[1.25rem] border border-[#DDEFFF] bg-[linear-gradient(120deg,_#FFFFFF_0%,_#EAF6FF_55%,_#CFE8F8_100%)] p-6">
-                  <div className="flex items-center justify-between border-b border-[#DDEFFF] pb-4">
-                    <div>
-                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5CA6D2]">Intervention</p>
-                      <p className="mt-2 text-xl font-semibold text-[#173246]">Une intervention suivie du diagnostic aux finitions</p>
-                    </div>
-                    <div className="rounded-full bg-[#397DA9] p-3 text-white">
-                      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-                        <path d="M6 8.5h12M6 12h12M6 15.5h8" strokeLinecap="round" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="mt-6 space-y-3 text-sm leading-7 text-[#5F7484]">
-                    <p>• Installation, entretien, dépannage et rénovation.</p>
-                    <p>• Plusieurs corps de métier réunis pour simplifier les travaux.</p>
-                    <p>• Un accompagnement clair et des finitions réalisées avec soin.</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -373,29 +355,6 @@ export default function Home() {
                 </div>
               </article>
             ))}
-          </div>
-        </section>
-
-        <section id="method" className="bg-[linear-gradient(135deg,_#173246_0%,_#1f4354_100%)] py-20 text-[#F8FCFF]">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Notre méthode</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-white sm:text-4xl">
-                Un parcours clair et rassurant, de la première prise de contact à la fin des travaux
-              </h2>
-            </div>
-            <div className="mt-10 grid gap-4 lg:grid-cols-4">
-              {methodSteps.map((step, index) => (
-                <div key={step.title} className="rounded-[1.5rem] border border-white/10 bg-white/10 p-6">
-                  <div className="flex items-center justify-between">
-                    <p className="text-sm font-semibold text-[#8CC4E7]">0{index + 1}</p>
-                    <div className="ml-3 h-px flex-1 bg-white/10" />
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold text-white">{step.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[#CFE8F8]">{step.text}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -459,9 +418,7 @@ export default function Home() {
               ) : null}
               <div className="mt-5 flex flex-wrap gap-3">
                 <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#397DA9] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2F6F98]" aria-label="Appeler AlloStef">
-                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-                    <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-                  </svg>
+                  <PhoneIcon className="h-4 w-4" />
                   Appeler AlloStef
                 </a>
                 <a href={`mailto:${siteConfig.email}?subject=Demande%20de%20devis%20AlloStef`} className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[#DDEFFF] bg-white px-4 py-2.5 text-sm font-semibold text-[#173246] transition hover:border-[#8CC4E7] hover:text-[#397DA9]">
@@ -508,9 +465,7 @@ export default function Home() {
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
               <a href={`tel:${siteConfig.phoneHref}`} className="flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/10 p-5 transition duration-300 hover:-translate-y-0.5" aria-label="Appeler AlloStef">
                 <div className="rounded-full bg-[#397DA9] p-3 text-white">
-                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-                    <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-                  </svg>
+                  <PhoneIcon className="h-5 w-5" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8CC4E7]">Appel</p>
@@ -534,7 +489,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-[#DDEFFF] bg-[#F8FCFF]">
+      <footer className="border-t border-[#DDEFFF] bg-[#F8FCFF] pb-[calc(5.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.8fr] lg:px-8">
           <div>
             <div className="flex items-center">
@@ -583,9 +538,7 @@ export default function Home() {
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-[#DDEFFF] bg-[rgba(248,252,255,0.95)] backdrop-blur md:hidden">
         <div className="mx-auto flex max-w-7xl gap-3 px-3 py-3">
           <a href={`tel:${siteConfig.phoneHref}`} className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-4 py-3 text-sm font-semibold text-white" aria-label="Appeler AlloStef">
-            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
-              <path d="M7.4 4.5c.4-.8 1.7-.4 2.3.2l.8 1c.3.4.4.9.2 1.3l-.8 1.6a1 1 0 0 0 .2 1.1l2.1 2.1a1 1 0 0 0 1.1.2l1.6-.8c.4-.2.9-.1 1.3.2l1 1c.6.6.9 1.8.2 2.3l-.8.7a3.1 3.1 0 0 1-2.8.8c-2.5-.4-4.8-1.7-6.6-3.5-1.8-1.8-3.1-4.1-3.5-6.6a3.1 3.1 0 0 1 .8-2.8l.7-.8Z" />
-            </svg>
+            <PhoneIcon className="h-4 w-4" />
             Appeler
           </a>
           <a href="#devis" className="flex-1 rounded-full border border-[#DDEFFF] bg-white px-4 py-3 text-center text-sm font-semibold text-[#173246]">

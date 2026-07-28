@@ -7,7 +7,7 @@ export const siteConfig = {
   phoneDisplay: "06 15 26 78 47",
   phoneHref: "+33615267847",
   email: "allostef60@gmail.com",
-  siteUrl: "https://allostef.vercel.app",
+  siteUrl: "https://allostef.fr",
   legalLastUpdated: "27 juillet 2026",
   privacyLastUpdated: "27 juillet 2026",
   serviceRadiusKm: 40,
@@ -23,7 +23,6 @@ export const siteConfig = {
   ],
   navigation: [
     { label: "Services", href: "#services" },
-    { label: "Notre méthode", href: "#method" },
     { label: "Zone d’intervention", href: "#zones" },
     { label: "Devis", href: "#devis" },
   ],
