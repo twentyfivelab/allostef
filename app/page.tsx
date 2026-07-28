@@ -440,11 +440,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
-              <div
-                className="service-visual relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] lg:aspect-[5/4] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_16%,black_100%)] lg:[-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_16%,black_100%)]"
-              >
+              <div className="hero-visual relative aspect-[3/2] w-full rounded-[2rem]">
                 <Image
-                  src="/images/realizations/realisation-plomberie.png"
+                  src="/assets/sdb-allostef.webp"
                   alt="Intervention de plomberie avec équipements sanitaires installés"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -469,46 +467,48 @@ export default function Home() {
               Vous pouvez vérifier votre commune dans la <a href="#zones" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">zone d’intervention</a> et demander rapidement un <a href="#devis" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">devis</a> selon votre besoin.
             </p>
           </div>
-          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+          <div className="mt-10 flex flex-col gap-6 sm:gap-7">
             {serviceCards.map((service) => (
               <article
                 key={service.title}
-                className={`group flex h-full flex-col overflow-hidden rounded-[1.5rem] border ${service.tintBorder} ${service.tintBg} p-5 shadow-[0_14px_34px_-26px_rgba(13,35,69,0.22)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_-22px_rgba(13,35,69,0.28)] sm:p-6`}
+                className={`group w-full overflow-hidden rounded-[1.5rem] border ${service.tintBorder} ${service.tintBg} p-5 shadow-[0_14px_34px_-26px_rgba(13,35,69,0.22)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_-22px_rgba(13,35,69,0.28)] sm:p-6 lg:p-7`}
               >
-                <div className="flex items-center gap-2.5">
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#176BC0] shadow-[0_6px_16px_-10px_rgba(13,35,69,0.3)]">
-                    {service.icon}
-                  </span>
-                  <h3 className="text-lg font-semibold text-[#0D2345]" style={{ textWrap: "balance" }}>{service.title}</h3>
-                </div>
-                <div className="mt-4 overflow-hidden rounded-[1.1rem] border border-white/70 bg-white">
-                  <div className="service-visual relative aspect-[4/3] min-h-[180px]">
-                    <Image
-                      src={service.imageSrc}
-                      alt={service.imageAlt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
-                      loading="lazy"
-                    />
+                <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-8">
+                  <div className="min-w-0 lg:flex-1">
+                    <div className="flex items-center gap-2.5">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#176BC0] shadow-[0_6px_16px_-10px_rgba(13,35,69,0.3)]">
+                        {service.icon}
+                      </span>
+                      <h3 className="text-lg font-semibold text-[#0D2345]" style={{ textWrap: "balance" }}>{service.title}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-7 text-[#5E7189]" style={{ textWrap: "pretty" }}>{service.subtitle}</p>
+                    <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5E7189]">
+                      {service.bullets.map((bullet) => (
+                        <li key={bullet}>
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                    {service.pageHref ? (
+                      <p className="mt-4 text-sm font-semibold">
+                        <a href={service.pageHref} className="text-[#176BC0] transition hover:text-[#105BA7]">
+                          En savoir plus sur {service.title.toLowerCase()}
+                        </a>
+                      </p>
+                    ) : null}
                   </div>
-                </div>
-                <div className="mt-4 flex flex-1 flex-col">
-                  <p className="text-sm leading-7 text-[#5E7189]" style={{ textWrap: "pretty" }}>{service.subtitle}</p>
-                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5E7189]">
-                    {service.bullets.map((bullet) => (
-                      <li key={bullet}>
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                  {service.pageHref ? (
-                    <p className="mt-4 text-sm font-semibold">
-                      <a href={service.pageHref} className="text-[#176BC0] transition hover:text-[#105BA7]">
-                        En savoir plus sur {service.title.toLowerCase()}
-                      </a>
-                    </p>
-                  ) : null}
+                  <div className="overflow-hidden rounded-[1.1rem] border border-white/70 bg-white lg:w-[42%] lg:flex-none">
+                    <div className="service-visual relative aspect-[4/3] min-h-[220px]">
+                      <Image
+                        src={service.imageSrc}
+                        alt={service.imageAlt}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 42vw"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
                 </div>
               </article>
             ))}

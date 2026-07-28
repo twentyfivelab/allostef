@@ -100,6 +100,40 @@ h3,
   object-position: center;
 }
 
+.hero-visual {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.75) 6%,
+      transparent 20%
+    ),
+    linear-gradient(
+      0deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.35) 8%,
+      transparent 22%
+    );
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
