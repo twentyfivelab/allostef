@@ -479,6 +479,12 @@ export default function Home() {
                   {statusMessage}
                 </p>
               ) : null}
+              <div className="mt-5 rounded-xl border border-[#DDEFFF] bg-[#F8FCFF] p-4">
+                <p className="text-sm font-semibold text-[#173246]">Villes les plus recherchees</p>
+                <p className="mt-2 text-sm leading-7 text-[#5F7484]">
+                  Consultez aussi nos pages locales: <a href="/plombier-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/plombier-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/plombier-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>, <a href="/plombier-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/plombier-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
+                </p>
+              </div>
             </div>
           </div>
         </section>
