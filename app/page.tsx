@@ -50,7 +50,7 @@ const serviceCards = [
     ],
     imageSrc: "/images/realizations/realisation-electricite.png",
     imageAlt: "Travaux d'électricité sur prises, éclairages et tableau électrique",
-    cardClass: "border-[#F3E4CE] bg-[linear-gradient(145deg,_#FFFDF8_0%,_#F7F0E3_100%)]",
+    cardClass: "border-[#EBCB8C] bg-[linear-gradient(145deg,_#FFFCF5_0%,_#FBEED4_100%)]",
   },
   {
     title: "Plâtrerie",

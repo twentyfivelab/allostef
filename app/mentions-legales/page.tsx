@@ -6,8 +6,8 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Mentions legales | AlloStef",
-  description: "Mentions legales du site AlloStef.",
+  title: "Mentions légales | AlloStef",
+  description: "Mentions légales du site AlloStef.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/mentions-legales`,
   },
@@ -36,24 +36,24 @@ export default function MentionsLegalesPage() {
 
       <main className="mx-auto w-full max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <Link href="/" className="text-sm font-semibold text-[#397DA9] transition hover:text-[#2F6F98]">
-          Retour a l'accueil
+          Retour à l'accueil
         </Link>
 
-        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Mentions legales</h1>
-        <p className="mt-4 text-sm text-[#5F7484]">Derniere mise a jour: {siteConfig.legalLastUpdated}</p>
+        <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Mentions légales</h1>
+        <p className="mt-4 text-sm text-[#5F7484]">Dernière mise à jour: {siteConfig.legalLastUpdated}</p>
 
         <section className="mt-10 space-y-8 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Editeur du site</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Éditeur du site</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site est exploite sous le nom commercial <strong>AlloStef</strong>. L'activite professionnelle est exercee par <strong>{siteConfig.legalEntityName}</strong>.
+              Le site est exploité sous le nom commercial <strong>AlloStef</strong>. L'activité professionnelle est exercée par <strong>{siteConfig.legalEntityName}</strong>.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Informations sur l'entreprise</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Activite / entreprise: {siteConfig.legalEntityName}</li>
+              <li>Activité / entreprise: {siteConfig.legalEntityName}</li>
               <li>Nom commercial: {siteConfig.brandName}</li>
               <li>Forme juridique: {siteConfig.legalForm}</li>
               <li>SIRET: {siteConfig.siret}</li>
@@ -61,56 +61,55 @@ export default function MentionsLegalesPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Hebergement</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Hébergement</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
               Vercel Inc.<br />
               440 N Barranca Avenue #4133<br />
               Covina, CA 91723<br />
-              Etats-Unis<br />
+              États-Unis<br />
               Site: <a href="https://vercel.com" className="text-[#397DA9] underline underline-offset-4">https://vercel.com</a><br />
-              Numero de telephone: [NUMERO DE TELEPHONE DE L'HEBERGEUR A VERIFIER]
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Conception et realisation du site</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Conception et réalisation du site</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Site vitrine concu et developpe pour l'activite {siteConfig.legalEntityName} exploitee sous le nom commercial AlloStef.
+              Site vitrine conçu et développé pour l'activité {siteConfig.legalEntityName} exploitée sous le nom commercial AlloStef.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Propriete intellectuelle</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Propriété intellectuelle</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les contenus (textes, logos, elements visuels, images et structure) sont proteges par le droit de la propriete intellectuelle. Toute reproduction, adaptation ou diffusion sans autorisation prealable est interdite, sauf exceptions legales.
+              Les contenus (textes, logos, éléments visuels, images et structure) sont protégés par le droit de la propriété intellectuelle. Toute reproduction, adaptation ou diffusion sans autorisation préalable est interdite, sauf exceptions légales.
             </p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Responsabilite</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Responsabilité</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les informations publiees sur ce site sont fournies a titre indicatif. Elles peuvent evoluer et etre mises a jour. L'editeur ne peut garantir l'absence totale d'erreurs ou d'interruptions.
+              Les informations publiées sur ce site sont fournies à titre indicatif. Elles peuvent évoluer et être mises à jour. L'éditeur ne peut garantir l'absence totale d'erreurs ou d'interruptions.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Liens externes</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site peut contenir des liens vers des sites tiers. L'editeur n'exerce aucun controle sur ces contenus et decline toute responsabilite quant a leur disponibilite ou leur politique.
+              Le site peut contenir des liens vers des sites tiers. L'éditeur n'exerce aucun contrôle sur ces contenus et décline toute responsabilité quant à leur disponibilité ou leur politique.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Droit applicable</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le present site est soumis au droit francais. En cas de litige et a defaut de resolution amiable, les juridictions competentes seront saisies selon les regles legales applicables.
+              Le présent site est soumis au droit français. En cas de litige et à défaut de résolution amiable, les juridictions compétentes seront saisies selon les règles légales applicables.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Contact</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Telephone: <a href={`tel:${siteConfig.phoneHref}`} className="text-[#397DA9] underline underline-offset-4">{siteConfig.phoneDisplay}</a></li>
+              <li>Téléphone: <a href={`tel:${siteConfig.phoneHref}`} className="text-[#397DA9] underline underline-offset-4">{siteConfig.phoneDisplay}</a></li>
               <li>E-mail: <a href={`mailto:${siteConfig.email}`} className="text-[#397DA9] underline underline-offset-4">{siteConfig.email}</a></li>
             </ul>
           </div>
@@ -124,7 +123,7 @@ export default function MentionsLegalesPage() {
               <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
-              Installation, depannage et entretien en plomberie, chauffage, electricite, platrerie, carrelage et renovation interieure dans l'Oise et le Val-d'Oise.
+              Installation, dépannage et entretien en plomberie, chauffage, électricité, plâtrerie, carrelage et rénovation intérieure dans l'Oise et le Val-d'Oise.
             </p>
           </div>
           <div>
@@ -136,7 +135,7 @@ export default function MentionsLegalesPage() {
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnees</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#397DA9]">Coordonnées</p>
             <ul className="mt-4 space-y-2 text-sm text-[#5F7484]">
               <li><a href={`tel:${siteConfig.phoneHref}`} className="transition hover:text-[#397DA9]">{siteConfig.phoneDisplay}</a></li>
               <li><a href={`mailto:${siteConfig.email}`} className="transition hover:text-[#397DA9]">{siteConfig.email}</a></li>
@@ -146,9 +145,9 @@ export default function MentionsLegalesPage() {
         <div className="border-t border-[#DDEFFF] px-4 py-6 text-center text-sm text-[#5F7484] sm:px-6 lg:px-8">
           <p>
             © <span>{new Date().getFullYear()}</span> AlloStef. {" "}
-            <a href="/mentions-legales" className="transition hover:text-[#397DA9]">Mentions legales</a>
+            <a href="/mentions-legales" className="transition hover:text-[#397DA9]">Mentions légales</a>
             {" · "}
-            <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialite</a>
+            <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialité</a>
           </p>
           <p className="mt-1 text-xs text-[#7D93A3]">Site conçu par DZRT.</p>
         </div>
