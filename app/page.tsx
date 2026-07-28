@@ -484,6 +484,9 @@ export default function Home() {
                 <p className="mt-2 text-sm leading-7 text-[#5F7484]">
                   Consultez aussi nos pages locales: <a href="/plombier-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/plombier-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/plombier-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>, <a href="/plombier-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/plombier-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
                 </p>
+                <p className="mt-2 text-sm leading-7 text-[#5F7484]">
+                  En electricite: <a href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a>, <a href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a> et <a href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>.
+                </p>
               </div>
             </div>
           </div>
