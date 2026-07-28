@@ -587,6 +587,7 @@ export default function Home() {
             {" · "}
             <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialité</a>
           </p>
+          <p className="mt-1 text-xs text-[#7D93A3]">Site conçu par DZRT.</p>
         </div>
       </footer>
 

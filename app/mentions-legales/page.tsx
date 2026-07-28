@@ -57,14 +57,7 @@ export default function MentionsLegalesPage() {
               <li>Nom commercial: {siteConfig.brandName}</li>
               <li>Forme juridique: {siteConfig.legalForm}</li>
               <li>SIRET: {siteConfig.siret}</li>
-              <li>Nom et prenom de l'entrepreneur: [NOM ET PRENOM DE L'ENTREPRENEUR A CONFIRMER]</li>
-              <li>Adresse professionnelle: [ADRESSE PROFESSIONNELLE A CONFIRMER]</li>
             </ul>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Directeur de la publication</h2>
-            <p className="mt-3 leading-7 text-[#5F7484]">[DIRECTEUR DE LA PUBLICATION A CONFIRMER]</p>
           </div>
 
           <div>
@@ -157,6 +150,7 @@ export default function MentionsLegalesPage() {
             {" · "}
             <a href="/politique-de-confidentialite" className="transition hover:text-[#397DA9]">Politique de confidentialite</a>
           </p>
+          <p className="mt-1 text-xs text-[#7D93A3]">Site conçu par DZRT.</p>
         </div>
       </footer>
     </>
