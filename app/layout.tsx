@@ -111,7 +111,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#F8FCFF] text-[#173246]">
+      <body className="min-h-full flex flex-col bg-[#FFFFFF] text-[#0D2345]">
         <Script id="schema-global" type="application/ld+json" strategy="beforeInteractive">
           {JSON.stringify(globalStructuredData)}
         </Script>

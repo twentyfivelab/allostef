@@ -85,86 +85,86 @@ export default function ChauffagePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
-        <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5E7189]">
+        <Link href="/" className="hover:text-[#176BC0]">Accueil</Link>
         <span> · </span>
         <span>Chauffage</span>
       </nav>
 
-      <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">
+      <section className="mt-6 rounded-[2rem] border border-[#E7EDF3] bg-[linear-gradient(135deg,_#FFFFFF_0%,_#F5F9FC_45%,_#EEF7FF_100%)] p-7 shadow-[0_24px_60px_-38px_rgba(13,35,69,0.22)] sm:p-10">
+        <p className="inline-flex rounded-full border border-[#D8E6F2] bg-white/80 px-3 py-1 text-xs font-medium text-[#176BC0]">
           Chauffagiste Oise et Val-d’Oise
         </p>
-        <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
+        <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#0D2345]">
           Chauffage dans l’Oise et le Val-d’Oise : dépannage, entretien et installation
         </h1>
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
+        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5E7189]">
           AlloStef intervient sur les installations de chauffage pour le dépannage, l’entretien et le remplacement d’équipements. L’objectif est de rétablir votre confort rapidement et d’améliorer la fiabilité de votre système dans la durée.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
+          <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#176BC0] px-6 py-3 font-semibold text-white hover:bg-[#105BA7]">
             <PhoneIcon className="h-4 w-4" />
             Appeler AlloStef
           </a>
-          <a href="/#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
+          <a href="/#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#D8E6F2] bg-white/80 px-6 py-3 font-semibold text-[#0D2345] hover:text-[#176BC0]">
             Demander un devis chauffage
           </a>
         </div>
       </section>
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Dépannage de systèmes de chauffage</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Dépannage de systèmes de chauffage</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Diagnostic de panne, remise en route, contrôle des points critiques et recherche de cause pour limiter les récurrences.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Entretien et suivi de chaudières</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Entretien et suivi de chaudières</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Entretien courant et vérifications pour conserver rendement, sécurité de fonctionnement et confort thermique régulier.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Remplacement de chaudière et ballon d’eau chaude</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Remplacement de chaudière et ballon d’eau chaude</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Étude de solution adaptée, remplacement des équipements et adaptation des raccordements pour une installation cohérente.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Circuits de chauffage et radiateurs</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Circuits de chauffage et radiateurs</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Intervention sur circuits, émetteurs et réglages pour équilibrer la diffusion de chaleur et optimiser le confort des occupants.
           </p>
         </article>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Zone d’intervention en Oise et Val-d’Oise</h2>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Vérifiez votre secteur via la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> et demandez votre <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis chauffage</a>.
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Zone d’intervention en Oise et Val-d’Oise</h2>
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Vérifiez votre secteur via la <a href="/#zones" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">zone d’intervention</a> et demandez votre <a href="/#devis" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">devis chauffage</a>.
         </p>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes chauffage</h2>
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Questions fréquentes chauffage</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
-            <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
-              <h3 className="text-base font-semibold text-[#173246]">{item.question}</h3>
-              <p className="mt-2 text-sm leading-7 text-[#5F7484]">{item.answer}</p>
+            <article key={item.question} className="rounded-2xl border border-[#EEF7FF] bg-[#FFFFFF] p-4 shadow-[0_10px_26px_-22px_rgba(13,35,69,0.14)]">
+              <h3 className="text-base font-semibold text-[#0D2345]">{item.question}</h3>
+              <p className="mt-2 text-sm leading-7 text-[#5E7189]">{item.answer}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres services utiles</h2>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pour un besoin connexe, consultez la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">plomberie</Link> ou la page <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Autres services utiles</h2>
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          Pour un besoin connexe, consultez la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">plomberie</Link> ou la page <Link href="/electricien-oise-val-doise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">électricité</Link>.
         </p>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Cergy</Link> et <Link href="/chauffagiste-pontoise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Pontoise</Link>.
         </p>
       </section>
     </main>

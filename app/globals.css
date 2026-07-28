@@ -1,19 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fcff;
-  --foreground: #173246;
-  --surface: #ffffff;
-  --surface-alt: #eff8ff;
-  --border: #ddefff;
-  --text-muted: #5f7484;
-  --blue-soft: #c6e3f7;
-  --blue-accent: #5ca6d2;
-  --blue-action: #397da9;
+  --navy: #0d2345;
+  --blue: #176bc0;
+  --blue-hover: #105ba7;
+  --text-secondary: #5e7189;
+  --background: #ffffff;
+  --surface-alt: #f5f9fc;
+  --border: #e7edf3;
+  --border-strong: #d8e6f2;
+
+  --plomberie-bg: #eef7ff;
+  --plomberie-border: #d9ebfa;
+  --chauffage-bg: #fff0ec;
+  --chauffage-border: #fbdcd3;
+  --electricite-bg: #fff8e8;
+  --electricite-border: #f7e9c2;
+  --renovation-bg: #eef8f1;
+  --renovation-border: #d8ecdf;
+  --carrelage-bg: #f3f0fb;
+  --carrelage-border: #e3daf3;
+
   --accent-amber: #ddaa62;
   --accent-turquoise: #67b4b0;
-  --gradient-hero: linear-gradient(135deg, #f8fcff 0%, #eff8ff 45%, #ddefff 100%);
-  --gradient-button: linear-gradient(135deg, #397da9 0%, #5ca6d2 100%);
+
+  --foreground: var(--navy);
+  --shadow-soft: 0 16px 40px -28px rgba(13, 35, 69, 0.16);
+  --shadow-card: 0 10px 28px -20px rgba(13, 35, 69, 0.14);
+  --shadow-button: 0 12px 24px -14px rgba(23, 107, 192, 0.45);
 }
 
 @theme inline {
@@ -51,7 +65,7 @@ h3,
 }
 
 ::selection {
-  background: #5ca6d2;
+  background: var(--blue);
   color: #fff;
 }
 

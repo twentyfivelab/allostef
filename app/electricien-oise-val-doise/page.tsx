@@ -85,86 +85,86 @@ export default function ElectricitePage() {
         {JSON.stringify(structuredData)}
       </Script>
 
-      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5F7484]">
-        <Link href="/" className="hover:text-[#397DA9]">Accueil</Link>
+      <nav aria-label="Fil d’Ariane" className="text-sm text-[#5E7189]">
+        <Link href="/" className="hover:text-[#176BC0]">Accueil</Link>
         <span> · </span>
         <span>Électricité</span>
       </nav>
 
-      <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">
+      <section className="mt-6 rounded-[2rem] border border-[#E7EDF3] bg-[linear-gradient(135deg,_#FFFFFF_0%,_#F5F9FC_45%,_#EEF7FF_100%)] p-7 shadow-[0_24px_60px_-38px_rgba(13,35,69,0.22)] sm:p-10">
+        <p className="inline-flex rounded-full border border-[#D8E6F2] bg-white/80 px-3 py-1 text-xs font-medium text-[#176BC0]">
           Électricien Oise et Val-d’Oise
         </p>
-        <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
+        <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#0D2345]">
           Électricité dans l’Oise et le Val-d’Oise : dépannage, installation et rénovation
         </h1>
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
+        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5E7189]">
           AlloStef réalise les travaux électriques indispensables au bon fonctionnement du logement : dépannage, prise et éclairage, intervention sur tableau électrique et adaptation en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
+          <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#176BC0] px-6 py-3 font-semibold text-white hover:bg-[#105BA7]">
             <PhoneIcon className="h-4 w-4" />
             Appeler AlloStef
           </a>
-          <a href="/#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
+          <a href="/#devis" className="btn-display inline-flex items-center justify-center rounded-full border border-[#D8E6F2] bg-white/80 px-6 py-3 font-semibold text-[#0D2345] hover:text-[#176BC0]">
             Demander un devis électricité
           </a>
         </div>
       </section>
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Dépannage électrique du quotidien</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Dépannage électrique du quotidien</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Recherche de panne, remise en fonctionnement et contrôles de sécurité pour rétablir l’usage normal de l’installation.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Installation et remplacement de prises et éclairages</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Installation et remplacement de prises et éclairages</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Pose ou remplacement d’équipements électriques avec attention portée au confort d’usage et à la fiabilité des branchements.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Intervention sur tableau électrique</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Intervention sur tableau électrique</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Diagnostic du tableau, ajustement de la distribution et sécurisation des circuits selon la configuration de votre bien.
           </p>
         </article>
-        <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Électricité pour rénovation intérieure</h2>
-          <p className="mt-3 text-sm leading-7 text-[#5F7484]">
+        <article className="rounded-[1.5rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)]">
+          <h2 className="text-2xl font-semibold text-[#0D2345]">Électricité pour rénovation intérieure</h2>
+          <p className="mt-3 text-sm leading-7 text-[#5E7189]">
             Intégration des travaux électriques dans un projet de rénovation pour une installation plus pratique, plus sûre et mieux adaptée aux usages.
           </p>
         </article>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Zone d’intervention en Oise et Val-d’Oise</h2>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Utilisez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d’intervention</a> pour vérifier votre secteur et la section <a href="/#devis" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">devis</a> pour présenter votre besoin.
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Zone d’intervention en Oise et Val-d’Oise</h2>
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          AlloStef intervient principalement dans l’Oise et le Val-d’Oise. Utilisez la <a href="/#zones" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">zone d’intervention</a> pour vérifier votre secteur et la section <a href="/#devis" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">devis</a> pour présenter votre besoin.
         </p>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes électricité</h2>
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Questions fréquentes électricité</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
-            <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
-              <h3 className="text-base font-semibold text-[#173246]">{item.question}</h3>
-              <p className="mt-2 text-sm leading-7 text-[#5F7484]">{item.answer}</p>
+            <article key={item.question} className="rounded-2xl border border-[#EEF7FF] bg-[#FFFFFF] p-4 shadow-[0_10px_26px_-22px_rgba(13,35,69,0.14)]">
+              <h3 className="text-base font-semibold text-[#0D2345]">{item.question}</h3>
+              <p className="mt-2 text-sm leading-7 text-[#5E7189]">{item.answer}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres services utiles</h2>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Selon votre projet, vous pouvez aussi consulter la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">plomberie</Link> ou la page <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link>.
+      <section className="mt-10 rounded-[1.75rem] border border-[#E7EDF3] bg-white p-6 shadow-[0_16px_40px_-32px_rgba(13,35,69,0.16)] sm:p-8">
+        <h2 className="text-2xl font-semibold text-[#0D2345]">Autres services utiles</h2>
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          Selon votre projet, vous pouvez aussi consulter la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">plomberie</Link> ou la page <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">chauffage</Link>.
         </p>
-        <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pages locales électricité prioritaires: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
+        <p className="mt-3 text-sm leading-7 text-[#5E7189]">
+          Pages locales électricité prioritaires: <Link href="/electricien-meru" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Beauvais</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Cergy</Link> et <Link href="/electricien-pontoise" className="font-semibold text-[#176BC0] hover:text-[#105BA7]">Pontoise</Link>.
         </p>
       </section>
     </main>
