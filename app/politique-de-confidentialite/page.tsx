@@ -76,7 +76,7 @@ export default function PolitiqueDeConfidentialitePage() {
 
       <main className="mx-auto w-full max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <Link href="/" className="text-sm font-semibold text-[#397DA9] transition hover:text-[#2F6F98]">
-          Retour a l'accueil
+          Retour à l'accueil
         </Link>
 
         <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] text-[#173246] sm:text-5xl">Politique de confidentialite</h1>
@@ -123,8 +123,8 @@ export default function PolitiqueDeConfidentialitePage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Bases legales</h2>
             <ul className="mt-3 space-y-2 leading-7 text-[#5F7484]">
-              <li>Mesures precontractuelles a la demande de la personne concernee (reponse a une demande de devis ou de contact).</li>
-              <li>Execution contractuelle lorsque la demande donne lieu a une prestation.</li>
+              <li>Mesures precontractuelles à la demande de la personne concernee (reponse à une demande de devis ou de contact).</li>
+              <li>Execution contractuelle lorsque la demande donne lieu à une prestation.</li>
               <li>Obligation legale pour les obligations administratives, fiscales et comptables.</li>
               <li>Interet legitime pour l'organisation, la securisation et le suivi des echanges professionnels.</li>
             </ul>
@@ -133,21 +133,21 @@ export default function PolitiqueDeConfidentialitePage() {
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Caractere obligatoire ou facultatif des informations</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les informations strictement necessaires au traitement de votre demande (moyen de contact, description du besoin, localisation du chantier) sont indispensables pour obtenir une reponse utile. Les autres informations sont facultatives.
+              Les informations strictement nécessaires au traitement de votre demande (moyen de contact, description du besoin, localisation du chantier) sont indispensables pour obtenir une reponse utile. Les autres informations sont facultatives.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Destinataires et sous-traitants</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Les donnees sont destinees a {siteConfig.legalEntityName}. Elles peuvent egalement etre traitees par les prestataires techniques necessaires au fonctionnement du site et des moyens de communication utilises (hebergeur, messagerie), dans la limite de leurs attributions.
+              Les donnees sont destinees a {siteConfig.legalEntityName}. Elles peuvent également être traitees par les prestataires techniques nécessaires au fonctionnement du site et des moyens de communication utilises (hebergeur, messagerie), dans la limite de leurs attributions.
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-semibold text-[#173246]">Hebergement et eventuels transferts hors de l'Union europeenne</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
-              Le site est heberge sur l'infrastructure de Vercel Inc. (Etats-Unis). Selon la configuration technique de l'hebergeur, certaines donnees techniques (ex. journaux de connexion) peuvent transiter ou etre traitees hors Union europeenne.
+              Le site est heberge sur l'infrastructure de Vercel Inc. (Etats-Unis). Selon la configuration technique de l'hebergeur, certaines donnees techniques (ex. journaux de connexion) peuvent transiter ou être traitees hors Union europeenne.
               Les garanties contractuelles applicables: [GARANTIES DE TRANSFERT A CONFIRMER LE CAS ECHEANT].
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function PolitiqueDeConfidentialitePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#173246]">Securite des donnees</h2>
+            <h2 className="text-2xl font-semibold text-[#173246]">Sécurité des donnees</h2>
             <p className="mt-3 leading-7 text-[#5F7484]">
               Des mesures techniques et organisationnelles raisonnables sont mises en oeuvre pour proteger les donnees contre l'acces non autorise, la divulgation, l'alteration ou la destruction.
             </p>
@@ -217,7 +217,7 @@ export default function PolitiqueDeConfidentialitePage() {
               <Image src="/allostef-logo-final-transition-corrigee.png" alt="Logo AlloStef" width={140} height={40} className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-md text-sm leading-7 text-[#5F7484]">
-              Installation, depannage et entretien en plomberie, chauffage, electricite, platrerie, carrelage et renovation interieure dans l'Oise et le Val-d'Oise.
+              Installation, dépannage et entretien en plomberie, chauffage, électricité, platrerie, carrelage et rénovation intérieure dans l'Oise et le Val-d'Oise.
             </p>
           </div>
           <div>

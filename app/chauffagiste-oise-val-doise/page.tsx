@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Chauffagiste Oise et Val-d'Oise | Depannage, entretien, installation | AlloStef",
+  title: "Chauffagiste Oise et Val-d'Oise | Dépannage, entretien, installation | AlloStef",
   description:
-    "AlloStef, chauffagiste dans l'Oise et le Val-d'Oise : depannage chauffage, entretien et remplacement de chaudieres, adaptation de circuits et solutions durables pour votre confort.",
+    "AlloStef, chauffagiste dans l'Oise et le Val-d'Oise : dépannage chauffage, entretien et remplacement de chaudieres, adaptation de circuits et solutions durables pour votre confort.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-oise-val-doise`,
   },
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Proposez-vous l'entretien de chaudiere ?",
+    question: "Proposez-vous l'entretien de chaudière ?",
     answer:
-      "Oui. AlloStef intervient pour l'entretien et le suivi des installations de chauffage afin de maintenir performance, securite et confort au quotidien.",
+      "Oui. AlloStef intervient pour l'entretien et le suivi des installations de chauffage afin de maintenir performance, sécurité et confort au quotidien.",
   },
   {
-    question: "Quand faut-il envisager un remplacement de chaudiere ?",
+    question: "Quand faut-il envisager un remplacement de chaudière ?",
     answer:
-      "Un remplacement peut etre pertinent en cas de pannes repetees, surconsommation, performances en baisse ou impossibilite de reparation durable.",
+      "Un remplacement peut être pertinent en cas de pannes repetees, surconsommation, performances en baisse ou impossibilite de reparation durable.",
   },
   {
     question: "Intervenez-vous sur radiateurs et circuits de chauffage ?",
@@ -30,14 +30,14 @@ const faqItems = [
       "Oui. AlloStef peut adapter, modifier ou remplacer des elements du circuit de chauffage et des radiateurs selon la configuration du logement.",
   },
   {
-    question: "Faites-vous du depannage chauffage en periode hivernale ?",
+    question: "Faites-vous du dépannage chauffage en periode hivernale ?",
     answer:
-      "Oui. Les demandes de depannage chauffage sont traitees en priorite selon disponibilite et zone afin de limiter les inconforts.",
+      "Oui. Les demandes de dépannage chauffage sont traitees en priorité selon disponibilité et zone afin de limiter les inconforts.",
   },
   {
-    question: "Quels delais pour un devis chauffage ?",
+    question: "Quels délais pour un devis chauffage ?",
     answer:
-      "Apres prise d'information, un devis est etabli rapidement avec un niveau de detail adapte au projet d'entretien, de depannage ou de remplacement.",
+      "Apres prise d'information, un devis est etabli rapidement avec un niveau de detail adapte au projet d'entretien, de dépannage ou de remplacement.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function ChauffagePage() {
           "@id": `${siteConfig.siteUrl}/#organization`,
         },
         areaServed: [{ "@type": "AdministrativeArea", name: "Oise" }, { "@type": "AdministrativeArea", name: "Val-d'Oise" }],
-        serviceType: "Depannage, entretien et installation chauffage",
+        serviceType: "Dépannage, entretien et installation chauffage",
         url: `${siteConfig.siteUrl}/chauffagiste-oise-val-doise`,
       },
       {
@@ -96,10 +96,10 @@ export default function ChauffagePage() {
           Chauffagiste Oise et Val-d'Oise
         </p>
         <h1 className="mt-4 max-w-[20ch] text-[clamp(2rem,4.4vw,3.3rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Chauffage dans l'Oise et le Val-d'Oise : depannage, entretien et installation
+          Chauffage dans l'Oise et le Val-d'Oise : dépannage, entretien et installation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient sur les installations de chauffage pour le depannage, l'entretien et le remplacement d'equipements. L'objectif est de retablir votre confort rapidement et d'ameliorer la fiabilite de votre systeme dans la duree.
+          AlloStef intervient sur les installations de chauffage pour le dépannage, l'entretien et le remplacement d'équipements. L'objectif est de retablir votre confort rapidement et d'ameliorer la fiabilité de votre systeme dans la duree.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="btn-display inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -114,21 +114,21 @@ export default function ChauffagePage() {
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Depannage de systemes de chauffage</h2>
+          <h2 className="text-2xl font-semibold text-[#173246]">Dépannage de systèmes de chauffage</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Diagnostic de panne, remise en route, controle des points critiques et recherche de cause pour limiter les recurrences.
+            Diagnostic de panne, remise en route, contrôle des points critiques et recherche de cause pour limiter les recurrences.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Entretien et suivi de chaudieres</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Entretien courant et verifications pour conserver rendement, securite de fonctionnement et confort thermique regulier.
+            Entretien courant et verifications pour conserver rendement, sécurité de fonctionnement et confort thermique regulier.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Remplacement de chaudiere et ballon d'eau chaude</h2>
+          <h2 className="text-2xl font-semibold text-[#173246]">Remplacement de chaudière et ballon d'eau chaude</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Etude de solution adaptee, remplacement des equipements et adaptation des raccordements pour une installation cohérente.
+            Etude de solution adaptée, remplacement des équipements et adaptation des raccordements pour une installation cohérente.
           </p>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
@@ -147,7 +147,7 @@ export default function ChauffagePage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes chauffage</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes chauffage</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -161,10 +161,10 @@ export default function ChauffagePage() {
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
         <h2 className="text-2xl font-semibold text-[#173246]">Autres services utiles</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pour un besoin connexe, consultez la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">plomberie</Link> ou la page <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">electricite</Link>.
+          Pour un besoin connexe, consultez la page <Link href="/plomberie-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">plomberie</Link> ou la page <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
         </p>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/chauffagiste-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Pages locales chauffage prioritaires: <Link href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
         </p>
       </section>
     </main>

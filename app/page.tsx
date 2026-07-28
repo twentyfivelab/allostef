@@ -53,7 +53,7 @@ const serviceCards = [
       "Intervention sur les tableaux électriques",
       "Travaux électriques dans le cadre d’une rénovation",
     ],
-    imageSrc: "/images/realizations/realisation-electricite.png",
+    imageSrc: "/images/realizations/realisation-électricité.png",
     imageAlt: "Travaux d'électricité sur prises, éclairages et tableau électrique",
     cardClass: "border-[#EBCB8C] bg-[linear-gradient(145deg,_#FFFCF5_0%,_#FBEED4_100%)]",
   },
@@ -380,7 +380,7 @@ export default function Home() {
                         alt={service.imageAlt}
                         fill
                         sizes="(max-width: 1024px) 100vw, 42vw"
-                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
                         loading="lazy"
                       />
                     </div>
@@ -419,7 +419,7 @@ export default function Home() {
                     }
                   }}
                   onKeyDown={handleKeyDown}
-                  placeholder="Ex. Méru, 60000, Senlis"
+                  placeholder="Ex. Méru, 60000, Cergy"
                   className="w-full rounded-[0.9rem] border border-[#DDEFFF] bg-white px-4 py-3 text-base text-[#173246] outline-none focus:border-[#5CA6D2]"
                   role="combobox"
                   aria-autocomplete="list"
@@ -480,15 +480,15 @@ export default function Home() {
                 </p>
               ) : null}
               <div className="mt-5 rounded-xl border border-[#DDEFFF] bg-[#F8FCFF] p-4">
-                <p className="text-sm font-semibold text-[#173246]">Villes les plus recherchees</p>
+                <p className="text-sm font-semibold text-[#173246]">Villes les plus recherchées</p>
                 <p className="mt-2 text-sm leading-7 text-[#5F7484]">
-                  Consultez aussi nos pages locales: <a href="/plombier-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/plombier-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/plombier-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>, <a href="/plombier-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/plombier-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
+                  Consultez aussi nos pages locales: <a href="/plombier-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/plombier-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/plombier-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/plombier-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
                 </p>
                 <p className="mt-2 text-sm leading-7 text-[#5F7484]">
-                  En electricite: <a href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a>, <a href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a> et <a href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>.
+                  En électricité: <a href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
                 </p>
                 <p className="mt-2 text-sm leading-7 text-[#5F7484]">
-                  En chauffage: <a href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a>, <a href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a> et <a href="/chauffagiste-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</a>.
+                  En chauffage: <a href="/chauffagiste-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</a>, <a href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</a>, <a href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</a> et <a href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</a>.
                 </p>
               </div>
             </div>

@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Cergy (95000) | Depannage et travaux electriques | AlloStef",
+  title: "Electricien Cergy (95000) | Dépannage et travaux électriques | AlloStef",
   description:
-    "AlloStef intervient a Cergy pour depannage electrique, intervention sur tableau, prises, eclairages et travaux electriques en renovation.",
+    "AlloStef intervient à Cergy pour dépannage électrique, intervention sur tableau, prises, éclairages et travaux électriques en rénovation.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/electricien-cergy`,
   },
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Intervenez-vous a Cergy pour coupure ou panne electrique ?",
+    question: "Intervenez-vous à Cergy pour coupure ou panne électrique ?",
     answer:
-      "Oui. AlloStef intervient a Cergy selon disponibilite pour diagnostiquer la panne et remettre l'installation en fonctionnement.",
+      "Oui. AlloStef intervient à Cergy selon disponibilité pour diagnostiquer la panne et remettre l'installation en fonctionnement.",
   },
   {
-    question: "Pouvez-vous intervenir sur un tableau electrique ancien ?",
+    question: "Pouvez-vous intervenir sur un tableau électrique ancien ?",
     answer:
-      "Oui. Un controle du tableau est realise puis des adaptations ou remplacements sont proposes selon l'etat de l'installation.",
+      "Oui. Un contrôle du tableau est realise puis des adaptations ou remplacements sont proposes selon l'etat de l'installation.",
   },
   {
-    question: "Realisez-vous des installations de prises et eclairages a Cergy ?",
+    question: "Realisez-vous des installations de prises et éclairages à Cergy ?",
     answer:
-      "Oui. Installation et remplacement de prises et eclairages peuvent etre realises pour ameliorer confort et fiabilite d'usage.",
+      "Oui. Installation et remplacement de prises et éclairages peuvent être realises pour ameliorer confort et fiabilité d'usage.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ElectricienCergyPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-cergy#service`,
-        name: "Electricien a Cergy",
+        name: "Electricien à Cergy",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Cergy" },
           { "@type": "AdministrativeArea", name: "Val-d'Oise" },
         ],
-        serviceType: "Depannage, installation et renovation electrique",
+        serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-cergy`,
       },
       {
@@ -80,12 +80,12 @@ export default function ElectricienCergyPage() {
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Cergy (95000) - Electricite</p>
+        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Cergy (95000) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien a Cergy pour depannage et adaptation des installations
+          Electricien à Cergy pour dépannage et adaptation des installations
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          A Cergy, AlloStef intervient pour depannage electrique, modernisation des equipements, prise en charge du tableau electrique et travaux sur circuits dans le cadre d'une renovation.
+          À Cergy, AlloStef intervient pour dépannage électrique, modernisation des équipements, prise en charge du tableau électrique et travaux sur circuits dans le cadre d'une rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,23 +93,23 @@ export default function ElectricienCergyPage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis electricite a Cergy
+            Demander un devis électricité à Cergy
           </a>
         </div>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Interventions electriques a Cergy</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Interventions électriques à Cergy</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-          <li>Depannage electrique avec diagnostic</li>
-          <li>Remise en etat de prises et eclairages</li>
-          <li>Controle et adaptation du tableau electrique</li>
-          <li>Travaux electriques pour renovation</li>
+          <li>Dépannage électrique avec diagnostic</li>
+          <li>Remise en etat de prises et éclairages</li>
+          <li>Contrôle et adaptation du tableau électrique</li>
+          <li>Travaux électriques pour rénovation</li>
         </ul>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Cergy</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Cergy</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -121,9 +121,9 @@ export default function ElectricienCergyPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes electricite</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes électricité</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link> et <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
         </p>
       </section>
     </main>

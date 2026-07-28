@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Pontoise (95300) | Depannage et installation electrique | AlloStef",
+  title: "Electricien Pontoise (95300) | Dépannage et installation électrique | AlloStef",
   description:
-    "A Pontoise, AlloStef intervient pour depannage electrique, prises, eclairages, tableau electrique et travaux de renovation.",
+    "À Pontoise, AlloStef intervient pour dépannage électrique, prises, éclairages, tableau électrique et travaux de rénovation.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/electricien-pontoise`,
   },
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Intervenez-vous a Pontoise pour une panne electrique ?",
+    question: "Intervenez-vous à Pontoise pour une panne électrique ?",
     answer:
-      "Oui. Les interventions a Pontoise sont traitees selon disponibilite avec diagnostic de la panne et remise en service en securite.",
+      "Oui. Les interventions à Pontoise sont traitees selon disponibilité avec diagnostic de la panne et remise en service en sécurité.",
   },
   {
-    question: "Pouvez-vous remplacer un tableau electrique a Pontoise ?",
+    question: "Pouvez-vous remplacer un tableau électrique à Pontoise ?",
     answer:
-      "Oui. Un controle est realise puis une solution d'adaptation ou de remplacement est proposee selon l'installation existante.",
+      "Oui. Un contrôle est realise puis une solution d'adaptation ou de remplacement est proposee selon l'installation existante.",
   },
   {
-    question: "Realisez-vous les travaux electriques lors d'une renovation ?",
+    question: "Realisez-vous les travaux électriques lors d'une rénovation ?",
     answer:
-      "Oui. AlloStef peut integrer l'electricite a une renovation pour ameliorer fonctionnalite, confort et fiabilite des usages.",
+      "Oui. AlloStef peut integrer l'électricité à une rénovation pour ameliorer fonctionnalité, confort et fiabilité des usages.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ElectricienPontoisePage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-pontoise#service`,
-        name: "Electricien a Pontoise",
+        name: "Electricien à Pontoise",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Pontoise" },
           { "@type": "AdministrativeArea", name: "Val-d'Oise" },
         ],
-        serviceType: "Depannage, installation et renovation electrique",
+        serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-pontoise`,
       },
       {
@@ -80,12 +80,12 @@ export default function ElectricienPontoisePage() {
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Pontoise (95300) - Electricite</p>
+        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Pontoise (95300) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien a Pontoise pour depannage, installation et modernisation
+          Electricien à Pontoise pour dépannage, installation et modernisation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef accompagne les besoins electriques a Pontoise: depannage, remplacement de prises et eclairages, intervention sur tableau et adaptation des circuits en renovation.
+          AlloStef accompagne les besoins électriques à Pontoise: dépannage, remplacement de prises et éclairages, intervention sur tableau et adaptation des circuits en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,23 +93,23 @@ export default function ElectricienPontoisePage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis electricite a Pontoise
+            Demander un devis électricité à Pontoise
           </a>
         </div>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Interventions electriques a Pontoise</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Interventions électriques à Pontoise</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-          <li>Depannage electrique et recherche de panne</li>
-          <li>Remplacement de prises, interrupteurs et eclairages</li>
-          <li>Intervention sur tableau electrique</li>
-          <li>Travaux electriques pour renovation</li>
+          <li>Dépannage électrique et recherche de panne</li>
+          <li>Remplacement de prises, interrupteurs et éclairages</li>
+          <li>Intervention sur tableau électrique</li>
+          <li>Travaux électriques pour rénovation</li>
         </ul>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Pontoise</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Pontoise</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -121,9 +121,9 @@ export default function ElectricienPontoisePage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes electricite</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes électricité</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link> et <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>.
         </p>
       </section>
     </main>

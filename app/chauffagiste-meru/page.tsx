@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Chauffagiste Meru (60110) | Depannage et entretien chauffage | AlloStef",
+  title: "Chauffagiste Meru (60110) | Dépannage et entretien chauffage | AlloStef",
   description:
-    "AlloStef intervient a Meru pour depannage chauffage, entretien de chaudiere, remplacement d'equipements et ajustement des circuits.",
+    "AlloStef intervient à Meru pour dépannage chauffage, entretien de chaudière, remplacement d'équipements et ajustement des circuits.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/chauffagiste-meru`,
   },
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Intervenez-vous pour une panne de chauffage a Meru ?",
+    question: "Intervenez-vous pour une panne de chauffage à Meru ?",
     answer:
-      "Oui. Les pannes de chauffage a Meru sont traitees selon disponibilite et priorite, avec diagnostic et remise en service si possible.",
+      "Oui. Les pannes de chauffage à Meru sont traitees selon disponibilité et priorité, avec diagnostic et remise en service si possible.",
   },
   {
-    question: "Faites-vous l'entretien de chaudiere a Meru ?",
+    question: "Faites-vous l'entretien de chaudière à Meru ?",
     answer:
-      "Oui. AlloStef realise l'entretien et les controles de base pour maintenir le confort et limiter les pannes recurrentes.",
+      "Oui. AlloStef realise l'entretien et les contrôles de base pour maintenir le confort et limiter les pannes recurrentes.",
   },
   {
-    question: "Pouvez-vous remplacer une chaudiere ou un ballon d'eau chaude ?",
+    question: "Pouvez-vous remplacer une chaudière ou un ballon d'eau chaude ?",
     answer:
-      "Oui. Le remplacement peut etre etudie selon l'etat de l'installation et les besoins de votre logement.",
+      "Oui. Le remplacement peut être étudié selon l'etat de l'installation et les besoins de votre logement.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ChauffagisteMeruPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/chauffagiste-meru#service`,
-        name: "Chauffagiste a Meru",
+        name: "Chauffagiste à Meru",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Meru" },
           { "@type": "AdministrativeArea", name: "Oise" },
         ],
-        serviceType: "Depannage, entretien et remplacement chauffage",
+        serviceType: "Dépannage, entretien et remplacement chauffage",
         url: `${siteConfig.siteUrl}/chauffagiste-meru`,
       },
       {
@@ -82,10 +82,10 @@ export default function ChauffagisteMeruPage() {
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Meru (60110) - Chauffage</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Chauffagiste a Meru pour depannage, entretien et remplacement
+          Chauffagiste à Meru pour dépannage, entretien et remplacement
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient a Meru pour le chauffage: depannage, entretien de chaudiere, remplacement de ballon d'eau chaude et adaptation de circuits. L'objectif est de retablir rapidement un confort durable.
+          AlloStef intervient à Meru pour le chauffage: dépannage, entretien de chaudière, remplacement de ballon d'eau chaude et adaptation de circuits. L'objectif est de retablir rapidement un confort durable.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,23 +93,23 @@ export default function ChauffagisteMeruPage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis chauffage a Meru
+            Demander un devis chauffage à Meru
           </a>
         </div>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Interventions chauffage a Meru</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Interventions chauffage à Meru</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-          <li>Depannage de systemes de chauffage</li>
-          <li>Entretien et suivi de chaudiere</li>
-          <li>Remplacement de chaudiere et ballon d'eau chaude</li>
+          <li>Dépannage de systèmes de chauffage</li>
+          <li>Entretien et suivi de chaudière</li>
+          <li>Remplacement de chaudière et ballon d'eau chaude</li>
           <li>Adaptation de circuits et radiateurs</li>
         </ul>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Meru</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Meru</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -123,7 +123,7 @@ export default function ChauffagisteMeruPage() {
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
         <h2 className="text-2xl font-semibold text-[#173246]">Autres villes chauffage</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Consultez aussi: <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/chauffagiste-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Consultez aussi: <Link href="/chauffagiste-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/chauffagiste-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/chauffagiste-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
         </p>
       </section>
     </main>

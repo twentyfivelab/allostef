@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Plombier Beauvais (60000) | Depannage et travaux plomberie | AlloStef",
+  title: "Plombier Beauvais (60000) | Dépannage et travaux plomberie | AlloStef",
   description:
-    "Intervention plomberie a Beauvais : depannage, remplacement sanitaire, recherche de fuite et renovation. AlloStef propose des solutions claires et adaptees.",
+    "Intervention plomberie à Beauvais : dépannage, remplacement sanitaire, recherche de fuite et rénovation. AlloStef propose des solutions claires et adaptées.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/plombier-beauvais`,
   },
@@ -17,17 +17,17 @@ const faqItems = [
   {
     question: "Pouvez-vous intervenir en plomberie sur Beauvais et sa peripherie ?",
     answer:
-      "Oui. Les demandes sur Beauvais et les alentours peuvent etre traitees selon disponibilite et priorite des interventions.",
+      "Oui. Les demandes sur Beauvais et les alentours peuvent être traitees selon disponibilité et priorité des interventions.",
   },
   {
     question: "Faites-vous le remplacement de ballon d'eau chaude et raccordements ?",
     answer:
-      "Oui. Le remplacement et les raccordements associes peuvent etre pris en charge avec controle du bon fonctionnement.",
+      "Oui. Le remplacement et les raccordements associes peuvent être pris en charge avec contrôle du bon fonctionnement.",
   },
   {
-    question: "Prenez-vous en charge les projets de salle de bain a Beauvais ?",
+    question: "Prenez-vous en charge les projets de salle de bain à Beauvais ?",
     answer:
-      "Oui. Les travaux de plomberie pour renovation de salle de bain sont etudies avec une vision complete de l'installation.",
+      "Oui. Les travaux de plomberie pour rénovation de salle de bain sont étudiés avec une vision complete de l'installation.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function PlombierBeauvaisPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/plombier-beauvais#service`,
-        name: "Plombier a Beauvais",
+        name: "Plombier à Beauvais",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Beauvais" },
           { "@type": "AdministrativeArea", name: "Oise" },
         ],
-        serviceType: "Depannage plomberie, installation sanitaire, renovation",
+        serviceType: "Dépannage plomberie, installation sanitaire, rénovation",
         url: `${siteConfig.siteUrl}/plombier-beauvais`,
       },
       {
@@ -82,10 +82,10 @@ export default function PlombierBeauvaisPage() {
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
         <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Beauvais (60000) - Oise</p>
         <h1 className="mt-4 max-w-[18ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Plombier a Beauvais pour depannage et travaux d'installation
+          Plombier à Beauvais pour dépannage et travaux d'installation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          A Beauvais, AlloStef intervient sur les besoins de plomberie du quotidien et les projets plus complets : depannage, remplacement d'equipements sanitaires, recherche de fuite et adaptation des reseaux en renovation.
+          À Beauvais, AlloStef intervient sur les besoins de plomberie du quotidien et les projets plus complets : dépannage, remplacement d'équipements sanitaires, recherche de fuite et adaptation des reseaux en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,25 +93,25 @@ export default function PlombierBeauvaisPage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis a Beauvais
+            Demander un devis à Beauvais
           </a>
         </div>
       </section>
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
-          <h2 className="text-2xl font-semibold text-[#173246]">Besoins traites regulierement</h2>
+          <h2 className="text-2xl font-semibold text-[#173246]">Besoins traités regulierement</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
             <li>Fuites d'eau, robinets et mecanismes de chasse</li>
             <li>Problemes d'alimentation et d'evacuation</li>
             <li>Remplacement de sanitaires et raccordements</li>
-            <li>Reprise de plomberie dans un projet de renovation</li>
+            <li>Reprise de plomberie dans un projet de rénovation</li>
           </ul>
         </article>
         <article className="rounded-[1.5rem] border border-[#DDEFFF] bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#173246]">Beauvais et communes proches</h2>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-            Les interventions peuvent aussi etre etudiees autour de Beauvais, notamment vers Tille, Allonne, Saint-Paul et Goincourt, selon les besoins et les delais.
+            Les interventions peuvent aussi être étudiées autour de Beauvais, notamment vers Tille, Allonne, Saint-Paul et Goincourt, selon les besoins et les délais.
           </p>
           <p className="mt-3 text-sm leading-7 text-[#5F7484]">
             Consultez la <a href="/#zones" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">zone d'intervention</a> pour confirmer votre secteur.
@@ -120,7 +120,7 @@ export default function PlombierBeauvaisPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Beauvais</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Beauvais</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -134,7 +134,7 @@ export default function PlombierBeauvaisPage() {
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
         <h2 className="text-2xl font-semibold text-[#173246]">Services complementaires</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Si votre besoin depasse la plomberie, consultez aussi <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">electricite</Link>.
+          Si votre besoin depasse la plomberie, consultez aussi <Link href="/chauffagiste-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">chauffage</Link> et <Link href="/electricien-oise-val-doise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">électricité</Link>.
         </p>
       </section>
     </main>

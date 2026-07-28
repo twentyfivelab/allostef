@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Meru (60110) | Depannage et renovation electrique | AlloStef",
+  title: "Electricien Meru (60110) | Dépannage et rénovation électrique | AlloStef",
   description:
-    "AlloStef intervient a Meru pour depannage electrique, remplacement de prises, eclairages, tableau electrique et travaux de renovation.",
+    "AlloStef intervient à Meru pour dépannage électrique, remplacement de prises, éclairages, tableau électrique et travaux de rénovation.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/electricien-meru`,
   },
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Intervenez-vous a Meru pour une panne electrique ?",
+    question: "Intervenez-vous à Meru pour une panne électrique ?",
     answer:
-      "Oui. Les pannes electriques a Meru sont traitees selon disponibilite, avec diagnostic de l'origine et remise en service en securite.",
+      "Oui. Les pannes électriques à Meru sont traitees selon disponibilité, avec diagnostic de l'origine et remise en service en sécurité.",
   },
   {
-    question: "Pouvez-vous remplacer prises et interrupteurs a Meru ?",
+    question: "Pouvez-vous remplacer prises et interrupteurs à Meru ?",
     answer:
-      "Oui. Le remplacement de prises, interrupteurs et points d'eclairage peut etre realise selon l'etat de l'installation.",
+      "Oui. Le remplacement de prises, interrupteurs et points d'éclairage peut être realise selon l'etat de l'installation.",
   },
   {
-    question: "Realisez-vous les travaux electriques en renovation ?",
+    question: "Realisez-vous les travaux électriques en rénovation ?",
     answer:
-      "Oui. AlloStef integre les travaux electriques dans un projet de renovation partielle ou complete, avec approche adaptee au logement.",
+      "Oui. AlloStef integre les travaux électriques dans un projet de rénovation partielle ou complete, avec approche adaptée au logement.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ElectricienMeruPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-meru#service`,
-        name: "Electricien a Meru",
+        name: "Electricien à Meru",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Meru" },
           { "@type": "AdministrativeArea", name: "Oise" },
         ],
-        serviceType: "Depannage, installation et renovation electrique",
+        serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-meru`,
       },
       {
@@ -80,12 +80,12 @@ export default function ElectricienMeruPage() {
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Meru (60110) - Electricite</p>
+        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Meru (60110) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien a Meru pour depannage, installation et renovation
+          Electricien à Meru pour dépannage, installation et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          AlloStef intervient a Meru pour vos besoins en electricite: recherche de panne, remplacement de prises et eclairages, intervention sur tableau electrique et adaptation des circuits.
+          AlloStef intervient à Meru pour vos besoins en électricité: recherche de panne, remplacement de prises et éclairages, intervention sur tableau électrique et adaptation des circuits.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,23 +93,23 @@ export default function ElectricienMeruPage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis electricite a Meru
+            Demander un devis électricité à Meru
           </a>
         </div>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Interventions electriques a Meru</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Interventions électriques à Meru</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-          <li>Depannage electrique et diagnostic de panne</li>
+          <li>Dépannage électrique et diagnostic de panne</li>
           <li>Installation et remplacement de prises et interrupteurs</li>
           <li>Pose ou remplacement de luminaires</li>
-          <li>Intervention sur tableau electrique et circuits</li>
+          <li>Intervention sur tableau électrique et circuits</li>
         </ul>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Meru</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Meru</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -121,9 +121,9 @@ export default function ElectricienMeruPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes electricite</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes électricité</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Consultez aussi: <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Consultez aussi: <Link href="/electricien-beauvais" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Beauvais</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
         </p>
       </section>
     </main>

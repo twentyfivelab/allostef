@@ -5,9 +5,9 @@ import { PhoneIcon } from "@/components/phone-icon";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Electricien Beauvais (60000) | Depannage et installation electrique | AlloStef",
+  title: "Electricien Beauvais (60000) | Dépannage et installation électrique | AlloStef",
   description:
-    "A Beauvais, AlloStef intervient pour depannage electrique, tableau, prises, eclairages et travaux de mise a niveau en renovation.",
+    "À Beauvais, AlloStef intervient pour dépannage électrique, tableau, prises, éclairages et travaux de mise a niveau en rénovation.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/electricien-beauvais`,
   },
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Pouvez-vous intervenir en depannage electrique a Beauvais ?",
+    question: "Pouvez-vous intervenir en dépannage électrique à Beauvais ?",
     answer:
-      "Oui. Les demandes de depannage electrique a Beauvais sont traitees selon disponibilite, avec recherche de cause et remise en etat.",
+      "Oui. Les demandes de dépannage électrique à Beauvais sont traitees selon disponibilité, avec recherche de cause et remise en etat.",
   },
   {
-    question: "Intervenez-vous sur le tableau electrique ?",
+    question: "Intervenez-vous sur le tableau électrique ?",
     answer:
-      "Oui. Le tableau electrique peut etre controle, adapte ou remplace selon la configuration et le niveau de securite attendu.",
+      "Oui. Le tableau électrique peut être contrôle, adapte ou remplace selon la configuration et le niveau de sécurité attendu.",
   },
   {
-    question: "Proposez-vous des travaux electriques pour renovation interieure ?",
+    question: "Proposez-vous des travaux électriques pour rénovation intérieure ?",
     answer:
-      "Oui. Les travaux electriques sont integres a vos projets de renovation pour une installation plus pratique et fiable.",
+      "Oui. Les travaux électriques sont integres à vos projets de rénovation pour une installation plus pratique et fiable.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ElectricienBeauvaisPage() {
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}/electricien-beauvais#service`,
-        name: "Electricien a Beauvais",
+        name: "Electricien à Beauvais",
         provider: { "@id": `${siteConfig.siteUrl}/#organization` },
         areaServed: [
           { "@type": "City", name: "Beauvais" },
           { "@type": "AdministrativeArea", name: "Oise" },
         ],
-        serviceType: "Depannage, installation et renovation electrique",
+        serviceType: "Dépannage, installation et rénovation électrique",
         url: `${siteConfig.siteUrl}/electricien-beauvais`,
       },
       {
@@ -80,12 +80,12 @@ export default function ElectricienBeauvaisPage() {
       </nav>
 
       <section className="mt-6 rounded-[2rem] border border-[#DDEFFF] bg-[linear-gradient(135deg,_#F8FCFF_0%,_#EFF8FF_45%,_#DDEFFF_100%)] p-7 sm:p-10">
-        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Beauvais (60000) - Electricite</p>
+        <p className="inline-flex rounded-full border border-[#C6E3F7] bg-white/80 px-3 py-1 text-xs font-medium text-[#397DA9]">Beauvais (60000) - Électricité</p>
         <h1 className="mt-4 max-w-[19ch] text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[#173246]">
-          Electricien a Beauvais pour depannage, tableau et renovation
+          Electricien à Beauvais pour dépannage, tableau et rénovation
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#5F7484]">
-          A Beauvais, AlloStef intervient sur les pannes electriques, le remplacement de prises et eclairages, ainsi que l'adaptation de tableaux et circuits en renovation.
+          À Beauvais, AlloStef intervient sur les pannes électriques, le remplacement de prises et éclairages, ainsi que l'adaptation de tableaux et circuits en rénovation.
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a href={`tel:${siteConfig.phoneHref}`} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#397DA9] px-6 py-3 font-semibold text-white hover:bg-[#2F6F98]">
@@ -93,23 +93,23 @@ export default function ElectricienBeauvaisPage() {
             Appeler AlloStef
           </a>
           <a href="/#devis" className="inline-flex items-center justify-center rounded-full border border-[#C6E3F7] bg-white/80 px-6 py-3 font-semibold text-[#173246] hover:text-[#397DA9]">
-            Demander un devis electricite a Beauvais
+            Demander un devis électricité à Beauvais
           </a>
         </div>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Interventions electriques a Beauvais</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Interventions électriques à Beauvais</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5F7484]">
-          <li>Depannage electrique et recherche de panne</li>
-          <li>Remplacement de prises, interrupteurs et eclairages</li>
-          <li>Intervention et ajustement du tableau electrique</li>
-          <li>Travaux electriques en renovation interieure</li>
+          <li>Dépannage électrique et recherche de panne</li>
+          <li>Remplacement de prises, interrupteurs et éclairages</li>
+          <li>Intervention et ajustement du tableau électrique</li>
+          <li>Travaux électriques en rénovation intérieure</li>
         </ul>
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Questions frequentes a Beauvais</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Questions fréquentes à Beauvais</h2>
         <div className="mt-4 space-y-4">
           {faqItems.map((item) => (
             <article key={item.question} className="rounded-xl border border-[#E4F1FC] bg-[#F8FCFF] p-4">
@@ -121,9 +121,9 @@ export default function ElectricienBeauvaisPage() {
       </section>
 
       <section className="mt-10 rounded-[1.75rem] border border-[#DDEFFF] bg-white p-6 sm:p-8">
-        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes electricite</h2>
+        <h2 className="text-2xl font-semibold text-[#173246]">Autres villes électricité</h2>
         <p className="mt-3 text-sm leading-7 text-[#5F7484]">
-          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link>, <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link> et <Link href="/electricien-compiegne" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Compiegne</Link>.
+          Consultez aussi: <Link href="/electricien-meru" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Meru</Link>, <Link href="/electricien-cergy" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Cergy</Link> et <Link href="/electricien-pontoise" className="font-semibold text-[#397DA9] hover:text-[#2F6F98]">Pontoise</Link>.
         </p>
       </section>
     </main>
